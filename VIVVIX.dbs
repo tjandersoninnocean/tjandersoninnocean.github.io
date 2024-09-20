@@ -22148,8 +22148,7 @@ where date_month_key = 20240401;]]></string>
 	CONSTRAINT pk_dimension_rdr_dates PRIMARY KEY ( rdr_date_pk )
  );
 
-ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_dates ADD CONSTRAINT fk_dimension_rdr_dates FOREIGN KEY ( date_day_fk ) REFERENCES ius_unity_prod.ius_datawarehouse.dimension_date_day( date_key ) ON DELETE NO ACTION ON UPDATE NO ACTION;
-]]></string>
+ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_dates ADD CONSTRAINT fk_dimension_rdr_dates FOREIGN KEY ( date_day_fk ) REFERENCES ius_unity_prod.ius_datawarehouse.dimension_date_day( date_key ) ON DELETE NO ACTION ON UPDATE NO ACTION;]]></string>
 		</script>
 		<script name="dimension_rdr_dealer_regions" id="Editor-760" language="SQL" >
 			<string><![CDATA[CREATE TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_dealer_regions ( 
@@ -22169,8 +22168,7 @@ TBLPROPERTIES (
   'delta.minReaderVersion' = '1',
   'delta.minWriterVersion' = '6');
 
-ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_dealer_regions ADD CONSTRAINT fk_dimension_rdr_sales_dealer_regions FOREIGN KEY ( dealer_cd_fk ) REFERENCES ius_unity_prod.hgma_dealers_datamart.hgma_combined_dealers( id ) ON DELETE NO ACTION ON UPDATE NO ACTION;
-]]></string>
+ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_dealer_regions ADD CONSTRAINT fk_dimension_rdr_sales_dealer_regions FOREIGN KEY ( dealer_cd_fk ) REFERENCES ius_unity_prod.hgma_dealers_datamart.hgma_combined_dealers( id ) ON DELETE NO ACTION ON UPDATE NO ACTION;]]></string>
 		</script>
 		<script name="dimension_rdr_models" id="Editor-1b51" language="SQL" >
 			<string><![CDATA[CREATE TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_models ( 
@@ -22192,8 +22190,7 @@ TBLPROPERTIES (
   'delta.minReaderVersion' = '1',
   'delta.minWriterVersion' = '6');
 
-ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_models ADD CONSTRAINT fk_dimension_rdr_sales_models FOREIGN KEY ( ius_make_model_fk ) REFERENCES ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_makemodelsegments( iwa_id ) ON DELETE NO ACTION ON UPDATE NO ACTION;
-]]></string>
+ALTER TABLE ius_unity_prod.rdr_datawarehouse.dimension_rdr_models ADD CONSTRAINT fk_dimension_rdr_sales_models FOREIGN KEY ( ius_make_model_fk ) REFERENCES ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_makemodelsegments( iwa_id ) ON DELETE NO ACTION ON UPDATE NO ACTION;]]></string>
 		</script>
 		<script name="fact_rdr_sales_daily" id="Editor-1e47" language="SQL" >
 			<string><![CDATA[INSERT INTO ius_unity_prod.rdr_datawarehouse.fact_rdr_sales_daily
@@ -22219,8 +22216,7 @@ ALTER TABLE ius_unity_prod.rdr_datawarehouse.fact_rdr_sales_daily ADD CONSTRAINT
 
 ALTER TABLE ius_unity_prod.rdr_datawarehouse.fact_rdr_sales_daily ADD CONSTRAINT fk_fact_rdr_sales_daily_dealer FOREIGN KEY ( rdr_dealer_fk ) REFERENCES ius_unity_prod.rdr_datawarehouse.dimension_rdr_dealer_regions( rdr_dealer_pk ) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE ius_unity_prod.rdr_datawarehouse.fact_rdr_sales_daily ADD CONSTRAINT fk_fact_rdr_sales_daily_model FOREIGN KEY ( rdr_model_fk ) REFERENCES ius_unity_prod.rdr_datawarehouse.dimension_rdr_models( rdr_model_pk ) ON DELETE NO ACTION ON UPDATE NO ACTION;
-]]></string>
+ALTER TABLE ius_unity_prod.rdr_datawarehouse.fact_rdr_sales_daily ADD CONSTRAINT fk_fact_rdr_sales_daily_model FOREIGN KEY ( rdr_model_fk ) REFERENCES ius_unity_prod.rdr_datawarehouse.dimension_rdr_models( rdr_model_pk ) ON DELETE NO ACTION ON UPDATE NO ACTION;]]></string>
 		</script>
 		<script name="raw_sales_monthly_003" id="Editor-10f2" language="SQL" >
 			<string><![CDATA[SELECT
@@ -22304,45 +22300,44 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 		</query>
 	</layout>
 	<layout name="Vivvix" id="Layout-6cd" confirmed="y" show_column_type="y" show_relation="columns" >
-		<comment><![CDATA[Vivvix_Layout_V1]]></comment>
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_advertiser_product" color="3986C1" x="736" y="80" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_dmaregions" color="3986C1" x="1824" y="80" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_mediatype" color="3986C1" x="1280" y="80" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_tier" color="3986C1" x="2336" y="80" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_advertiser_product" color="3986C1" x="736" y="320" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_dmaregions" color="3986C1" x="1824" y="272" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_mediatype" color="3986C1" x="1280" y="320" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_tier" color="3986C1" x="2336" y="272" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_advertiser_product" color="3986C1" x="736" y="560" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_dmaregions" color="3986C1" x="1856" y="528" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_mediatype" color="3986C1" x="1280" y="560" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_tier" color="3986C1" x="2368" y="544" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_advertiser_product" color="3986C1" x="736" y="800" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_dmaregions" color="3986C1" x="1888" y="784" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_mediatype" color="3986C1" x="1312" y="816" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_tier" color="3986C1" x="2432" y="816" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_final_monthly" color="3986C1" x="800" y="1328" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_preliminary_monthly" color="3986C1" x="1216" y="1328" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_modelmonthly_final_monthly" color="3986C1" x="1728" y="1328" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_modelmonthly_preliminary_monthly" color="3986C1" x="2112" y="1328" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_advertiser_product" color="3986C1" x="672" y="80" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_dmaregions" color="3986C1" x="1776" y="80" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_mediatype" color="3986C1" x="1232" y="80" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_tier" color="3986C1" x="2288" y="80" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_advertiser_product" color="3986C1" x="672" y="320" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_dmaregions" color="3986C1" x="1776" y="272" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_mediatype" color="3986C1" x="1232" y="320" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_tier" color="3986C1" x="2288" y="272" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_advertiser_product" color="3986C1" x="672" y="560" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_dmaregions" color="3986C1" x="1792" y="528" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_mediatype" color="3986C1" x="1216" y="560" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_tier" color="3986C1" x="2320" y="544" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_advertiser_product" color="3986C1" x="672" y="800" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_dmaregions" color="3986C1" x="1824" y="784" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_mediatype" color="3986C1" x="1248" y="816" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_tier" color="3986C1" x="2368" y="816" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_final_monthly" color="3986C1" x="736" y="1328" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_preliminary_monthly" color="3986C1" x="1152" y="1328" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_modelmonthly_final_monthly" color="3986C1" x="1680" y="1328" />
+		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_modelmonthly_preliminary_monthly" color="3986C1" x="2064" y="1328" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="log_vivvix_magnifier_marketlevelspend_final_monthly" color="3986C1" x="48" y="80" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="log_vivvix_magnifier_marketlevelspend_preliminary_monthly" color="3986C1" x="48" y="256" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="log_vivvix_magnifier_modelmonthly_final_monthly" color="3986C1" x="48" y="176" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="log_vivvix_magnifier_modelmonthly_preliminary_monthly" color="3986C1" x="48" y="336" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_dma_monthly" color="3986C1" x="1296" y="2144" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_national_monthly" color="3986C1" x="912" y="2144" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_regional_monthly" color="3986C1" x="912" y="2528" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_rollup_monthly" color="3986C1" x="1840" y="2560" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_search_sales_rollup_monthly" color="3986C1" x="1840" y="2128" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_final_raw_monthly" color="3986C1" x="176" y="2368" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_preliminary_raw_monthly" color="3986C1" x="176" y="2112" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_dma_monthly" color="3986C1" x="1296" y="3136" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_national_monthly" color="3986C1" x="912" y="3136" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_regional_monthly" color="3986C1" x="912" y="3552" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_rollup_monthly" color="3986C1" x="1840" y="3568" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_search_sales_rollup_monthly" color="3986C1" x="1840" y="3136" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_final_raw_monthly" color="3986C1" x="240" y="3392" />
-		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_preliminary_raw_monthly" color="3986C1" x="240" y="3152" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_dma_monthly" color="3986C1" x="4000" y="112" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_national_monthly" color="3986C1" x="3616" y="112" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_regional_monthly" color="3986C1" x="3616" y="496" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_rollup_monthly" color="3986C1" x="4544" y="528" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_combined_search_sales_rollup_monthly" color="3986C1" x="4544" y="96" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_final_raw_monthly" color="3986C1" x="2880" y="336" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_marketlevelspend_preliminary_raw_monthly" color="3986C1" x="2880" y="80" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_dma_monthly" color="3986C1" x="4000" y="1104" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_national_monthly" color="3986C1" x="3616" y="1104" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_regional_monthly" color="3986C1" x="3616" y="1520" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_rollup_monthly" color="3986C1" x="4544" y="1536" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_combined_search_sales_rollup_monthly" color="3986C1" x="4544" y="1104" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_final_raw_monthly" color="3986C1" x="2944" y="1360" />
+		<entity schema="ius_unity_prod.vivvix_datamart" name="magnifier_modelmonthly_preliminary_raw_monthly" color="3986C1" x="2944" y="1120" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="raw_vivvix_magnifier_modelmonthly_advertiserproduct_srs_makemodel_map" color="3986C1" x="48" y="416" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="raw_vivvix_magnifier_modelmonthly_final_monthly" color="3986C1" x="48" y="528" />
 		<entity schema="ius_unity_prod.vivvix_datalake" name="raw_vivvix_magnifier_modelmonthly_preliminary_monthly" color="3986C1" x="48" y="752" />
