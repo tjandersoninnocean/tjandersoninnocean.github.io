@@ -21122,19 +21122,7 @@ TBLPROPERTIES (
 		</table>
 	</schema>
 	<schema name="rdr_datamart" catalogname="ius_unity_prod" >
-		<table name="rdr_sales_daily" >
-			<column name="date_day" type="DATE" jt="91" />
-			<column name="sales_date_month" type="DATE" jt="91" />
-			<column name="ius_make" type="DATE" jt="91" />
-			<column name="ius_model" type="DATE" jt="91" />
-			<column name="ius_make_model" type="DATE" jt="91" />
-			<column name="ius_srs_segment" type="DATE" jt="91" />
-			<column name="dealer_cd" type="DATE" jt="91" />
-			<column name="region_cd" type="DATE" jt="91" />
-			<column name="region_desc" type="STRING" jt="12" />
-			<column name="sales_volume" type="INT" jt="4" />
-		</table>
-		<table name="rdr_sales_monthly" prior="rdr_sales_daily_0" >
+		<table name="rdr_sales__model_monthly" prior="rdr_sales_monthly" >
 			<column name="sales_date_month" type="DATE" jt="91" />
 			<column name="ius_make" type="DATE" jt="91" />
 			<column name="ius_model" type="DATE" jt="91" />
@@ -21144,6 +21132,40 @@ TBLPROPERTIES (
 			<column name="region_cd" type="DATE" jt="91" />
 			<column name="region_desc" type="DATE" jt="91" />
 			<column name="sales_volume" type="DATE" jt="91" />
+		</table>
+		<table name="rdr_sales_model_daily" prior="rdr_sales_daily" >
+			<column name="date_day" type="DATE" jt="91" />
+			<column name="sales_date_month" type="DATE" jt="91" />
+			<column name="ius_make" type="DATE" jt="91" />
+			<column name="ius_model" type="DATE" jt="91" />
+			<column name="ius_make_model" type="DATE" jt="91" />
+			<column name="ius_srs_segment" type="DATE" jt="91" />
+			<column name="dealer_cd" type="DATE" jt="91" />
+			<column name="dealer_type_cd" type="INT" jt="4" />
+			<column name="region_cd" type="DATE" jt="91" />
+			<column name="region_desc" type="STRING" jt="12" />
+			<column name="sales_volume" type="INT" jt="4" />
+			<column name="retail_sale_type_cd" type="INT" jt="4" />
+		</table>
+		<table name="rdr_sales_vin_daily" prior="rdr_sales_model_code_year_daily" >
+			<column name="date_day" type="DATE" jt="91" />
+			<column name="sales_date_month" type="DATE" jt="91" />
+			<column name="purchase_date" type="DATE" jt="91" />
+			<column name="ius_make" type="DATE" jt="91" />
+			<column name="ius_model" type="DATE" jt="91" />
+			<column name="ius_make_model" type="DATE" jt="91" />
+			<column name="ius_srs_segment" type="DATE" jt="91" />
+			<column name="model_year" prior="ius_model_year" type="DATE" jt="91" />
+			<column name="model_cd" type="DATE" jt="91" />
+			<column name="vin_serial_num" type="INT" jt="4" />
+			<column name="rdr_sequence" type="INT" jt="4" />
+			<column name="rdr_type" type="INT" jt="4" />
+			<column name="dealer_cd" type="DATE" jt="91" />
+			<column name="dealer_type_cd" type="INT" jt="4" />
+			<column name="region_cd" type="DATE" jt="91" />
+			<column name="region_desc" type="STRING" jt="12" />
+			<column name="retail_sale_type_cd" type="INT" jt="4" />
+			<column name="sales_volume" type="INT" jt="4" />
 		</table>
 	</schema>
 	<schema name="rdr_datawarehouse" catalogname="ius_unity_prod" >
@@ -21197,7 +21219,6 @@ TBLPROPERTIES (
 			<column name="series_cd" type="INT" jt="4" />
 			<column name="series_desc" type="INT" jt="4" />
 			<column name="model_year" type="INT" jt="4" />
-			<column name="model_cd" type="STRING" jt="12" />
 			<column name="org_brand_cd" type="INT" jt="4" />
 			<column name="framework_source" type="STRING" jt="12" />
 			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
@@ -21223,6 +21244,7 @@ TBLPROPERTIES (
 			<column name="vin_serial_num" type="DATE" jt="91" />
 			<column name="rdr_sequence" type="DATE" jt="91" />
 			<column name="rdr_type" type="DATE" jt="91" />
+			<column name="model_cd" type="BOOLEAN" jt="16" />
 			<column name="retail_units" type="DATE" jt="91" />
 			<column name="retail_sale_type_cd" type="DATE" jt="91" />
 			<column name="framework_update_ts" type="DATE" jt="91" />
@@ -22094,7 +22116,7 @@ TBLPROPERTIES (
 		</table>
 	</schema>
 	<layout name="RDR" id="Layout-2672" joined_routing="y" show_column_type="y" show_relation="columns" >
-		<comment><![CDATA[RDR Schemas V1]]></comment>
+		<comment><![CDATA[RDR_MODEL_V1]]></comment>
 		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_date_day" color="3986C1" x="688" y="592" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="3986C1" x="976" y="112" />
 		<entity schema="ius_unity_prod.rdr_datawarehouse" name="dimension_rdr_dates" color="C1D8EE" x="400" y="416" />
@@ -22104,8 +22126,9 @@ TBLPROPERTIES (
 		<entity schema="ius_unity_prod.hgma_dealers_datamart" name="hgma_combined_dealers" color="3986C1" x="48" y="672" />
 		<entity schema="ius_unity_prod.rdr_datalake" name="log_sales_monthly" color="BED3F4" x="1488" y="96" />
 		<entity schema="ius_unity_prod.rdr_datalake" name="raw_sales_monthly" color="BED3F4" x="1472" y="256" />
-		<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_daily" color="C1D8EE" x="1472" y="768" />
-		<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_monthly" color="3986C1" x="1712" y="768" />
+		<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales__model_monthly" color="3986C1" x="1712" y="768" />
+		<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_model_daily" color="C1D8EE" x="1472" y="768" />
+		<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_vin_daily" color="C1D8EE" x="1472" y="1024" />
 		<entity schema="ius_unity_prod.rdr_datalake" name="temp_sales_monthly" color="BED3F4" x="1760" y="96" />
 		<group name="RDR_Datalake" color="0000FF" >
 			<entity schema="ius_unity_prod.rdr_datalake" name="log_sales_monthly" />
@@ -22115,15 +22138,16 @@ TBLPROPERTIES (
 		<group name="RDR_DataWarehouse" color="C4E0F9" >
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" />
 			<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_date_day" />
-			<entity schema="ius_unity_prod.rdr_datawarehouse" name="fact_rdr_sales_daily" />
 			<entity schema="ius_unity_prod.rdr_datawarehouse" name="dimension_rdr_dates" />
-			<entity schema="ius_unity_prod.rdr_datawarehouse" name="dimension_rdr_models" />
 			<entity schema="ius_unity_prod.hgma_dealers_datamart" name="hgma_combined_dealers" />
 			<entity schema="ius_unity_prod.rdr_datawarehouse" name="dimension_rdr_dealer_regions" />
+			<entity schema="ius_unity_prod.rdr_datawarehouse" name="dimension_rdr_models" />
+			<entity schema="ius_unity_prod.rdr_datawarehouse" name="fact_rdr_sales_daily" />
 		</group>
 		<group name="RDR_DataMart" color="C4E0F9" >
-			<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_monthly" />
-			<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_daily" />
+			<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales__model_monthly" />
+			<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_vin_daily" />
+			<entity schema="ius_unity_prod.rdr_datamart" name="rdr_sales_model_daily" />
 		</group>
 		<script name="dimension_date_day_003" id="Editor-213d" language="SQL" >
 			<string><![CDATA[SELECT
@@ -22228,6 +22252,25 @@ FROM
 where rdr_date = '2024-04-01'
 and rdr_region_cd != dealer_region_cd;]]></string>
 		</script>
+		<script name="raw_sales_monthly_004" id="Editor-1e1c" language="SQL" >
+			<string><![CDATA[SELECT
+	distinct dealer_type_cd
+	from ius_unity_prod.rdr_datalake.raw_sales_monthly y;]]></string>
+		</script>
+		<script name="raw_sales_monthly_005" id="Editor-161b" language="SQL" >
+			<string><![CDATA[SELECT
+	distinct retail_sale_type_cd
+FROM
+	ius_unity_prod.rdr_datalake.raw_sales_monthly y;]]></string>
+		</script>
+		<script name="temp_sales_monthly_001" id="Editor-1bd" language="SQL" >
+			<string><![CDATA[SELECT
+	model_year, model_cd, vin_serial_num, rdr_sequence, rdr_type, sales_year, sales_month, rdr_region_cd, dealer_region_cd, 
+	sales_district_cd, dealer_cd, org_brand_cd, dealer_type_cd, series_cd, series_desc, model_group_cd, model_group_desc, purchase_date, 
+	rdr_date, retail_units, retail_sale_type_cd, file_name, ingest_ts
+FROM
+	ius_unity_prod.rdr_datalake.temp_sales_monthly y;]]></string>
+		</script>
 		<browser id="Browse-1450" name="dimension_date_day" confirm_updates="y" >
 			<browse_table schema="ius_unity_prod.ius_datawarehouse" entity="dimension_date_day" x="20" y="20" width="762" height="752" />
 		</browser>
@@ -22248,6 +22291,15 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 		</browser>
 		<browser id="Browse-1eff" name="raw_sales_monthly_002" confirm_updates="y" >
 			<browse_table schema="ius_unity_prod.rdr_datalake" entity="raw_sales_monthly" x="20" y="20" width="500" height="490" />
+		</browser>
+		<browser id="Browse-24d4" name="raw_sales_monthly_006" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.rdr_datalake" entity="raw_sales_monthly" x="20" y="20" width="503" height="493" />
+		</browser>
+		<browser id="Browse-6e8" name="raw_sales_monthly_007" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.rdr_datalake" entity="raw_sales_monthly" x="20" y="20" width="537" height="527" />
+		</browser>
+		<browser id="Browse-ab0" name="temp_sales_monthly" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.rdr_datalake" entity="temp_sales_monthly" x="20" y="20" width="270" height="223" />
 		</browser>
 		<query id="Query-1f86" name="dimension_date_day_002" >
 			<query_table schema="ius_unity_prod.ius_datawarehouse" name="dimension_date_day" alias="ddd" x="48" y="48" >

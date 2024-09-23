@@ -287,7 +287,6 @@ tr:nth-child(even) {
 <!-- == Shape Colors == -->
 <!-- == Desktop == -->
 <rect x='1' y='1' width='1998' height='1596' rx='8' ry='8' style='fill:url(#layoutBgA); stroke:#ccc; stroke-width:.7px; cursor:move;' />
-<rect x='1' y='1' width='1998' height='1596' rx='8' ry='8' style='fill:url(#layoutBgEval);' />
 
 <!-- == Legend == -->
 <g transform='translate(10,10)'>
@@ -307,7 +306,7 @@ DbSchema has a free Community Edition.</title></tspan></text></a>
 <rect class='grp' style='fill:#ECF4FD;stroke:#718191' x='32' y='45' width='1248' height='1378' />
 <text x='44' y='61' style='fill:#668AAC;'>RDR&#95;DataWarehouse</text>
 <!-- == Group 'RDR_DataMart' == -->
-<rect class='grp' style='fill:#ECF4FD;stroke:#718191' x='1456' y='733' width='448' height='258' />
+<rect class='grp' style='fill:#ECF4FD;stroke:#718191' x='1456' y='733' width='464' height='642' />
 <text x='1468' y='749' style='fill:#668AAC;'>RDR&#95;DataMart</text>
 <!-- == Fk 'dimension_rdr_dates_fk_dimension_rdr_dates' == -->
 <path id='dimension_rdr_dates_fk_dimension_rdr_dates'  onmouseover="hghl(['dimension_rdr_dates_fk_dimension_rdr_dates','rdr_datawarehouse.dimension_rdr_dates.date_day_fk','ius_datawarehouse.dimension_date_day.date_key'])" onmouseout="uhghl(['dimension_rdr_dates_fk_dimension_rdr_dates','rdr_datawarehouse.dimension_rdr_dates.date_day_fk','ius_datawarehouse.dimension_date_day.date_key'])" transform='translate(8,0)' class='unhighlight' d='M 560,528L 648,528Q 656,528 656,536L 656,616Q 656,624 664,624L 672,624' >
@@ -757,56 +756,146 @@ fact_rdr_sales_daily ref dimension_rdr_models ( rdr_model_fk -&gt; rdr_model_pk 
 <text x='1648' y='632' class='dataType' style='fill:#8698B5;'>STRING</text>  <a xlink:href='#rdr_datalake.raw_sales_monthly.ingest_ts'><text id='rdr&#95;datalake&#46;raw&#95;sales&#95;monthly&#46;ingest&#95;ts' x='1491' y='647'>ingest&#95;ts</text><title>&#10697;  ingest_ts
      timestamp</title></a>
 <text x='1648' y='648' class='dataType' style='fill:#8698B5;'>TIMESTAMP</text>
-<!-- == Table 'rdr_sales_daily' == -->
-<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;daily' class='entity' style='stroke:#7698B9' x='1472' y='760' width='176' height='208' />
+<!-- == Table 'rdr_sales__model_monthly' == -->
+<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly' class='entity' style='stroke:#769BB9' x='1712' y='760' width='192' height='224' />
+<rect x='1712' y='760' width='192' height='28' style='stroke-width:0; fill:#F1F6FA'/>
+<line class='topLine' style='stroke:#176098;' stroke-linecap='round' x1='1712' y1='760' x2='1904' y2='760'/>
+<a xlink:href='#rdr_datamart.rdr_sales__model_monthly'><text x='1722' y='779' class='tableHeader'>rdr&#95;sales&#95;&#95;model&#95;monthly</text><title>Table rdr_datamart.rdr_sales__model_monthly</title></a>
+  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;sales&#95;date&#95;month' x='1731' y='807'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
+     date</title></a>
+<text x='1888' y='808' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;ius&#95;make' x='1731' y='823'>ius&#95;make</text><title>&#10697;  ius_make
+     date</title></a>
+<text x='1888' y='824' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;ius&#95;model' x='1731' y='839'>ius&#95;model</text><title>&#10697;  ius_model
+     date</title></a>
+<text x='1888' y='840' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;ius&#95;make&#95;model' x='1731' y='855'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
+     date</title></a>
+<text x='1888' y='856' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;ius&#95;srs&#95;segment' x='1731' y='871'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
+     date</title></a>
+<text x='1888' y='872' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;dealer&#95;cd' x='1731' y='887'>dealer&#95;cd</text><title>&#10697;  dealer_cd
+     date</title></a>
+<text x='1888' y='888' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.dealer_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;dealer&#95;type&#95;cd' x='1731' y='903'>dealer&#95;type&#95;cd</text><title>&#10697;  dealer_type_cd
+     int</title></a>
+<text x='1888' y='904' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;region&#95;cd' x='1731' y='919'>region&#95;cd</text><title>&#10697;  region_cd
+     date</title></a>
+<text x='1888' y='920' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;region&#95;desc' x='1731' y='935'>region&#95;desc</text><title>&#10697;  region_desc
+     date</title></a>
+<text x='1888' y='936' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.retail_sale_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;retail&#95;sale&#95;type&#95;cd' x='1731' y='951'>retail&#95;sale&#95;type&#95;cd</text><title>&#10697;  retail_sale_type_cd
+     int</title></a>
+<text x='1888' y='952' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales__model_monthly.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;&#95;model&#95;monthly&#46;sales&#95;volume' x='1731' y='967'>sales&#95;volume</text><title>&#10697;  sales_volume
+     date</title></a>
+<text x='1888' y='968' class='dataType' style='fill:#86A0B5;'>DATE</text>
+<!-- == Table 'rdr_sales_model_daily' == -->
+<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily' class='entity' style='stroke:#7698B9' x='1472' y='760' width='176' height='240' />
 <rect x='1472' y='760' width='176' height='28' style='stroke-width:0; fill:#F1F5FA'/>
 <line class='topLine' style='stroke:#175898;' stroke-linecap='round' x1='1472' y1='760' x2='1648' y2='760'/>
-<a xlink:href='#rdr_datamart.rdr_sales_daily'><text x='1511' y='779' class='tableHeader'>rdr&#95;sales&#95;daily</text><title>Table rdr_datamart.rdr_sales_daily</title></a>
-  <a xlink:href='#rdr_datamart.rdr_sales_daily.date_day'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;date&#95;day' x='1491' y='807'>date&#95;day</text><title>&#10697;  date_day
+<a xlink:href='#rdr_datamart.rdr_sales_model_daily'><text x='1488' y='779' class='tableHeader'>rdr&#95;sales&#95;model&#95;daily</text><title>Table rdr_datamart.rdr_sales_model_daily</title></a>
+  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.date_day'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;date&#95;day' x='1491' y='807'>date&#95;day</text><title>&#10697;  date_day
      date</title></a>
-<text x='1632' y='808' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;sales&#95;date&#95;month' x='1491' y='823'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
+<text x='1632' y='808' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;sales&#95;date&#95;month' x='1491' y='823'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
      date</title></a>
-<text x='1632' y='824' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;ius&#95;make' x='1491' y='839'>ius&#95;make</text><title>&#10697;  ius_make
+<text x='1632' y='824' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;ius&#95;make' x='1491' y='839'>ius&#95;make</text><title>&#10697;  ius_make
      date</title></a>
-<text x='1632' y='840' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;ius&#95;model' x='1491' y='855'>ius&#95;model</text><title>&#10697;  ius_model
+<text x='1632' y='840' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;ius&#95;model' x='1491' y='855'>ius&#95;model</text><title>&#10697;  ius_model
      date</title></a>
-<text x='1632' y='856' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;ius&#95;make&#95;model' x='1491' y='871'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
+<text x='1632' y='856' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;ius&#95;make&#95;model' x='1491' y='871'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
      date</title></a>
-<text x='1632' y='872' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;ius&#95;srs&#95;segment' x='1491' y='887'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
+<text x='1632' y='872' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;ius&#95;srs&#95;segment' x='1491' y='887'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
      date</title></a>
-<text x='1632' y='888' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;dealer&#95;cd' x='1491' y='903'>dealer&#95;cd</text><title>&#10697;  dealer_cd
+<text x='1632' y='888' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;dealer&#95;cd' x='1491' y='903'>dealer&#95;cd</text><title>&#10697;  dealer_cd
      date</title></a>
-<text x='1632' y='904' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;region&#95;cd' x='1491' y='919'>region&#95;cd</text><title>&#10697;  region_cd
-     date</title></a>
-<text x='1632' y='920' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;region&#95;desc' x='1491' y='935'>region&#95;desc</text><title>&#10697;  region_desc
-     string</title></a>
-<text x='1632' y='936' class='dataType' style='fill:#869EB5;'>STRING</text>  <a xlink:href='#rdr_datamart.rdr_sales_daily.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;daily&#46;sales&#95;volume' x='1491' y='951'>sales&#95;volume</text><title>&#10697;  sales_volume
+<text x='1632' y='904' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.dealer_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;dealer&#95;type&#95;cd' x='1491' y='919'>dealer&#95;type&#95;cd</text><title>&#10697;  dealer_type_cd
      int</title></a>
-<text x='1632' y='952' class='dataType' style='fill:#869EB5;'>INT</text>
-<!-- == Table 'rdr_sales_monthly' == -->
-<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly' class='entity' style='stroke:#769BB9' x='1712' y='760' width='176' height='192' />
-<rect x='1712' y='760' width='176' height='28' style='stroke-width:0; fill:#F1F6FA'/>
-<line class='topLine' style='stroke:#176098;' stroke-linecap='round' x1='1712' y1='760' x2='1888' y2='760'/>
-<a xlink:href='#rdr_datamart.rdr_sales_monthly'><text x='1740' y='779' class='tableHeader'>rdr&#95;sales&#95;monthly</text><title>Table rdr_datamart.rdr_sales_monthly</title></a>
-  <a xlink:href='#rdr_datamart.rdr_sales_monthly.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;sales&#95;date&#95;month' x='1731' y='807'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
+<text x='1632' y='920' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;region&#95;cd' x='1491' y='935'>region&#95;cd</text><title>&#10697;  region_cd
      date</title></a>
-<text x='1872' y='808' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;ius&#95;make' x='1731' y='823'>ius&#95;make</text><title>&#10697;  ius_make
+<text x='1632' y='936' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;region&#95;desc' x='1491' y='951'>region&#95;desc</text><title>&#10697;  region_desc
+     string</title></a>
+<text x='1632' y='952' class='dataType' style='fill:#869EB5;'>STRING</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;sales&#95;volume' x='1491' y='967'>sales&#95;volume</text><title>&#10697;  sales_volume
+     int</title></a>
+<text x='1632' y='968' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_model_daily.retail_sale_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;model&#95;daily&#46;retail&#95;sale&#95;type&#95;cd' x='1491' y='983'>retail&#95;sale&#95;type&#95;cd</text><title>&#10697;  retail_sale_type_cd
+     int</title></a>
+<text x='1632' y='984' class='dataType' style='fill:#869EB5;'>INT</text>
+<!-- == Table 'rdr_sales_vin_daily' == -->
+<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily' class='entity' style='stroke:#7698B9' x='1472' y='1016' width='176' height='336' />
+<rect x='1472' y='1016' width='176' height='28' style='stroke-width:0; fill:#F1F5FA'/>
+<line class='topLine' style='stroke:#175898;' stroke-linecap='round' x1='1472' y1='1016' x2='1648' y2='1016'/>
+<a xlink:href='#rdr_datamart.rdr_sales_vin_daily'><text x='1498' y='1035' class='tableHeader'>rdr&#95;sales&#95;vin&#95;daily</text><title>Table rdr_datamart.rdr_sales_vin_daily</title></a>
+  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.date_day'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;date&#95;day' x='1491' y='1063'>date&#95;day</text><title>&#10697;  date_day
      date</title></a>
-<text x='1872' y='824' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;ius&#95;model' x='1731' y='839'>ius&#95;model</text><title>&#10697;  ius_model
+<text x='1632' y='1064' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;sales&#95;date&#95;month' x='1491' y='1079'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
      date</title></a>
-<text x='1872' y='840' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;ius&#95;make&#95;model' x='1731' y='855'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
+<text x='1632' y='1080' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.purchase_date'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;purchase&#95;date' x='1491' y='1095'>purchase&#95;date</text><title>&#10697;  purchase_date
      date</title></a>
-<text x='1872' y='856' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;ius&#95;srs&#95;segment' x='1731' y='871'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
+<text x='1632' y='1096' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;ius&#95;make' x='1491' y='1111'>ius&#95;make</text><title>&#10697;  ius_make
      date</title></a>
-<text x='1872' y='872' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;dealer&#95;cd' x='1731' y='887'>dealer&#95;cd</text><title>&#10697;  dealer_cd
+<text x='1632' y='1112' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;ius&#95;model' x='1491' y='1127'>ius&#95;model</text><title>&#10697;  ius_model
      date</title></a>
-<text x='1872' y='888' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;region&#95;cd' x='1731' y='903'>region&#95;cd</text><title>&#10697;  region_cd
+<text x='1632' y='1128' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;ius&#95;make&#95;model' x='1491' y='1143'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
      date</title></a>
-<text x='1872' y='904' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;region&#95;desc' x='1731' y='919'>region&#95;desc</text><title>&#10697;  region_desc
+<text x='1632' y='1144' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;ius&#95;srs&#95;segment' x='1491' y='1159'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
      date</title></a>
-<text x='1872' y='920' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_monthly.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;monthly&#46;sales&#95;volume' x='1731' y='935'>sales&#95;volume</text><title>&#10697;  sales_volume
+<text x='1632' y='1160' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.model_year'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;model&#95;year' x='1491' y='1175'>model&#95;year</text><title>&#10697;  model_year
      date</title></a>
-<text x='1872' y='936' class='dataType' style='fill:#86A0B5;'>DATE</text>
+<text x='1632' y='1176' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.model_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;model&#95;cd' x='1491' y='1191'>model&#95;cd</text><title>&#10697;  model_cd
+     date</title></a>
+<text x='1632' y='1192' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.vin_serial_num'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;vin&#95;serial&#95;num' x='1491' y='1207'>vin&#95;serial&#95;num</text><title>&#10697;  vin_serial_num
+     int</title></a>
+<text x='1632' y='1208' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.rdr_sequence'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;rdr&#95;sequence' x='1491' y='1223'>rdr&#95;sequence</text><title>&#10697;  rdr_sequence
+     int</title></a>
+<text x='1632' y='1224' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.rdr_type'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;rdr&#95;type' x='1491' y='1239'>rdr&#95;type</text><title>&#10697;  rdr_type
+     int</title></a>
+<text x='1632' y='1240' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;dealer&#95;cd' x='1491' y='1255'>dealer&#95;cd</text><title>&#10697;  dealer_cd
+     date</title></a>
+<text x='1632' y='1256' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.dealer_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;dealer&#95;type&#95;cd' x='1491' y='1271'>dealer&#95;type&#95;cd</text><title>&#10697;  dealer_type_cd
+     int</title></a>
+<text x='1632' y='1272' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;region&#95;cd' x='1491' y='1287'>region&#95;cd</text><title>&#10697;  region_cd
+     date</title></a>
+<text x='1632' y='1288' class='dataType' style='fill:#869EB5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;region&#95;desc' x='1491' y='1303'>region&#95;desc</text><title>&#10697;  region_desc
+     string</title></a>
+<text x='1632' y='1304' class='dataType' style='fill:#869EB5;'>STRING</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.retail_sale_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;retail&#95;sale&#95;type&#95;cd' x='1491' y='1319'>retail&#95;sale&#95;type&#95;cd</text><title>&#10697;  retail_sale_type_cd
+     int</title></a>
+<text x='1632' y='1320' class='dataType' style='fill:#869EB5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_daily.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;daily&#46;sales&#95;volume' x='1491' y='1335'>sales&#95;volume</text><title>&#10697;  sales_volume
+     int</title></a>
+<text x='1632' y='1336' class='dataType' style='fill:#869EB5;'>INT</text>
+<!-- == Table 'rdr_sales_vin_monthly' == -->
+<rect id='depict_rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly' class='entity' style='stroke:#769BB9' x='1712' y='1016' width='176' height='320' />
+<rect x='1712' y='1016' width='176' height='28' style='stroke-width:0; fill:#F1F6FA'/>
+<line class='topLine' style='stroke:#176098;' stroke-linecap='round' x1='1712' y1='1016' x2='1888' y2='1016'/>
+<a xlink:href='#rdr_datamart.rdr_sales_vin_monthly'><text x='1727' y='1035' class='tableHeader'>rdr&#95;sales&#95;vin&#95;monthly</text><title>Table rdr_datamart.rdr_sales_vin_monthly</title></a>
+  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.sales_date_month'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;sales&#95;date&#95;month' x='1731' y='1063'>sales&#95;date&#95;month</text><title>&#10697;  sales_date_month
+     date</title></a>
+<text x='1872' y='1064' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.purchase_date'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;purchase&#95;date' x='1731' y='1079'>purchase&#95;date</text><title>&#10697;  purchase_date
+     date</title></a>
+<text x='1872' y='1080' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.ius_make'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;ius&#95;make' x='1731' y='1095'>ius&#95;make</text><title>&#10697;  ius_make
+     date</title></a>
+<text x='1872' y='1096' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.ius_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;ius&#95;model' x='1731' y='1111'>ius&#95;model</text><title>&#10697;  ius_model
+     date</title></a>
+<text x='1872' y='1112' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.ius_make_model'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;ius&#95;make&#95;model' x='1731' y='1127'>ius&#95;make&#95;model</text><title>&#10697;  ius_make_model
+     date</title></a>
+<text x='1872' y='1128' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.ius_srs_segment'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;ius&#95;srs&#95;segment' x='1731' y='1143'>ius&#95;srs&#95;segment</text><title>&#10697;  ius_srs_segment
+     date</title></a>
+<text x='1872' y='1144' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.model_year'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;model&#95;year' x='1731' y='1159'>model&#95;year</text><title>&#10697;  model_year
+     date</title></a>
+<text x='1872' y='1160' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.model_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;model&#95;cd' x='1731' y='1175'>model&#95;cd</text><title>&#10697;  model_cd
+     date</title></a>
+<text x='1872' y='1176' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.vin_serial_num'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;vin&#95;serial&#95;num' x='1731' y='1191'>vin&#95;serial&#95;num</text><title>&#10697;  vin_serial_num
+     int</title></a>
+<text x='1872' y='1192' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.rdr_sequence'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;rdr&#95;sequence' x='1731' y='1207'>rdr&#95;sequence</text><title>&#10697;  rdr_sequence
+     int</title></a>
+<text x='1872' y='1208' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.rdr_type'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;rdr&#95;type' x='1731' y='1223'>rdr&#95;type</text><title>&#10697;  rdr_type
+     int</title></a>
+<text x='1872' y='1224' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.dealer_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;dealer&#95;cd' x='1731' y='1239'>dealer&#95;cd</text><title>&#10697;  dealer_cd
+     date</title></a>
+<text x='1872' y='1240' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.dealer_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;dealer&#95;type&#95;cd' x='1731' y='1255'>dealer&#95;type&#95;cd</text><title>&#10697;  dealer_type_cd
+     int</title></a>
+<text x='1872' y='1256' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.region_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;region&#95;cd' x='1731' y='1271'>region&#95;cd</text><title>&#10697;  region_cd
+     date</title></a>
+<text x='1872' y='1272' class='dataType' style='fill:#86A0B5;'>DATE</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.region_desc'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;region&#95;desc' x='1731' y='1287'>region&#95;desc</text><title>&#10697;  region_desc
+     string</title></a>
+<text x='1872' y='1288' class='dataType' style='fill:#86A0B5;'>STRING</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.retail_sale_type_cd'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;retail&#95;sale&#95;type&#95;cd' x='1731' y='1303'>retail&#95;sale&#95;type&#95;cd</text><title>&#10697;  retail_sale_type_cd
+     int</title></a>
+<text x='1872' y='1304' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#rdr_datamart.rdr_sales_vin_monthly.sales_volume'><text id='rdr&#95;datamart&#46;rdr&#95;sales&#95;vin&#95;monthly&#46;sales&#95;volume' x='1731' y='1319'>sales&#95;volume</text><title>&#10697;  sales_volume
+     int</title></a>
+<text x='1872' y='1320' class='dataType' style='fill:#86A0B5;'>INT</text>
 <!-- == Table 'temp_sales_monthly' == -->
 <rect id='depict_rdr&#95;datalake&#46;temp&#95;sales&#95;monthly' class='entity' style='stroke:#7690B9' x='1760' y='88' width='192' height='416' />
 <rect x='1760' y='88' width='192' height='28' style='stroke-width:0; fill:#F1F4FA'/>
@@ -962,8 +1051,10 @@ function installListeners( svgContainer, svgImage ){
 </ul>
 <li>Schema <a href='#ius_unity_prod.rdr_datamart'/> ius_unity_prod.rdr_datamart</a><ul>
 
-<li><a href='#rdr_datamart.rdr_sales_daily'/>rdr_sales_daily</a>
-<li><a href='#rdr_datamart.rdr_sales_monthly'/>rdr_sales_monthly</a>
+<li><a href='#rdr_datamart.rdr_sales__model_monthly'/>rdr_sales__model_monthly</a>
+<li><a href='#rdr_datamart.rdr_sales_model_daily'/>rdr_sales_model_daily</a>
+<li><a href='#rdr_datamart.rdr_sales_vin_daily'/>rdr_sales_vin_daily</a>
+<li><a href='#rdr_datamart.rdr_sales_vin_monthly'/>rdr_sales_vin_monthly</a>
 </ul>
 <li>Schema <a href='#ius_unity_prod.rdr_datawarehouse'/> ius_unity_prod.rdr_datawarehouse</a><ul>
 
@@ -1812,7 +1903,7 @@ function installListeners( svgContainer, svgImage ){
 <div class='card'><div class='card-body'><a name='ius_unity_prod.rdr_datamart' style='cursor:pointer;'><h5 class='card-title'>Schema ius_unity_prod.rdr_datamart</h5></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales_daily'  onclick="window.scrollTo(1272, 768);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales_daily').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales_daily</h5></a>
+<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales__model_monthly'  onclick="window.scrollTo(1512, 768);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales__model_monthly').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales__model_monthly</h5></a>
 <table class='table table-sm small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:40%'>Column Name</th><th>Data Type</th></tr>
@@ -1820,59 +1911,134 @@ function installListeners( svgContainer, svgImage ){
 <tbody>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.date_day'>date&#95;day</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.sales_date_month'>sales&#95;date&#95;month</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.sales_date_month'>sales&#95;date&#95;month</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.ius_make'>ius&#95;make</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.ius_make'>ius&#95;make</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.ius_model'>ius&#95;model</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.ius_model'>ius&#95;model</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.ius_make_model'>ius&#95;make&#95;model</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.ius_make_model'>ius&#95;make&#95;model</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.dealer_cd'>dealer&#95;cd</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.dealer_cd'>dealer&#95;cd</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.dealer_type_cd'>dealer&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.region_cd'>region&#95;cd</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.region_cd'>region&#95;cd</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.region_desc'>region&#95;desc</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.region_desc'>region&#95;desc</a></td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.retail_sale_type_cd'>retail&#95;sale&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales__model_monthly.sales_volume'>sales&#95;volume</a></td>
+		<td> DATE  </td>
+	</tr>
+</tbody>
+</table></div></div>
+
+<br><br>
+<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales_model_daily'  onclick="window.scrollTo(1272, 768);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales_model_daily').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales_model_daily</h5></a>
+<table class='table table-sm small' style='table-layout: fixed; word-wrap: break-word;'>
+<thead>
+<tr><th style='width:5%'>Idx</th><th style='width:40%'>Column Name</th><th>Data Type</th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.date_day'>date&#95;day</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.sales_date_month'>sales&#95;date&#95;month</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.ius_make'>ius&#95;make</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.ius_model'>ius&#95;model</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.ius_make_model'>ius&#95;make&#95;model</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.dealer_cd'>dealer&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.dealer_type_cd'>dealer&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.region_cd'>region&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.region_desc'>region&#95;desc</a></td>
 		<td> STRING  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_daily.sales_volume'>sales&#95;volume</a></td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.sales_volume'>sales&#95;volume</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_model_daily.retail_sale_type_cd'>retail&#95;sale&#95;type&#95;cd</a></td>
 		<td> INT  </td>
 	</tr>
 </tbody>
 </table></div></div>
 
 <br><br>
-<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales_monthly'  onclick="window.scrollTo(1512, 768);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales_monthly').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales_monthly</h5></a>
+<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales_vin_daily'  onclick="window.scrollTo(1272, 1024);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales_vin_daily').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales_vin_daily</h5></a>
 <table class='table table-sm small' style='table-layout: fixed; word-wrap: break-word;'>
 <thead>
 <tr><th style='width:5%'>Idx</th><th style='width:40%'>Column Name</th><th>Data Type</th></tr>
@@ -1880,48 +2046,188 @@ function installListeners( svgContainer, svgImage ){
 <tbody>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.sales_date_month'>sales&#95;date&#95;month</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.date_day'>date&#95;day</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.ius_make'>ius&#95;make</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.sales_date_month'>sales&#95;date&#95;month</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.ius_model'>ius&#95;model</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.purchase_date'>purchase&#95;date</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.ius_make_model'>ius&#95;make&#95;model</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.ius_make'>ius&#95;make</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.ius_model'>ius&#95;model</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.dealer_cd'>dealer&#95;cd</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.ius_make_model'>ius&#95;make&#95;model</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.region_cd'>region&#95;cd</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.region_desc'>region&#95;desc</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.model_year'>model&#95;year</a></td>
 		<td> DATE  </td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><a name='rdr_datamart.rdr_sales_monthly.sales_volume'>sales&#95;volume</a></td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.model_cd'>model&#95;cd</a></td>
 		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.vin_serial_num'>vin&#95;serial&#95;num</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.rdr_sequence'>rdr&#95;sequence</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.rdr_type'>rdr&#95;type</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.dealer_cd'>dealer&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.dealer_type_cd'>dealer&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.region_cd'>region&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.region_desc'>region&#95;desc</a></td>
+		<td> STRING  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.retail_sale_type_cd'>retail&#95;sale&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_daily.sales_volume'>sales&#95;volume</a></td>
+		<td> INT  </td>
+	</tr>
+</tbody>
+</table></div></div>
+
+<br><br>
+<div class='card'><div class='card-body'><a name='rdr_datamart.rdr_sales_vin_monthly'  onclick="window.scrollTo(1512, 1024);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_rdr_datamart.rdr_sales_vin_monthly').classList.add('palpable'); return false;" style='cursor:pointer;'><h5 class='card-title'>Table rdr_sales_vin_monthly</h5></a>
+<table class='table table-sm small' style='table-layout: fixed; word-wrap: break-word;'>
+<thead>
+<tr><th style='width:5%'>Idx</th><th style='width:40%'>Column Name</th><th>Data Type</th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.sales_date_month'>sales&#95;date&#95;month</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.purchase_date'>purchase&#95;date</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.ius_make'>ius&#95;make</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.ius_model'>ius&#95;model</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.ius_make_model'>ius&#95;make&#95;model</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.ius_srs_segment'>ius&#95;srs&#95;segment</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.model_year'>model&#95;year</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.model_cd'>model&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.vin_serial_num'>vin&#95;serial&#95;num</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.rdr_sequence'>rdr&#95;sequence</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.rdr_type'>rdr&#95;type</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.dealer_cd'>dealer&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.dealer_type_cd'>dealer&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.region_cd'>region&#95;cd</a></td>
+		<td> DATE  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.region_desc'>region&#95;desc</a></td>
+		<td> STRING  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.retail_sale_type_cd'>retail&#95;sale&#95;type&#95;cd</a></td>
+		<td> INT  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='rdr_datamart.rdr_sales_vin_monthly.sales_volume'>sales&#95;volume</a></td>
+		<td> INT  </td>
 	</tr>
 </tbody>
 </table></div></div>
