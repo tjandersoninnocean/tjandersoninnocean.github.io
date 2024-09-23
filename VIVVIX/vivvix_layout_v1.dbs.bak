@@ -21764,66 +21764,6 @@ TBLPROPERTIES (
 		</table>
 	</schema>
 	<schema name="vivvix_datawarehouse" catalogname="ius_unity_prod" >
-		<table name="dimension_vivvix_magnifier_advertiser_product" spec="" >
-			<column name="id" type="BIGINT" jt="-5" >
-				<identity><![CDATA[GENERATED  ALWAYS AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
-			</column>
-			<column name="advertiser" type="STRING" jt="12" />
-			<column name="product" type="STRING" jt="12" />
-			<column name="messaging_type" type="STRING" jt="12" />
-			<column name="iwa_make_model_id" type="INT" jt="4" mandatory="y" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '6')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_advertiser_product_20240923" spec="" >
-			<column name="id" type="BIGINT" jt="-5" />
-			<column name="advertiser" type="STRING" jt="12" />
-			<column name="product" type="STRING" jt="12" />
-			<column name="messaging_type" type="STRING" jt="12" />
-			<column name="iwa_make_model_id" type="INT" jt="4" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '2')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_dmaregions" spec="" >
-			<column name="id" type="BIGINT" jt="-5" >
-				<identity><![CDATA[GENERATED  ALWAYS AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
-			</column>
-			<column name="dma" type="STRING" jt="12" />
-			<column name="region" type="STRING" jt="12" />
-			<column name="hdaa_status" type="STRING" jt="12" />
-			<column name="iwa_dma_id" type="INT" jt="4" mandatory="y" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '6')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_dmaregions_20240923" spec="" >
-			<column name="id" type="BIGINT" jt="-5" />
-			<column name="dma" type="STRING" jt="12" />
-			<column name="region" type="STRING" jt="12" />
-			<column name="hdaa_status" type="STRING" jt="12" />
-			<column name="iwa_dma_id" type="INT" jt="4" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '2')]]></options>
-		</table>
 		<table name="dimension_vivvix_magnifier_marketlevelspend_final_advertiser_product" spec="" >
 			<column name="id" type="BIGINT" jt="-5" >
 				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
@@ -21946,30 +21886,6 @@ TBLPROPERTIES (
   'delta.minReaderVersion' = '1',
   'delta.minWriterVersion' = '6')]]></options>
 		</table>
-		<table name="dimension_vivvix_magnifier_mediatype" spec="" >
-			<column name="id" type="BIGINT" jt="-5" >
-				<identity><![CDATA[GENERATED  ALWAYS AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
-			</column>
-			<column name="media_type" type="STRING" jt="12" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '6')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_mediatype_20240923" spec="" >
-			<column name="id" type="BIGINT" jt="-5" />
-			<column name="media_type" type="STRING" jt="12" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '2')]]></options>
-		</table>
 		<table name="dimension_vivvix_magnifier_modelmonthly_final_advertiser_product" spec="" >
 			<column name="id" type="BIGINT" jt="-5" >
 				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
@@ -22091,30 +22007,6 @@ TBLPROPERTIES (
 TBLPROPERTIES (
   'delta.minReaderVersion' = '1',
   'delta.minWriterVersion' = '6')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_tier" spec="" >
-			<column name="id" type="BIGINT" jt="-5" >
-				<identity><![CDATA[GENERATED  ALWAYS AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
-			</column>
-			<column name="tier" type="STRING" jt="12" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '6')]]></options>
-		</table>
-		<table name="dimension_vivvix_magnifier_tier_20240923" spec="" >
-			<column name="id" type="BIGINT" jt="-5" />
-			<column name="tier" type="STRING" jt="12" />
-			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
-			<column name="framework_source" type="STRING" jt="12" />
-			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<options><![CDATA[USING delta
-TBLPROPERTIES (
-  'delta.minReaderVersion' = '1',
-  'delta.minWriterVersion' = '2')]]></options>
 		</table>
 		<table name="fact_vivvix_magnifier_marketlevelspend_final_monthly" spec="" >
 			<column name="id" type="BIGINT" jt="-5" >
@@ -22413,10 +22305,6 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 	</layout>
 	<layout name="Vivvix" id="Layout-6cd" confirmed="y" show_column_type="y" show_relation="columns" >
 		<comment><![CDATA[vivvix_model_v1]]></comment>
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_advertiser_product" color="3986C1" x="736" y="1648" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_advertiser_product_20240923" color="3986C1" x="1072" y="1648" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_dmaregions" color="3986C1" x="1472" y="1648" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_dmaregions_20240923" color="3986C1" x="1744" y="1648" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_advertiser_product" color="3986C1" x="720" y="80" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_dmaregions" color="3986C1" x="1808" y="80" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_final_mediatype" color="3986C1" x="1264" y="80" />
@@ -22425,8 +22313,6 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_dmaregions" color="3986C1" x="1808" y="272" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_mediatype" color="3986C1" x="1264" y="320" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_marketlevelspend_preliminary_tier" color="3986C1" x="2320" y="272" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_mediatype" color="3986C1" x="736" y="1840" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_mediatype_20240923" color="3986C1" x="1024" y="1840" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_advertiser_product" color="3986C1" x="720" y="560" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_dmaregions" color="3986C1" x="1840" y="528" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_final_mediatype" color="3986C1" x="1264" y="560" />
@@ -22435,8 +22321,6 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_dmaregions" color="3986C1" x="1872" y="784" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_mediatype" color="3986C1" x="1296" y="816" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_modelmonthly_preliminary_tier" color="3986C1" x="2416" y="816" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_tier" color="3986C1" x="1408" y="1840" />
-		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="dimension_vivvix_magnifier_tier_20240923" color="3986C1" x="1696" y="1840" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_final_monthly" color="3986C1" x="784" y="1328" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_marketlevelspend_preliminary_monthly" color="3986C1" x="1200" y="1328" />
 		<entity schema="ius_unity_prod.vivvix_datawarehouse" name="fact_vivvix_magnifier_modelmonthly_final_monthly" color="3986C1" x="1712" y="1328" />
@@ -22517,9 +22401,6 @@ and rdr_region_cd != dealer_region_cd;]]></string>
 			<entity schema="ius_unity_prod.vivvix_datalake" name="temp_vivvix_magnifier_modelmonthly_final_monthly" />
 			<entity schema="ius_unity_prod.vivvix_datalake" name="temp_vivvix_magnifier_modelmonthly_preliminary_monthly" />
 		</group>
-		<browser id="Browse-1e12" name="dimension_vivvix_magnifier_advertiser_product" confirm_updates="y" >
-			<browse_table schema="ius_unity_prod.vivvix_datawarehouse" entity="dimension_vivvix_magnifier_advertiser_product" x="20" y="20" width="907" height="897" />
-		</browser>
 	</layout>
 	<layout name="gma" id="Layout-1cfb" show_relation="columns" >
 		<entity schema="ius_unity_prod.gma" name="crm_campaign_tracker" color="BED3F4" x="48" y="80" />
