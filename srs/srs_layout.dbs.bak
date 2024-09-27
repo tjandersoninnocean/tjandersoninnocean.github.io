@@ -12104,9 +12104,6 @@ TBLPROPERTIES (
 			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
 			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
 			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<fk name="fk_dimension_srs_makemodelsegments" to_schema="ius_unity_prod.ius_datawarehouse" to_table="dimension_ius_makemodelsegments(new)" >
-				<fk_column name="iwa_id" pk="ius_model_pk" />
-			</fk>
 			<options><![CDATA[USING delta
 LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_srs_makemodelsegments'
 TBLPROPERTIES (
@@ -16035,8 +16032,12 @@ TBLPROPERTIES (
 			</column>
 			<column name="ius_make" prior="make" type="VARCHAR" length="100" jt="12" />
 			<column name="ius_model" prior="model" type="VARCHAR" length="100" jt="12" />
-			<column name="ius_make_model" type="VARCHAR" length="100" jt="12" />
-			<column name="ius_make_model_group" type="VARCHAR" length="100" jt="12" />
+			<column name="ius_make_model" type="VARCHAR" length="100" jt="12" >
+				<comment><![CDATA[unique model indicator]]></comment>
+			</column>
+			<column name="ius_make_model_group" type="VARCHAR" length="100" jt="12" >
+				<comment><![CDATA[iwa make model]]></comment>
+			</column>
 			<column name="ius_make_model_family" type="VARCHAR" length="100" jt="12" />
 			<column name="ius_srs_segment" type="VARCHAR" length="100" jt="12" />
 			<column name="ius_competitive_set" type="VARCHAR" length="100" jt="12" />
@@ -16047,6 +16048,12 @@ TBLPROPERTIES (
 			<column name="ius_srs_current_sales_flag" type="VARCHAR" length="10" jt="12" />
 			<column name="framework_ts" type="TIMESTAMP" jt="93" />
 			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="srs_model_flag" type="STRING" jt="12" />
+			<column name="google_model_flag" type="STRING" jt="12" />
+			<column name="vivvix_model_flag" type="STRING" jt="12" />
+			<column name="row_effective_date" type="DATE" jt="91" />
+			<column name="row_expiration_date" type="DATE" jt="91" />
+			<column name="current_row_indicator" type="DATE" jt="91" />
 			<index name="pk_dimension_ius_makemodelsegments" unique="PRIMARY_KEY" >
 				<column name="ius_model_pk" />
 			</index>
@@ -21088,9 +21095,9 @@ TBLPROPERTIES (
   'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_raw.log_srs_salesvolume_fileingest')]]></options>
 		</table>
 		<table name="temp_srs_sales_model_adi_monthly" prior="temp_srs_sales_adi_monthly" >
+			<column name="date_month" type="DATE" jt="91" />
 			<column name="geography" type="INT" jt="4" />
 			<column name="geography_name" type="VARCHAR" length="100" jt="12" />
-			<column name="source_file" type="VARCHAR" length="255" jt="12" />
 			<column name="brand" type="STRING" jt="12" />
 			<column name="segment" type="STRING" jt="12" />
 			<column name="model" type="STRING" jt="12" />
@@ -21109,6 +21116,7 @@ TBLPROPERTIES (
   'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_raw.temp_srs_salesvolume_monthly')]]></options>
 		</table>
 		<table name="temp_srs_sales_model_pma_monthly" prior="temp_srs_sales_model_adi_monthly_0" >
+			<column name="date_month" type="DATE" jt="91" />
 			<column name="region" prior="geography" type="INT" jt="4" />
 			<column name="district" type="STRING" jt="12" />
 			<column name="adi" type="STRING" jt="12" />
@@ -21176,12 +21184,29 @@ TBLPROPERTIES (
 			<column name="srs_model_pk" type="BIGINT" jt="-5" mandatory="y" >
 				<identity><![CDATA[GENERATED ALWAYS AS IDENTITY (START WITH 1 )]]></identity>
 			</column>
+			<column name="srs_model_dk" type="STRING" jt="12" />
 			<column name="ius_model_fk" type="BIGINT" jt="-5" />
 			<column name="row_effective_date" type="DATE" jt="91" />
 			<column name="row_expiration_date" type="DATE" jt="91" />
 			<column name="current_row_indicator" type="STRING" jt="12" />
+			<column name="srs_brand" type="STRING" jt="12" />
+			<column name="srs_segment" type="STRING" jt="12" />
+			<column name="srs_model" type="STRING" jt="12" />
+			<column name="srs_make_model" type="STRING" jt="12" />
+			<column name="srs_luxury" type="STRING" jt="12" />
+			<column name="srs_cartruck" prior="srs_car_truck" type="STRING" jt="12" />
+			<column name="srs_cartruck_detail" type="STRING" jt="12" />
+			<column name="powertrain" type="STRING" jt="12" >
+				<comment><![CDATA[EV, HEV, ICE]]></comment>
+			</column>
+			<column name="current_sales_flag" type="STRING" jt="12" />
+			<column name="framework_source" type="DATE" jt="91" />
+			<column name="framework_checksum" type="STRING" jt="12" />
 			<index name="pk_dimension_srs_makemodelsegments" unique="PRIMARY_KEY" >
 				<column name="srs_model_pk" />
+			</index>
+			<index name="unq_dimension_srs_makemodelsegments_srs_model_dk" unique="UNIQUE_KEY" >
+				<column name="srs_model_dk" />
 			</index>
 		</table>
 		<table name="dimension_srs_pma" prior="dimension_srs_adi_0" >
@@ -21211,11 +21236,6 @@ TBLPROPERTIES (
 			<column name="row_effective_date" type="DATE" jt="91" />
 			<column name="row_expiration_date" type="DATE" jt="91" />
 			<column name="current_row_indicator" type="STRING" jt="12" />
-			<column name="current_dealer_indicator" type="DATE" jt="91" >
-				<comment><![CDATA[current or expired]]></comment>
-			</column>
-			<column name="dealer_effective_date" type="DATE" jt="91" />
-			<column name="dealer_expiration_date" type="DATE" jt="91" />
 			<index name="pk_dimension_srs_adi_0" unique="PRIMARY_KEY" >
 				<column name="srs_pma_pk" />
 			</index>
@@ -21227,6 +21247,36 @@ TBLPROPERTIES (
 			</fk>
 			<fk name="fk_dma" to_schema="ius_unity_prod.ius_datawarehouse" to_table="dimension_ius_dma(new)" >
 				<fk_column name="ius_dma_fk" pk="ius_dma_pk" />
+			</fk>
+		</table>
+		<table name="fact_srs_salesvolume_adi_monthly" prior="favt" >
+			<column name="srs_pk" type="BIGINT" jt="-5" mandatory="y" >
+				<identity><![CDATA[GENERATED ALWAYS AS IDENTITY (START WITH 1 )]]></identity>
+			</column>
+			<column name="srs_adi_fk" type="DOUBLE" jt="8" />
+			<column name="srs_adi_dk_fk" type="DOUBLE" jt="8" />
+			<column name="srs_model_fk" type="STRING" jt="12" />
+			<column name="srs_model_dk_fk" prior="srs_model_fk_dk" type="STRING" jt="12" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="srs_sales_volume" type="DATE" jt="91" />
+			<column name="srs_share_of_segment" type="DATE" jt="91" />
+			<column name="file_name" type="VARCHAR" length="100" jt="12" />
+			<column name="framework_update_ts" type="DATE" jt="91" />
+			<column name="framework_source" type="DATE" jt="91" />
+			<index name="pk_fact_srs_salesvolume_adi_monthly" unique="PRIMARY_KEY" >
+				<column name="srs_pk" />
+			</index>
+			<fk name="fk_fact_adi_pk" to_schema="ius_unity_prod.srs_datawarehouse" to_table="dimension_srs_adi" >
+				<fk_column name="srs_adi_fk" pk="srs_adi_pk" />
+			</fk>
+			<fk name="fk_fact_srs_dk" to_schema="ius_unity_prod.srs_datawarehouse" to_table="dimension_srs_adi" >
+				<fk_column name="srs_adi_dk_fk" pk="srs_adi_dk" />
+			</fk>
+			<fk name="fk_fact_srs_model_pk" to_schema="ius_unity_prod.srs_datawarehouse" to_table="dimension_srs_makemodelsegments" >
+				<fk_column name="srs_model_fk" pk="srs_model_pk" />
+			</fk>
+			<fk name="fk_fact_srs_model_dk" to_schema="ius_unity_prod.srs_datawarehouse" to_table="dimension_srs_makemodelsegments" >
+				<fk_column name="srs_adi_dk_fk" pk="srs_model_dk" />
 			</fk>
 		</table>
 	</schema>
@@ -23986,18 +24036,20 @@ Double-click the table headers to edit.]]></comment>
 	</layout>
 	<layout name="srs" id="Layout-1d28" joined_routing="y" show_column_type="y" show_relation="columns" >
 		<comment><![CDATA[srs]]></comment>
-		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_adi(new)" color="C7F4BE" x="1776" y="80" />
-		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" color="C7F4BE" x="1824" y="560" />
-		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_makemodelsegments(new)" color="C7F4BE" x="1504" y="1280" />
-		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" color="3986C1" x="2320" y="192" />
-		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" color="3986C1" x="928" y="112" />
-		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" color="3986C1" x="1856" y="864" />
-		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="3986C1" x="1888" y="1360" />
-		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_adi" color="C7F4BE" x="1312" y="656" />
+		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_adi(new)" color="C7F4BE" x="1728" y="80" />
+		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" color="C7F4BE" x="560" y="1024" />
+		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_makemodelsegments(new)" color="C7F4BE" x="1504" y="1216" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" color="3986C1" x="2128" y="112" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" color="3986C1" x="912" y="112" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" color="3986C1" x="560" y="1344" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="3986C1" x="1984" y="1280" />
+		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_adi" color="C7F4BE" x="1904" y="624" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi(current)" color="3986C1" x="1184" y="160" />
-		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" color="3986C1" x="1056" y="1360" />
-		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_makemodelsegments" color="C7F4BE" x="768" y="1360" />
-		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_pma" color="C7F4BE" x="944" y="624" />
+		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_makemodelsegments" color="C7F4BE" x="2944" y="1088" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" color="3986C1" x="2944" y="1424" />
+		<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_pma" color="C7F4BE" x="1296" y="576" />
+		<entity schema="ius_unity_prod.srs_datawarehouse" name="fact_srs_salesvolume_adi_monthly" color="C7F4BE" x="2368" y="624" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly" color="3986C1" x="2368" y="848" />
 		<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_adi_fileingest" color="C7F4BE" x="288" y="704" />
 		<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_pma_fileingest" color="C7F4BE" x="544" y="688" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_raw" name="log_srs_salesvolume_fileingest" color="3986C1" x="48" y="704" />
@@ -24005,12 +24057,12 @@ Double-click the table headers to edit.]]></comment>
 		<entity schema="ius_unity_prod.srs_datalake" name="temp_srs_sales_model_pma_monthly" color="C7F4BE" x="544" y="416" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_raw" name="temp_srs_salesvolume_monthly" color="3986C1" x="48" y="416" />
 		<group name="SRS_Datalake" color="C4E0F9" >
-			<entity schema="ius_unity_prod.hma_gma_ocm_prm_raw" name="log_srs_salesvolume_fileingest" />
+			<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_pma_fileingest" />
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_raw" name="temp_srs_salesvolume_monthly" />
+			<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_adi_fileingest" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_raw" name="log_srs_salesvolume_fileingest" />
 			<entity schema="ius_unity_prod.srs_datalake" name="temp_srs_sales_model_adi_monthly" />
 			<entity schema="ius_unity_prod.srs_datalake" name="temp_srs_sales_model_pma_monthly" />
-			<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_adi_fileingest" />
-			<entity schema="ius_unity_prod.srs_datalake" name="log_srs_sales_model_pma_fileingest" />
 		</group>
 		<script name="temp_srs_salesvolume_monthly_001" id="Editor-1f0" language="SQL" >
 			<string><![CDATA[SELECT
@@ -24018,11 +24070,26 @@ Double-click the table headers to edit.]]></comment>
 FROM
 	ius_unity_prod.hma_gma_ocm_prm_raw.temp_srs_salesvolume_monthly y;]]></string>
 		</script>
+		<browser id="Browse-1afb" name="dimension_srs_makemodelsegments" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_srs_makemodelsegments" x="20" y="20" width="270" height="70" />
+		</browser>
+		<browser id="Browse-2359" name="dimension_srs_makemodelsegments_001" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_srs_makemodelsegments" x="20" y="20" width="270" height="70" />
+		</browser>
+		<browser id="Browse-16a3" name="log_srs_salesvolume_fileingest" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_raw" entity="log_srs_salesvolume_fileingest" x="20" y="20" width="764" height="754" />
+		</browser>
 		<browser id="Browse-199b" name="temp_srs_salesvolume_monthly" confirm_updates="y" >
 			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_raw" entity="temp_srs_salesvolume_monthly" x="20" y="20" width="907" height="897" />
 		</browser>
 		<browser id="Browse-a05" name="temp_srs_salesvolume_monthly_002" confirm_updates="y" >
 			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_raw" entity="temp_srs_salesvolume_monthly" x="20" y="20" width="907" height="897" />
+		</browser>
+		<browser id="Browse-ad6" name="temp_srs_salesvolume_monthly_003" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_raw" entity="temp_srs_salesvolume_monthly" x="20" y="20" width="764" height="754" />
+		</browser>
+		<browser id="Browse-1edd" name="temp_srs_salesvolume_monthly_004" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_raw" entity="temp_srs_salesvolume_monthly" x="20" y="20" width="764" height="754" />
 		</browser>
 	</layout>
 	<layout name="vivvix_datalake" id="Layout-1e15" confirmed="y" show_relation="columns" >
