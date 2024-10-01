@@ -267,6 +267,11 @@ tr:nth-child(even) {
   <marker id='Arrow' viewBox='0 0 8.00 8.00' refX='4.00' refY='4.00' markerWidth='8.00' markerHeight='8.00' orient='auto-start-reverse'>
     <path d='M 4.000,2.000 L 8.000,4.000 L 4.000,6.000 z' style='stroke-width:1;' class='filled'/>
   </marker>
+  <linearGradient id='tbg_F4DDBE' x1='0%' y1='0%' x2='0%' y2='100%' >
+     <stop offset='0%' stop-color='#FFFEFE' /> 
+     <stop offset='75%' stop-color='#FDF0DF' /> 
+     <stop offset='100%' stop-color='#FEE1BA' /> 
+  </linearGradient>
   <linearGradient id='tbg_C7F4BE' x1='0%' y1='0%' x2='0%' y2='100%' >
      <stop offset='0%' stop-color='#FEFFFE' /> 
      <stop offset='75%' stop-color='#E4FDDF' /> 
@@ -324,14 +329,6 @@ dimension_srs_adi ref dimension_ius_dma(new) ( ius_dma_fk -&gt; ius_dma_pk )</ti
 <path transform='translate(8,0)' marker-start='url(#ZeroMore)'   class='dotted '  d='M 816,1600L 584,1600Q 576,1600 576,1592L 576,1584' ><title>&#x1F517;  Foreign Key fk_dimension_srs_adi
 dimension_srs_adi ref dimension_ius_dma(new) ( ius_dma_fk -&gt; ius_dma_pk )</title></path>
 <text x='763' y='1595' transform='rotate(0 763,1595)' class='relName'>ius&#95;dma&#95;fk</text>
-<!-- == Fk 'dimension_srs_adi(current)_fk_dimension_srs_adi' == -->
-<path id='dimension_srs_adi(current)_fk_dimension_srs_adi'  onmouseover="hghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','hma_gma_ocm_prm_datamart.dimension_srs_adi(current).srs_id','ius_datawarehouse.dimension_ius_adi(new).srs_adi_id'])" onmouseout="uhghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','hma_gma_ocm_prm_datamart.dimension_srs_adi(current).srs_id','ius_datawarehouse.dimension_ius_adi(new).srs_adi_id'])" transform='translate(8,0)' class='unhighlight' d='M 560,1120L 808,1120Q 816,1120 816,1112L 816,1112Q 816,1104 824,1104L 832,1104' >
-	<title>&#x1F517;  Foreign Key fk_dimension_srs_adi
-dimension_srs_adi(current) ref dimension_ius_adi(new) ( srs_id -&gt; srs_adi_id )</title>
-</path>
-<path transform='translate(8,0)' marker-start='url(#ZeroMore)' marker-end='url(#Arrow)'  class='dotted virtual'  d='M 560,1120L 808,1120Q 816,1120 816,1112L 816,1112Q 816,1104 824,1104L 832,1104' ><title>&#x1F517;  Foreign Key fk_dimension_srs_adi
-dimension_srs_adi(current) ref dimension_ius_adi(new) ( srs_id -&gt; srs_adi_id )</title></path>
-<text x='569' y='1115' transform='rotate(0 569,1115)' class='relName'>srs&#95;id</text>
 <!-- == Fk 'dimension_srs_makemodelsegments_fk_dimension_srs_makemodelsegments' == -->
 <path id='dimension_srs_makemodelsegments_fk_dimension_srs_makemodelsegments'  onmouseover="hghl(['dimension_srs_makemodelsegments_fk_dimension_srs_makemodelsegments','srs_datawarehouse.dimension_srs_makemodelsegments.ius_model_fk','ius_datawarehouse.dimension_ius_makemodelsegments(new).ius_model_pk'])" onmouseout="uhghl(['dimension_srs_makemodelsegments_fk_dimension_srs_makemodelsegments','srs_datawarehouse.dimension_srs_makemodelsegments.ius_model_fk','ius_datawarehouse.dimension_ius_makemodelsegments(new).ius_model_pk'])" transform='translate(8,0)' class='unhighlight' d='M 2192,1856L 2312,1856Q 2320,1856 2320,1848L 2320,1816Q 2320,1808 2328,1808L 2648,1808Q 2656,1808 2656,1816L 2656,1864Q 2656,1872 2648,1872L 2640,1872' >
 	<title>&#x1F517;  Foreign Key fk_dimension_srs_makemodelsegments
@@ -429,54 +426,53 @@ fact_srs_salesvolume_pma_monthly ref dimension_srs_makemodelsegments ( srs_model
 fact_srs_salesvolume_pma_monthly ref dimension_srs_makemodelsegments ( srs_model_dk_fk -&gt; srs_model_dk )</title></path>
 <text x='1405' y='2299' transform='rotate(0 1405,2299)' class='relName'>srs&#95;model&#95;dk&#95;fk</text>
 <!-- == Table 'dimension_ius_adi(new)' == -->
-<rect id='depict_ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;' class='entity' style='stroke:#81B976' x='848' y='1032' width='256' height='352' />
-<rect x='848' y='1032' width='256' height='28' style='stroke-width:0; fill:#F2FAF1'/>
-<line class='topLine' style='stroke:#2C9817;' stroke-linecap='round' x1='848' y1='1032' x2='1104' y2='1032'/>
+<rect id='depict_ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;' class='entity' style='stroke:#B99C76' x='848' y='1032' width='256' height='352' />
+<rect x='848' y='1032' width='256' height='28' style='stroke-width:0; fill:#FAF6F1'/>
+<line class='topLine' style='stroke:#986117;' stroke-linecap='round' x1='848' y1='1032' x2='1104' y2='1032'/>
 <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29'><text x='897' y='1051' class='tableHeader'>dimension&#95;ius&#95;adi&#40;new&#41;</text><title>Table ius_datawarehouse.dimension_ius_adi(new)</title></a>
   <use id='nn' x='850' y='1069' xlink:href='#nn'/><use id='pk' x='850' y='1068' xlink:href='#pk'><title>&#x1F511;  Pk pk_dimension_ius_adi ( adi_pk ) </title></use><a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.adi_pk'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;adi&#95;pk' x='867' y='1079'>adi&#95;pk</text><title>&#10697;  adi_pk
      * bigint</title></a>
-<text x='1088' y='1080' class='dataType' style='fill:#8DB586;'>BIGINT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_dma_fk'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;dma&#95;fk' x='867' y='1095'>ius&#95;dma&#95;fk</text><title>&#10697;  ius_dma_fk
+<text x='1088' y='1080' class='dataType' style='fill:#B5A086;'>BIGINT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_dma_fk'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;dma&#95;fk' x='867' y='1095'>ius&#95;dma&#95;fk</text><title>&#10697;  ius_dma_fk
      int</title></a>
-<text x='1088' y='1096' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;id' x='867' y='1111' onmouseover="hghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','hma_gma_ocm_prm_datamart.dimension_srs_adi(current).srs_id'])" onmouseout="uhghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','hma_gma_ocm_prm_datamart.dimension_srs_adi(current).srs_id'])">srs&#95;adi&#95;id</text><title>&#10697;  srs_adi_id
-     int
- &#8601; dimension_srs_adi(current)( srs_adi_id )</title></a>
-<text x='1088' y='1112' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;name' x='867' y='1127'>srs&#95;adi&#95;name</text><title>&#10697;  srs_adi_name
-     varchar(100)</title></a>
-<text x='1088' y='1128' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;desc' x='867' y='1143'>srs&#95;adi&#95;desc</text><title>&#10697;  srs_adi_desc
-     varchar(100)</title></a>
-<text x='1088' y='1144' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name_state_caps'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name&#95;state&#95;caps' x='867' y='1159'>ius&#95;adi&#95;name&#95;state&#95;caps</text><title>&#10697;  ius_adi_name_state_caps
-     varchar(100)</title></a>
-<text x='1088' y='1160' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name&#95;state' x='867' y='1175'>ius&#95;adi&#95;name&#95;state</text><title>&#10697;  ius_adi_name_state
-     varchar(100)</title></a>
-<text x='1088' y='1176' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name' x='867' y='1191'>ius&#95;adi&#95;name</text><title>&#10697;  ius_adi_name
-     varchar(100)</title></a>
-<text x='1088' y='1192' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.adi_state_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;adi&#95;state&#95;cd' x='867' y='1207'>adi&#95;state&#95;cd</text><title>&#10697;  adi_state_cd
-     varchar(10)</title></a>
-<text x='1088' y='1208' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_cd_old'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;cd&#95;old' x='867' y='1223'>sales&#95;region&#95;cd&#95;old</text><title>&#10697;  sales_region_cd_old
-     varchar(10)</title></a>
-<text x='1088' y='1224' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;cd' x='867' y='1239'>sales&#95;region&#95;cd</text><title>&#10697;  sales_region_cd
-     varchar(10)</title></a>
-<text x='1088' y='1240' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;desc' x='867' y='1255'>sales&#95;region&#95;desc</text><title>&#10697;  sales_region_desc
-     varchar(100)</title></a>
-<text x='1088' y='1256' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.region_change_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;region&#95;change&#95;flag' x='867' y='1271'>region&#95;change&#95;flag</text><title>&#10697;  region_change_flag
-     varchar(10)</title></a>
-<text x='1088' y='1272' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.adi_hdaa_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;adi&#95;hdaa&#95;flag' x='867' y='1287'>adi&#95;hdaa&#95;flag</text><title>&#10697;  adi_hdaa_flag
-     varchar(10)</title></a>
-<text x='1088' y='1288' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;id' x='867' y='1303'>google&#95;id</text><title>&#10697;  google_id
+<text x='1088' y='1096' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;id' x='867' y='1111'>srs&#95;adi&#95;id</text><title>&#10697;  srs_adi_id
      int</title></a>
-<text x='1088' y='1304' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;name' x='867' y='1319'>google&#95;dma&#95;name</text><title>&#10697;  google_dma_name
+<text x='1088' y='1112' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;name' x='867' y='1127'>srs&#95;adi&#95;name</text><title>&#10697;  srs_adi_name
      varchar(100)</title></a>
-<text x='1088' y='1320' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;id' x='867' y='1335'>google&#95;dma&#95;id</text><title>&#10697;  google_dma_id
-     int</title></a>
-<text x='1088' y='1336' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_id_short'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;id&#95;short' x='867' y='1351'>google&#95;dma&#95;id&#95;short</text><title>&#10697;  google_dma_id_short
-     int</title></a>
-<text x='1088' y='1352' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;dma&#95;name' x='867' y='1367'>ius&#95;dma&#95;name</text><title>&#10697;  ius_dma_name
+<text x='1088' y='1128' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.srs_adi_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;srs&#95;adi&#95;desc' x='867' y='1143'>srs&#95;adi&#95;desc</text><title>&#10697;  srs_adi_desc
      varchar(100)</title></a>
-<text x='1088' y='1368' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>
+<text x='1088' y='1144' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name_state_caps'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name&#95;state&#95;caps' x='867' y='1159'>ius&#95;adi&#95;name&#95;state&#95;caps</text><title>&#10697;  ius_adi_name_state_caps
+     varchar(100)</title></a>
+<text x='1088' y='1160' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name&#95;state' x='867' y='1175'>ius&#95;adi&#95;name&#95;state</text><title>&#10697;  ius_adi_name_state
+     varchar(100)</title></a>
+<text x='1088' y='1176' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;adi&#95;name' x='867' y='1191'>ius&#95;adi&#95;name</text><title>&#10697;  ius_adi_name
+     varchar(100)</title></a>
+<text x='1088' y='1192' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.adi_state_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;adi&#95;state&#95;cd' x='867' y='1207'>adi&#95;state&#95;cd</text><title>&#10697;  adi_state_cd
+     varchar(10)</title></a>
+<text x='1088' y='1208' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_cd_old'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;cd&#95;old' x='867' y='1223'>sales&#95;region&#95;cd&#95;old</text><title>&#10697;  sales_region_cd_old
+     varchar(10)</title></a>
+<text x='1088' y='1224' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;cd' x='867' y='1239'>sales&#95;region&#95;cd</text><title>&#10697;  sales_region_cd
+     varchar(10)</title></a>
+<text x='1088' y='1240' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.sales_region_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;sales&#95;region&#95;desc' x='867' y='1255'>sales&#95;region&#95;desc</text><title>&#10697;  sales_region_desc
+     varchar(100)</title></a>
+<text x='1088' y='1256' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.region_change_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;region&#95;change&#95;flag' x='867' y='1271'>region&#95;change&#95;flag</text><title>&#10697;  region_change_flag
+     varchar(10)</title></a>
+<text x='1088' y='1272' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.adi_hdaa_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;adi&#95;hdaa&#95;flag' x='867' y='1287'>adi&#95;hdaa&#95;flag</text><title>&#10697;  adi_hdaa_flag
+     varchar(10)</title></a>
+<text x='1088' y='1288' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;id' x='867' y='1303'>google&#95;id</text><title>&#10697;  google_id
+     int</title></a>
+<text x='1088' y='1304' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;name' x='867' y='1319'>google&#95;dma&#95;name</text><title>&#10697;  google_dma_name
+     varchar(100)</title></a>
+<text x='1088' y='1320' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_id'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;id' x='867' y='1335'>google&#95;dma&#95;id</text><title>&#10697;  google_dma_id
+     int</title></a>
+<text x='1088' y='1336' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.google_dma_id_short'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;google&#95;dma&#95;id&#95;short' x='867' y='1351'>google&#95;dma&#95;id&#95;short</text><title>&#10697;  google_dma_id_short
+     int</title></a>
+<text x='1088' y='1352' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_adi%28new%29.ius_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;&#46;ius&#95;dma&#95;name' x='867' y='1367'>ius&#95;dma&#95;name</text><title>&#10697;  ius_dma_name
+     varchar(100)</title></a>
+<text x='1088' y='1368' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>
 <!-- == Table 'dimension_ius_dma(new)' == -->
-<rect id='depict_ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;' class='entity' style='stroke:#81B976' x='288' y='1448' width='272' height='304' />
-<rect x='288' y='1448' width='272' height='28' style='stroke-width:0; fill:#F2FAF1'/>
-<line class='topLine' style='stroke:#2C9817;' stroke-linecap='round' x1='288' y1='1448' x2='560' y2='1448'/>
+<rect id='depict_ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;' class='entity' style='stroke:#B99C76' x='288' y='1448' width='272' height='304' />
+<rect x='288' y='1448' width='272' height='28' style='stroke-width:0; fill:#FAF6F1'/>
+<line class='topLine' style='stroke:#986117;' stroke-linecap='round' x1='288' y1='1448' x2='560' y2='1448'/>
 <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29'><text x='341' y='1467' class='tableHeader'>dimension&#95;ius&#95;dma&#40;new&#41;</text><title>Table ius_datawarehouse.dimension_ius_dma(new)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Dimension table to describe all DMA (Designated Marketing Area)</title></a>
@@ -488,7 +484,7 @@ fact_srs_salesvolume_pma_monthly ref dimension_srs_makemodelsegments ( srs_model
  &#8601; dimension_srs_pma( ius_dma_pk )
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       pk for DMA</title></a>
-<text x='544' y='1496' class='dataType' style='fill:#8DB586;'>BIGINT</text><a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_pk'><use id='fk' x='548' y='1484' xlink:href='#fk'/><title>&#x1F517;  References dimension_iwa_dma ( ius_dma_pk -&gt; id ) 
+<text x='544' y='1496' class='dataType' style='fill:#B5A086;'>BIGINT</text><a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_pk'><use id='fk' x='548' y='1484' xlink:href='#fk'/><title>&#x1F517;  References dimension_iwa_dma ( ius_dma_pk -&gt; id ) 
 Referred by dimension_google_dmaregions(new) ( ius_dma_fk -&gt; ius_dma_pk ) 
 Referred by dimension_srs_adi ( ius_dma_fk -&gt; ius_dma_pk ) 
 Referred by dimension_srs_pma ( ius_dma_fk -&gt; ius_dma_pk ) </title></a>
@@ -496,53 +492,53 @@ Referred by dimension_srs_pma ( ius_dma_fk -&gt; ius_dma_pk ) </title></a>
      int
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       3 character code for dma</title></a>
-<text x='544' y='1512' class='dataType' style='fill:#8DB586;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name_state_caps'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name&#95;state&#95;caps' x='307' y='1527'>ius&#95;dma&#95;name&#95;state&#95;caps</text><title>&#10697;  ius_dma_name_state_caps
+<text x='544' y='1512' class='dataType' style='fill:#B5A086;'>INT</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name_state_caps'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name&#95;state&#95;caps' x='307' y='1527'>ius&#95;dma&#95;name&#95;state&#95;caps</text><title>&#10697;  ius_dma_name_state_caps
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Dma name with state capitalized</title></a>
-<text x='544' y='1528' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name&#95;state' x='307' y='1543'>ius&#95;dma&#95;name&#95;state</text><title>&#10697;  ius_dma_name_state
+<text x='544' y='1528' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name&#95;state' x='307' y='1543'>ius&#95;dma&#95;name&#95;state</text><title>&#10697;  ius_dma_name_state
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Name of DMA with State Added</title></a>
-<text x='544' y='1544' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name' x='307' y='1559'>ius&#95;dma&#95;name</text><title>&#10697;  ius_dma_name
+<text x='544' y='1544' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.ius_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;ius&#95;dma&#95;name' x='307' y='1559'>ius&#95;dma&#95;name</text><title>&#10697;  ius_dma_name
      varchar(100)</title></a>
-<text x='544' y='1560' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.primary_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;primary&#95;state' x='307' y='1575'>primary&#95;state</text><title>&#10697;  primary_state
+<text x='544' y='1560' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.primary_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;primary&#95;state' x='307' y='1575'>primary&#95;state</text><title>&#10697;  primary_state
      varchar(100)</title></a>
-<text x='544' y='1576' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.other_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;other&#95;state' x='307' y='1591'>other&#95;state</text><title>&#10697;  other_state
+<text x='544' y='1576' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.other_state'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;other&#95;state' x='307' y='1591'>other&#95;state</text><title>&#10697;  other_state
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       all states associates to DMA</title></a>
-<text x='544' y='1592' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;cd' x='307' y='1607'>sales&#95;region&#95;cd</text><title>&#10697;  sales_region_cd
+<text x='544' y='1592' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_cd'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;cd' x='307' y='1607'>sales&#95;region&#95;cd</text><title>&#10697;  sales_region_cd
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Newest definition of sales regions</title></a>
-<text x='544' y='1608' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_cd_old'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;cd&#95;old' x='307' y='1623'>sales&#95;region&#95;cd&#95;old</text><title>&#10697;  sales_region_cd_old
+<text x='544' y='1608' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_cd_old'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;cd&#95;old' x='307' y='1623'>sales&#95;region&#95;cd&#95;old</text><title>&#10697;  sales_region_cd_old
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Old Sales region code</title></a>
-<text x='544' y='1624' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;desc' x='307' y='1639'>sales&#95;region&#95;desc</text><title>&#10697;  sales_region_desc
+<text x='544' y='1624' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.sales_region_desc'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;sales&#95;region&#95;desc' x='307' y='1639'>sales&#95;region&#95;desc</text><title>&#10697;  sales_region_desc
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Written out region name</title></a>
-<text x='544' y='1640' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.region_change_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;region&#95;change&#95;flag' x='307' y='1655'>region&#95;change&#95;flag</text><title>&#10697;  region_change_flag
+<text x='544' y='1640' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.region_change_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;region&#95;change&#95;flag' x='307' y='1655'>region&#95;change&#95;flag</text><title>&#10697;  region_change_flag
      varchar(10)</title></a>
-<text x='544' y='1656' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.primary_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;primary&#95;adi&#95;name' x='307' y='1671'>primary&#95;adi&#95;name</text><title>&#10697;  primary_adi_name
+<text x='544' y='1656' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.primary_adi_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;primary&#95;adi&#95;name' x='307' y='1671'>primary&#95;adi&#95;name</text><title>&#10697;  primary_adi_name
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       Primary ADI associated to DMA</title></a>
-<text x='544' y='1672' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.hdaa_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;hdaa&#95;flag' x='307' y='1687'>hdaa&#95;flag</text><title>&#10697;  hdaa_flag
+<text x='544' y='1672' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.hdaa_flag'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;hdaa&#95;flag' x='307' y='1687'>hdaa&#95;flag</text><title>&#10697;  hdaa_flag
      varchar(10)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       hdaa association related to primary adi</title></a>
-<text x='544' y='1688' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.google_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;google&#95;dma&#95;name' x='307' y='1703'>google&#95;dma&#95;name</text><title>&#10697;  google_dma_name
+<text x='544' y='1688' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;10&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.google_dma_name'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;google&#95;dma&#95;name' x='307' y='1703'>google&#95;dma&#95;name</text><title>&#10697;  google_dma_name
      varchar(100)
  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
       How google names their dmas</title></a>
-<text x='544' y='1704' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.framework_ts'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;framework&#95;ts' x='307' y='1719'>framework&#95;ts</text><title>&#10697;  framework_ts
+<text x='544' y='1704' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;100&#41;</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.framework_ts'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;framework&#95;ts' x='307' y='1719'>framework&#95;ts</text><title>&#10697;  framework_ts
      timestamp</title></a>
-<text x='544' y='1720' class='dataType' style='fill:#8DB586;'>TIMESTAMP</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.framework_source'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;framework&#95;source' x='307' y='1735'>framework&#95;source</text><title>&#10697;  framework_source
+<text x='544' y='1720' class='dataType' style='fill:#B5A086;'>TIMESTAMP</text>  <a xlink:href='#ius_datawarehouse.dimension_ius_dma%28new%29.framework_source'><text id='ius&#95;datawarehouse&#46;dimension&#95;ius&#95;dma&#40;new&#41;&#46;framework&#95;source' x='307' y='1735'>framework&#95;source</text><title>&#10697;  framework_source
      varchar(255)</title></a>
-<text x='544' y='1736' class='dataType' style='fill:#8DB586;'>VARCHAR&#40;255&#41;</text>
+<text x='544' y='1736' class='dataType' style='fill:#B5A086;'>VARCHAR&#40;255&#41;</text>
 <!-- == Table 'dimension_ius_makemodelsegments(new)' == -->
 <rect id='depict_ius&#95;datawarehouse&#46;dimension&#95;ius&#95;makemodelsegments&#40;new&#41;' class='entity' style='stroke:#81B976' x='2352' y='1832' width='288' height='384' />
 <rect x='2352' y='1832' width='288' height='28' style='stroke-width:0; fill:#F2FAF1'/>
@@ -820,11 +816,9 @@ Referred by fact_srs_salesvolume_adi_monthly ( srs_adi_dk_fk -&gt; srs_adi_dk ) 
 <rect x='320' y='1080' width='240' height='28' style='stroke-width:0; fill:#F1F6FA'/>
 <line class='topLine' style='stroke:#176098;' stroke-linecap='round' x1='320' y1='1080' x2='560' y2='1080'/>
 <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29'><text x='351' y='1099' class='tableHeader'>dimension&#95;srs&#95;adi&#40;current&#41;</text><title>Table hma_gma_ocm_prm_datamart.dimension_srs_adi(current)</title></a>
-  <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_id'><text id='hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;&#46;srs&#95;id' x='339' y='1127' onmouseover="hghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','ius_datawarehouse.dimension_ius_adi(new).srs_adi_id'])" onmouseout="uhghl(['dimension_srs_adi(current)_fk_dimension_srs_adi','ius_datawarehouse.dimension_ius_adi(new).srs_adi_id'])">srs&#95;id</text><title>&#10697;  srs_id
-     bigint
- &#8599; dimension_srs_adi(current)( srs_adi_id )</title></a>
-<text x='544' y='1128' class='dataType' style='fill:#86A0B5;'>BIGINT</text><a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_id'><use id='fk' x='548' y='1116' xlink:href='#fk'/><title>&#x1F517;  References dimension_ius_adi(new) ( srs_id -&gt; srs_adi_id ) </title></a>
-  <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_legacy_id'><text id='hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;&#46;srs&#95;legacy&#95;id' x='339' y='1143'>srs&#95;legacy&#95;id</text><title>&#10697;  srs_legacy_id
+  <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_id'><text id='hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;&#46;srs&#95;id' x='339' y='1127'>srs&#95;id</text><title>&#10697;  srs_id
+     bigint</title></a>
+<text x='544' y='1128' class='dataType' style='fill:#86A0B5;'>BIGINT</text>  <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_legacy_id'><text id='hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;&#46;srs&#95;legacy&#95;id' x='339' y='1143'>srs&#95;legacy&#95;id</text><title>&#10697;  srs_legacy_id
      int</title></a>
 <text x='544' y='1144' class='dataType' style='fill:#86A0B5;'>INT</text>  <a xlink:href='#hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_adi_name'><text id='hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;&#46;srs&#95;adi&#95;name' x='339' y='1159'>srs&#95;adi&#95;name</text><title>&#10697;  srs_adi_name
      varchar(64)</title></a>
@@ -1827,7 +1821,7 @@ function installListeners( svgContainer, svgImage ){
 </thead>
 <tbody>
 	<tr>
-		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td>&nbsp;</td>
 		<td><a name='hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.srs_id'>srs&#95;id</a></td>
 		<td> BIGINT GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1) </td>
 	</tr>
@@ -1870,11 +1864,6 @@ function installListeners( svgContainer, svgImage ){
 		<td>&nbsp;</td>
 		<td><a name='hma_gma_ocm_prm_datamart.dimension_srs_adi%28current%29.framework_checksum'>framework&#95;checksum</a></td>
 		<td> VARCHAR&#40;255&#41;  </td>
-	</tr>
-<tr><th colspan='3'>Foreign Key</th></tr>
-	<tr>
-		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg><svg width='14' height='14'><use xlink:href='#virtual'/></svg></td><td>fk_dimension_srs_adi</td>
-		<td > srs&#95;id &#8599; <a href='#ius&#95;datawarehouse&#46;dimension&#95;ius&#95;adi&#40;new&#41;'  onclick="window.scrollTo(648, 1040);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_ius_datawarehouse.dimension_ius_adi(new)').classList.add('palpable'); return false;">&#10063; dimension&#95;ius&#95;adi&#40;new&#41;</a>(srs&#95;adi&#95;id) </td>
 	</tr>
 <tr><th colspan='3'>Options</th></tr>
 <tr><td colspan='3'>USING delta<br>LOCATION &#39;s3&#58;&#47;&#47;hma&#45;delta&#45;spark&#45;warehouse&#45;prod&#47;hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#47;dimension&#95;srs&#95;adi&#39;<br>TBLPROPERTIES &#40;<br>  &#39;delta&#46;minReaderVersion&#39; &#61; &#39;1&#39;&#44;<br>  &#39;delta&#46;minWriterVersion&#39; &#61; &#39;6&#39;&#44;<br>  &#39;upgraded&#95;to&#39; &#61; &#39;ius&#95;unity&#95;prod&#46;hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#39;&#41;</td></tr>
@@ -2255,11 +2244,6 @@ function installListeners( svgContainer, svgImage ){
 <tr><th colspan='3'>Indexes</th></tr>
 	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;dimension&#95;ius&#95;adi</td>
 		<td>Primary Key ON adi&#95;pk</td>
-	</tr>
-<tr><th colspan='3'>Referring Foreign Key</th></tr>
-	<tr>
-		<td><svg width='14' height='14'><use xlink:href='#ref'/></svg><svg width='14' height='14'><use xlink:href='#virtual'/></svg></td><td>fk_dimension_srs_adi</td>
-		<td > srs&#95;adi&#95;id &#8601; <a href='#hma&#95;gma&#95;ocm&#95;prm&#95;datamart&#46;dimension&#95;srs&#95;adi&#40;current&#41;'  onclick="window.scrollTo(120, 1088);var nodes = document.getElementsByClassName('palpable');for (var i = 0; i < nodes.length; i++) { nodes[i].classList.remove('palpable');}; document.getElementById('depict_hma_gma_ocm_prm_datamart.dimension_srs_adi(current)').classList.add('palpable'); return false;">&#10063; dimension&#95;srs&#95;adi&#40;current&#41;</a>(srs&#95;id) </td>
 	</tr>
 </tbody>
 </table></div></div>

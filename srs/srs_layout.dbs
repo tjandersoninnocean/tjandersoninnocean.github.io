@@ -12076,9 +12076,6 @@ TBLPROPERTIES (
 			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
 			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
 			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
-			<fk name="fk_dimension_srs_adi" virtual="y" to_schema="ius_unity_prod.ius_datawarehouse" to_table="dimension_ius_adi(new)" >
-				<fk_column name="srs_id" pk="srs_adi_id" />
-			</fk>
 			<options><![CDATA[USING delta
 LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_srs_adi'
 TBLPROPERTIES (
@@ -24130,8 +24127,8 @@ Double-click the table headers to edit.]]></comment>
 	</layout>
 	<layout name="srs" id="Layout-1d28" joined_routing="y" show_column_type="y" show_relation="columns" >
 		<comment><![CDATA[srs]]></comment>
-		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_adi(new)" color="C7F4BE" x="848" y="1040" />
-		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" color="C7F4BE" x="288" y="1456" />
+		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_adi(new)" color="F4DDBE" x="848" y="1040" />
+		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" color="F4DDBE" x="288" y="1456" />
 		<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_makemodelsegments(new)" color="C7F4BE" x="2352" y="1840" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" color="3986C1" x="1152" y="1056" />
 		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" color="3986C1" x="48" y="1040" />
@@ -24168,12 +24165,10 @@ Double-click the table headers to edit.]]></comment>
 		</group>
 		<group name="SRS_DataWarehouse" color="C4E0F9" >
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" />
-			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi(current)" />
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" />
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" />
 			<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_makemodelsegments(new)" />
 			<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_makemodelsegments" />
-			<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" />
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" />
 			<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_pma" />
 			<entity schema="ius_unity_prod.srs_datawarehouse" name="fact_srs_salesvolume_pma_monthly" />
@@ -24181,7 +24176,9 @@ Double-click the table headers to edit.]]></comment>
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly" />
 			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" />
 			<entity schema="ius_unity_prod.srs_datawarehouse" name="dimension_srs_adi" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi(current)" />
 			<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_adi(new)" />
+			<entity schema="ius_unity_prod.ius_datawarehouse" name="dimension_ius_dma(new)" />
 		</group>
 		<script name="temp_srs_salesvolume_monthly_001" id="Editor-1f0" language="SQL" >
 			<string><![CDATA[SELECT
