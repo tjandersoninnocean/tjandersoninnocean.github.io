@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Databricks" database="Databricks" id="Databricks-2603" >
+	<schema name="hma_gma_ocm_prm_datamart" catalogname="ius_unity_prod" >
+		<table name="dimension_google_dmaregions" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="google_dma_name" type="VARCHAR" length="64" jt="12" />
+			<column name="google_dma_id" type="BIGINT" jt="-5" />
+			<column name="google_dma_region" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_adi_id" type="BIGINT" jt="-5" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_dmaregions'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_dmaregions')]]></options>
+		</table>
+		<table name="dimension_google_dmaregions_20240108" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="google_dma_name" type="VARCHAR" length="64" jt="12" />
+			<column name="google_dma_id" type="BIGINT" jt="-5" />
+			<column name="google_dma_region" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_adi_id" type="BIGINT" jt="-5" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_dmaregions_20240108'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_dmaregions_20240108')]]></options>
+		</table>
+		<table name="dimension_google_makemodelsegments" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="legacy_google_id" type="BIGINT" jt="-5" />
+			<column name="google_make" type="VARCHAR" length="64" jt="12" />
+			<column name="google_model" type="VARCHAR" length="64" jt="12" />
+			<column name="google_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="google_competitive_set" type="VARCHAR" length="64" jt="12" />
+			<column name="google_segment" type="VARCHAR" length="64" jt="12" />
+			<column name="legacy_iwa_make_model_id" type="BIGINT" jt="-5" />
+			<column name="iwa_make_model_id" type="BIGINT" jt="-5" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_makemodelsegments'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_makemodelsegments')]]></options>
+		</table>
+		<table name="dimension_google_makemodelsegments_20240108" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="legacy_google_id" type="BIGINT" jt="-5" />
+			<column name="google_make" type="VARCHAR" length="64" jt="12" />
+			<column name="google_model" type="VARCHAR" length="64" jt="12" />
+			<column name="google_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="google_competitive_set" type="VARCHAR" length="64" jt="12" />
+			<column name="google_segment" type="VARCHAR" length="64" jt="12" />
+			<column name="legacy_iwa_make_model_id" type="BIGINT" jt="-5" />
+			<column name="iwa_make_model_id" type="BIGINT" jt="-5" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_makemodelsegments_20240108'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_makemodelsegments_20240108')]]></options>
+		</table>
+		<table name="dimension_google_micromoments" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="google_micromoment" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_micromoments'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_micromoments')]]></options>
+		</table>
+		<table name="dimension_google_micromoments_20240108" spec="" >
+			<column name="google_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="google_micromoment" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_google_micromoments_20240108'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_micromoments_20240108')]]></options>
+		</table>
+		<table name="dimension_iwa_adi" spec="" >
+			<column name="id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="srs_id" type="INT" jt="4" />
+			<column name="srs_adi_name" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_hdaa_flag" type="BOOLEAN" jt="16" />
+			<column name="iwa_adi_id" type="INT" jt="4" />
+			<column name="iwa_adi_state_cd" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_cd_old" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_cd_new" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_desc" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_region_change_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_hdaa_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="google_id" type="INT" jt="4" />
+			<column name="google_dma_name" type="VARCHAR" length="64" jt="12" />
+			<column name="google_dma_id" type="INT" jt="4" />
+			<column name="google_dma_id_short" type="INT" jt="4" />
+			<column name="dma_name_standard" type="VARCHAR" length="64" jt="12" />
+			<column name="dma_id" type="INT" jt="4" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_iwa_adi'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_adi')]]></options>
+		</table>
+		<table name="dimension_iwa_adiregions" spec="" >
+			<column name="iwa_adi_id" type="BIGINT" jt="-5" />
+			<column name="iwa_adi_name" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_adi_desc" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_adi_state_cd" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_cd_old" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_cd_new" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_adi_region_desc" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_region_change_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_hdaa_flag" type="BOOLEAN" jt="16" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/DIMENSION_iwa_ADIRegions'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_adiregions')]]></options>
+		</table>
+		<table name="dimension_iwa_dma" spec="" >
+			<column name="id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="dma_id" type="INT" jt="4" />
+			<column name="dma_name_standard_state" type="VARCHAR" length="64" jt="12" />
+			<column name="dma_name_caps_state" type="VARCHAR" length="64" jt="12" />
+			<column name="dma_name_standard" type="VARCHAR" length="64" jt="12" />
+			<column name="other_state" type="VARCHAR" length="64" jt="12" />
+			<column name="adi_desc" type="VARCHAR" length="64" jt="12" />
+			<column name="primary_state" type="VARCHAR" length="10" jt="12" />
+			<column name="region_cd_old" type="VARCHAR" length="10" jt="12" />
+			<column name="region_cd_new" type="VARCHAR" length="10" jt="12" />
+			<column name="region_desc" type="VARCHAR" length="64" jt="12" />
+			<column name="region_change_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="hdaa_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="google_id" type="INT" jt="4" />
+			<column name="google_dma_name" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_iwa_dma'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_dma')]]></options>
+		</table>
+		<table name="dimension_iwa_makemodelsegments" spec="" >
+			<column name="iwa_id" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="legacy_iwa_id" type="INT" jt="4" />
+			<column name="iwa_make" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_make_model_detail" type="VARCHAR" length="64" jt="12" />
+			<column name="hma_ocm_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_segment" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_competitive_set" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_make_only_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_srs_luxury_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_srs_cartruck_detail" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_cartruck" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_current_sales_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_google_competitive_set_flag" type="BOOLEAN" jt="16" />
+			<column name="framework_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="iwa_model_family" type="VARCHAR" length="255" jt="12" />
+			<column name="hma_google_comp_set" type="STRING" jt="12" />
+			<column name="gma_google_comp_set" type="STRING" jt="12" />
+			<column name="srs_tcg_set" type="STRING" jt="12" />
+			<index name="iwa_id_pk" unique="PRIMARY_KEY" >
+				<column name="iwa_id" />
+			</index>
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_iwa_makemodelsegments'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_iwa_makemodelsegments')]]></options>
+		</table>
+		<table name="dimension_iwa_makemodelsegments_20240823" spec="" >
+			<column name="iwa_id" type="BIGINT" jt="-5" />
+			<column name="legacy_iwa_id" type="INT" jt="4" />
+			<column name="iwa_make" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_make_model_detail" type="VARCHAR" length="64" jt="12" />
+			<column name="hma_ocm_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_segment" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_competitive_set" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_make_only_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_srs_luxury_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_srs_cartruck_detail" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_cartruck" type="VARCHAR" length="64" jt="12" />
+			<column name="iwa_srs_current_sales_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_google_competitive_set_flag" type="BOOLEAN" jt="16" />
+			<column name="framework_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="iwa_model_family" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2')]]></options>
+		</table>
+		<table name="dimension_srs_adi" spec="" >
+			<column name="srs_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="srs_legacy_id" type="INT" jt="4" />
+			<column name="srs_adi_name" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_hdaa_flag" type="BOOLEAN" jt="16" />
+			<column name="srs_legacy_region" type="VARCHAR" length="60" jt="12" />
+			<column name="iwa_adi_id" type="INT" jt="4" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_srs_adi'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_srs_adi')]]></options>
+		</table>
+		<table name="dimension_srs_makemodelsegments" spec="" >
+			<column name="srs_id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="srs_legacy_id" type="INT" jt="4" />
+			<column name="srs_brand" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_segment" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_model" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_make_model" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_luxury" type="VARCHAR" length="10" jt="12" />
+			<column name="srs_cartruck_detail" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_cartruck" type="VARCHAR" length="64" jt="12" />
+			<column name="srs_current_sales_flag" type="VARCHAR" length="10" jt="12" />
+			<column name="iwa_legacy_id" type="INT" jt="4" />
+			<column name="iwa_id" type="INT" jt="4" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_checksum" type="VARCHAR" length="255" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/dimension_srs_makemodelsegments'
+TBLPROPERTIES (
+  'delta.columnMapping.mode' = 'name',
+  'delta.minReaderVersion' = '2',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_srs_makemodelsegments')]]></options>
+		</table>
+		<table name="fact_google_queryvolume_daily" spec="" >
+			<column name="id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="date" type="VARCHAR" length="10" jt="12" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="date_day" type="DATE" jt="91" />
+			<column name="google_dma_id" type="INT" jt="4" />
+			<column name="google_make_model_id" type="INT" jt="4" />
+			<column name="google_micromoment_id" type="INT" jt="4" />
+			<column name="dealership_flag" type="BOOLEAN" jt="16" />
+			<column name="google_indexed_queries" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/fact_google_queryvolume_daily'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.fact_google_queryvolume_daily')]]></options>
+		</table>
+		<table name="fact_google_queryvolume_daily_20240108" spec="" >
+			<column name="id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="date" type="VARCHAR" length="10" jt="12" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="date_day" type="DATE" jt="91" />
+			<column name="google_dma_id" type="INT" jt="4" />
+			<column name="google_make_model_id" type="INT" jt="4" />
+			<column name="google_micromoment_id" type="INT" jt="4" />
+			<column name="dealership_flag" type="BOOLEAN" jt="16" />
+			<column name="google_indexed_queries" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/fact_google_queryvolume_daily_20240108'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.fact_google_queryvolume_daily_20240108')]]></options>
+		</table>
+		<table name="fact_srs_salesvolume_monthly" spec="" >
+			<column name="id" type="BIGINT" jt="-5" >
+				<identity><![CDATA[GENERATED  BY DEFAULT AS IDENTITY  (START WITH 1 INCREMENT BY 1)]]></identity>
+			</column>
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="srs_adi_id" type="INT" jt="4" />
+			<column name="srs_make_model_segment_id" type="INT" jt="4" />
+			<column name="srs_sales_volume" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+LOCATION 's3://hma-delta-spark-warehouse-prod/hma_gma_ocm_prm_datamart/fact_srs_salesvolume_monthly'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '6',
+  'upgraded_to' = 'ius_unity_prod.hma_gma_ocm_prm_datamart.fact_srs_salesvolume_monthly')]]></options>
+		</table>
+		<table name="fact_srs_salesvolume_monthly_20240823" spec="" >
+			<column name="id" type="BIGINT" jt="-5" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="srs_adi_id" type="INT" jt="4" />
+			<column name="srs_make_model_segment_id" type="INT" jt="4" />
+			<column name="srs_sales_volume" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2')]]></options>
+		</table>
+		<table name="fact_srs_salesvolume_monthly_20240911" spec="" >
+			<column name="id" type="BIGINT" jt="-5" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="srs_adi_id" type="INT" jt="4" />
+			<column name="srs_make_model_segment_id" type="INT" jt="4" />
+			<column name="srs_sales_volume" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2')]]></options>
+		</table>
+		<table name="fact_srs_salesvolume_monthly_20240911_2" spec="" >
+			<column name="id" type="BIGINT" jt="-5" />
+			<column name="date_month" type="DATE" jt="91" />
+			<column name="year" type="VARCHAR" length="4" jt="12" />
+			<column name="month" type="VARCHAR" length="3" jt="12" />
+			<column name="month_year" type="VARCHAR" length="6" jt="12" />
+			<column name="year_month" type="VARCHAR" length="6" jt="12" />
+			<column name="srs_adi_id" type="INT" jt="4" />
+			<column name="srs_make_model_segment_id" type="INT" jt="4" />
+			<column name="srs_sales_volume" type="DOUBLE" jt="8" />
+			<column name="file_name" type="VARCHAR" length="255" jt="12" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="VARCHAR" length="64" jt="12" />
+			<options><![CDATA[USING delta
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2')]]></options>
+		</table>
+	</schema>
+	<layout name="Dimension_IWA_MakeModelSegments" id="Layout-22f2" show_relation="columns" >
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="3986C1" x="48" y="48" />
+		<browser id="Browse-6d4" name="dimension_iwa_makemodelsegments" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_iwa_makemodelsegments" x="20" y="20" width="899" height="889" >
+				<orderby on="iwa_make_model_detail" />
+			</browse_table>
+		</browser>
+		<browser id="Browse-efd" name="dimension_iwa_makemodelsegments_001" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_iwa_makemodelsegments" x="20" y="20" width="462" height="452" >
+				<filter on="iwa_make_model_detail" string=":c contains &#039;town&#039;" />
+			</browse_table>
+		</browser>
+		<browser id="Browse-e3e" name="dimension_iwa_makemodelsegments_002" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_iwa_makemodelsegments" x="20" y="20" width="447" height="437" >
+				<filter on="iwa_make_model_detail" string=":c contains &#039;town&#039;" />
+			</browse_table>
+		</browser>
+	</layout>
+	<layout name="Main Layout" id="Layout-1337" confirmed="y" show_relation="columns" >
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions" color="BED3F4" x="656" y="224" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions_20240108" color="BEBEF4" x="1600" y="1328" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments" color="BEBEF4" x="1264" y="1328" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments_20240108" color="BEBEF4" x="1600" y="1664" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments" color="BEBEF4" x="1296" y="1104" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments_20240108" color="BEBEF4" x="1600" y="1104" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" color="F4DDBE" x="608" y="672" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" color="F4DDBE" x="864" y="1088" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" color="F4DDBE" x="864" y="672" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="F4DDBE" x="560" y="1088" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments_20240823" color="F4DDBE" x="864" y="1568" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi" color="F4DDBE" x="352" y="672" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" color="F4DDBE" x="48" y="960" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily" color="BED3F4" x="944" y="224" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily_20240108" color="C7F4BE" x="2224" y="560" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly" color="C7F4BE" x="1264" y="224" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240823" color="C7F4BE" x="1552" y="224" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911" color="C7F4BE" x="1888" y="224" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911_2" color="C7F4BE" x="2224" y="224" />
+		<callout x="656" y="80" pointer="Round" >
+			<comment><![CDATA[This is a layout. A table may show in multiple layouts.
+Create further layouts by clicking the '+' tab. 
+Double-click any table header to edit.
+The layouts and the schema structure will be saved to the design model file.]]></comment>
+		</callout>
+		<group name="dimension_google_dmaregions" color="ECF0F7" >
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily" />
+		</group>
+		<group name="fact_srs_salesvolume_monthly" color="EEF7EC" >
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240823" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911_2" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily_20240108" />
+		</group>
+		<group name="dimension_srs_adi" color="F7F2EC" >
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments_20240823" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" />
+		</group>
+		<group name="dimension_google_micromoments" color="ECECF7" >
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments_20240108" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions_20240108" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments" />
+			<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments_20240108" />
+		</group>
+	</layout>
+	<layout name="~Layout with Sample Tools" id="Layout-1d92" confirmed="y" show_column_type="y" show_relation="columns" >
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions" color="BED3F4" x="768" y="48" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions_20240108" color="BEBEF4" x="1792" y="1152" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments" color="BEBEF4" x="1456" y="1152" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_makemodelsegments_20240108" color="BEBEF4" x="1792" y="1488" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments" color="BEBEF4" x="1456" y="928" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_micromoments_20240108" color="BEBEF4" x="1792" y="928" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adi" color="F4DDBE" x="720" y="496" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_adiregions" color="F4DDBE" x="1056" y="912" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_dma" color="F4DDBE" x="1056" y="496" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments" color="F4DDBE" x="688" y="912" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_iwa_makemodelsegments_20240823" color="F4DDBE" x="1056" y="1392" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_adi" color="F4DDBE" x="384" y="496" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_srs_makemodelsegments" color="F4DDBE" x="48" y="784" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily" color="BED3F4" x="1104" y="48" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_google_queryvolume_daily_20240108" color="C7F4BE" x="2448" y="384" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly" color="C7F4BE" x="1456" y="48" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240823" color="C7F4BE" x="1776" y="48" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911" color="C7F4BE" x="2112" y="48" />
+		<entity schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="fact_srs_salesvolume_monthly_20240911_2" color="C7F4BE" x="2448" y="48" />
+		<script name="SQL Editor" id="Editor-2447" language="SQL" >
+			<string><![CDATA[SELECT
+	google_id, google_dma_name, google_dma_id, google_dma_region, iwa_adi_id, framework_update_ts, framework_source, 
+	framework_checksum
+FROM
+	ius_unity_prod.hma_gma_ocm_prm_datamart.dimension_google_dmaregions s;]]></string>
+		</script>
+		<browser id="Browse-1b03" name="Relational Data Editor" confirm_updates="y" >
+			<browse_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" entity="dimension_google_dmaregions" x="20" y="20" width="270" height="-60" />
+		</browser>
+		<query id="Query-1b1f" name="Query Builder" >
+			<query_table schema="ius_unity_prod.hma_gma_ocm_prm_datamart" name="dimension_google_dmaregions" alias="dgd" x="48" y="48" >
+				<column name="google_id" />
+				<column name="google_dma_name" />
+				<column name="google_dma_id" />
+				<column name="google_dma_region" />
+				<column name="iwa_adi_id" />
+				<column name="framework_update_ts" />
+				<column name="framework_source" />
+				<column name="framework_checksum" />
+			</query_table>
+		</query>
+	</layout>
+</project>

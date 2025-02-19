@@ -1,0 +1,2535 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Databricks" database="Databricks" id="Databricks-504" >
+	<schema name="hma_adobe_analytics" catalogname="hive_metastore" >
+		<table name="data_feed" spec="" >
+			<comment><![CDATA[raw adobe feed table from hma_global_prod suite]]></comment>
+			<column name="accept_language" type="STRING" jt="12" />
+			<column name="adclassificationcreative" type="STRING" jt="12" />
+			<column name="adload" type="STRING" jt="12" />
+			<column name="aemassetid" type="STRING" jt="12" />
+			<column name="aemassetsource" type="STRING" jt="12" />
+			<column name="aemclickedassetid" type="STRING" jt="12" />
+			<column name="browser" type="STRING" jt="12" />
+			<column name="browser_height" type="STRING" jt="12" />
+			<column name="browser_width" type="STRING" jt="12" />
+			<column name="c_color" type="STRING" jt="12" />
+			<column name="campaign" type="STRING" jt="12" />
+			<column name="carrier" type="STRING" jt="12" />
+			<column name="channel" type="STRING" jt="12" />
+			<column name="click_action" type="STRING" jt="12" />
+			<column name="click_action_type" type="STRING" jt="12" />
+			<column name="click_context" type="STRING" jt="12" />
+			<column name="click_context_type" type="STRING" jt="12" />
+			<column name="click_sourceid" type="STRING" jt="12" />
+			<column name="click_tag" type="STRING" jt="12" />
+			<column name="clickmaplink" type="STRING" jt="12" />
+			<column name="clickmaplinkbyregion" type="STRING" jt="12" />
+			<column name="clickmappage" type="STRING" jt="12" />
+			<column name="clickmapregion" type="STRING" jt="12" />
+			<column name="code_ver" type="STRING" jt="12" />
+			<column name="color" type="STRING" jt="12" />
+			<column name="connection_type" type="STRING" jt="12" />
+			<column name="cookies" type="STRING" jt="12" />
+			<column name="country" type="STRING" jt="12" />
+			<column name="ct_connect_type" type="STRING" jt="12" />
+			<column name="curr_factor" type="STRING" jt="12" />
+			<column name="curr_rate" type="STRING" jt="12" />
+			<column name="currency" type="STRING" jt="12" />
+			<column name="cust_hit_time_gmt" type="STRING" jt="12" />
+			<column name="cust_visid" type="STRING" jt="12" />
+			<column name="daily_visitor" type="STRING" jt="12" />
+			<column name="date_time" type="STRING" jt="12" />
+			<column name="domain" type="STRING" jt="12" />
+			<column name="duplicate_events" type="STRING" jt="12" />
+			<column name="duplicate_purchase" type="STRING" jt="12" />
+			<column name="duplicated_from" type="STRING" jt="12" />
+			<column name="ef_id" type="STRING" jt="12" />
+			<column name="evar1" type="STRING" jt="12" />
+			<column name="evar2" type="STRING" jt="12" />
+			<column name="evar3" type="STRING" jt="12" />
+			<column name="evar4" type="STRING" jt="12" />
+			<column name="evar5" type="STRING" jt="12" />
+			<column name="evar6" type="STRING" jt="12" />
+			<column name="evar7" type="STRING" jt="12" />
+			<column name="evar8" type="STRING" jt="12" />
+			<column name="evar9" type="STRING" jt="12" />
+			<column name="evar10" type="STRING" jt="12" />
+			<column name="evar11" type="STRING" jt="12" />
+			<column name="evar12" type="STRING" jt="12" />
+			<column name="evar13" type="STRING" jt="12" />
+			<column name="evar14" type="STRING" jt="12" />
+			<column name="evar15" type="STRING" jt="12" />
+			<column name="evar16" type="STRING" jt="12" />
+			<column name="evar17" type="STRING" jt="12" />
+			<column name="evar18" type="STRING" jt="12" />
+			<column name="evar19" type="STRING" jt="12" />
+			<column name="evar20" type="STRING" jt="12" />
+			<column name="evar21" type="STRING" jt="12" />
+			<column name="evar22" type="STRING" jt="12" />
+			<column name="evar23" type="STRING" jt="12" />
+			<column name="evar24" type="STRING" jt="12" />
+			<column name="evar25" type="STRING" jt="12" />
+			<column name="evar26" type="STRING" jt="12" />
+			<column name="evar27" type="STRING" jt="12" />
+			<column name="evar28" type="STRING" jt="12" />
+			<column name="evar29" type="STRING" jt="12" />
+			<column name="evar30" type="STRING" jt="12" />
+			<column name="evar31" type="STRING" jt="12" />
+			<column name="evar32" type="STRING" jt="12" />
+			<column name="evar33" type="STRING" jt="12" />
+			<column name="evar34" type="STRING" jt="12" />
+			<column name="evar35" type="STRING" jt="12" />
+			<column name="evar36" type="STRING" jt="12" />
+			<column name="evar37" type="STRING" jt="12" />
+			<column name="evar38" type="STRING" jt="12" />
+			<column name="evar39" type="STRING" jt="12" />
+			<column name="evar40" type="STRING" jt="12" />
+			<column name="evar41" type="STRING" jt="12" />
+			<column name="evar42" type="STRING" jt="12" />
+			<column name="evar43" type="STRING" jt="12" />
+			<column name="evar44" type="STRING" jt="12" />
+			<column name="evar45" type="STRING" jt="12" />
+			<column name="evar46" type="STRING" jt="12" />
+			<column name="evar47" type="STRING" jt="12" />
+			<column name="evar48" type="STRING" jt="12" />
+			<column name="evar49" type="STRING" jt="12" />
+			<column name="evar50" type="STRING" jt="12" />
+			<column name="evar51" type="STRING" jt="12" />
+			<column name="evar52" type="STRING" jt="12" />
+			<column name="evar53" type="STRING" jt="12" />
+			<column name="evar54" type="STRING" jt="12" />
+			<column name="evar55" type="STRING" jt="12" />
+			<column name="evar56" type="STRING" jt="12" />
+			<column name="evar57" type="STRING" jt="12" />
+			<column name="evar58" type="STRING" jt="12" />
+			<column name="evar59" type="STRING" jt="12" />
+			<column name="evar60" type="STRING" jt="12" />
+			<column name="evar61" type="STRING" jt="12" />
+			<column name="evar62" type="STRING" jt="12" />
+			<column name="evar63" type="STRING" jt="12" />
+			<column name="evar64" type="STRING" jt="12" />
+			<column name="evar65" type="STRING" jt="12" />
+			<column name="evar66" type="STRING" jt="12" />
+			<column name="evar67" type="STRING" jt="12" />
+			<column name="evar68" type="STRING" jt="12" />
+			<column name="evar69" type="STRING" jt="12" />
+			<column name="evar70" type="STRING" jt="12" />
+			<column name="evar71" type="STRING" jt="12" />
+			<column name="evar72" type="STRING" jt="12" />
+			<column name="evar73" type="STRING" jt="12" />
+			<column name="evar74" type="STRING" jt="12" />
+			<column name="evar75" type="STRING" jt="12" />
+			<column name="evar76" type="STRING" jt="12" />
+			<column name="evar77" type="STRING" jt="12" />
+			<column name="evar78" type="STRING" jt="12" />
+			<column name="evar79" type="STRING" jt="12" />
+			<column name="evar80" type="STRING" jt="12" />
+			<column name="evar81" type="STRING" jt="12" />
+			<column name="evar82" type="STRING" jt="12" />
+			<column name="evar83" type="STRING" jt="12" />
+			<column name="evar84" type="STRING" jt="12" />
+			<column name="evar85" type="STRING" jt="12" />
+			<column name="evar86" type="STRING" jt="12" />
+			<column name="evar87" type="STRING" jt="12" />
+			<column name="evar88" type="STRING" jt="12" />
+			<column name="evar89" type="STRING" jt="12" />
+			<column name="evar90" type="STRING" jt="12" />
+			<column name="evar91" type="STRING" jt="12" />
+			<column name="evar92" type="STRING" jt="12" />
+			<column name="evar93" type="STRING" jt="12" />
+			<column name="evar94" type="STRING" jt="12" />
+			<column name="evar95" type="STRING" jt="12" />
+			<column name="evar96" type="STRING" jt="12" />
+			<column name="evar97" type="STRING" jt="12" />
+			<column name="evar98" type="STRING" jt="12" />
+			<column name="evar99" type="STRING" jt="12" />
+			<column name="evar100" type="STRING" jt="12" />
+			<column name="evar101" type="STRING" jt="12" />
+			<column name="evar102" type="STRING" jt="12" />
+			<column name="evar103" type="STRING" jt="12" />
+			<column name="evar104" type="STRING" jt="12" />
+			<column name="evar105" type="STRING" jt="12" />
+			<column name="evar106" type="STRING" jt="12" />
+			<column name="evar107" type="STRING" jt="12" />
+			<column name="evar108" type="STRING" jt="12" />
+			<column name="evar109" type="STRING" jt="12" />
+			<column name="evar110" type="STRING" jt="12" />
+			<column name="evar111" type="STRING" jt="12" />
+			<column name="evar112" type="STRING" jt="12" />
+			<column name="evar113" type="STRING" jt="12" />
+			<column name="evar114" type="STRING" jt="12" />
+			<column name="evar115" type="STRING" jt="12" />
+			<column name="evar116" type="STRING" jt="12" />
+			<column name="evar117" type="STRING" jt="12" />
+			<column name="evar118" type="STRING" jt="12" />
+			<column name="evar119" type="STRING" jt="12" />
+			<column name="evar120" type="STRING" jt="12" />
+			<column name="evar121" type="STRING" jt="12" />
+			<column name="evar122" type="STRING" jt="12" />
+			<column name="evar123" type="STRING" jt="12" />
+			<column name="evar124" type="STRING" jt="12" />
+			<column name="evar125" type="STRING" jt="12" />
+			<column name="evar126" type="STRING" jt="12" />
+			<column name="evar127" type="STRING" jt="12" />
+			<column name="evar128" type="STRING" jt="12" />
+			<column name="evar129" type="STRING" jt="12" />
+			<column name="evar130" type="STRING" jt="12" />
+			<column name="evar131" type="STRING" jt="12" />
+			<column name="evar132" type="STRING" jt="12" />
+			<column name="evar133" type="STRING" jt="12" />
+			<column name="evar134" type="STRING" jt="12" />
+			<column name="evar135" type="STRING" jt="12" />
+			<column name="evar136" type="STRING" jt="12" />
+			<column name="evar137" type="STRING" jt="12" />
+			<column name="evar138" type="STRING" jt="12" />
+			<column name="evar139" type="STRING" jt="12" />
+			<column name="evar140" type="STRING" jt="12" />
+			<column name="evar141" type="STRING" jt="12" />
+			<column name="evar142" type="STRING" jt="12" />
+			<column name="evar143" type="STRING" jt="12" />
+			<column name="evar144" type="STRING" jt="12" />
+			<column name="evar145" type="STRING" jt="12" />
+			<column name="evar146" type="STRING" jt="12" />
+			<column name="evar147" type="STRING" jt="12" />
+			<column name="evar148" type="STRING" jt="12" />
+			<column name="evar149" type="STRING" jt="12" />
+			<column name="evar150" type="STRING" jt="12" />
+			<column name="evar151" type="STRING" jt="12" />
+			<column name="evar152" type="STRING" jt="12" />
+			<column name="evar153" type="STRING" jt="12" />
+			<column name="evar154" type="STRING" jt="12" />
+			<column name="evar155" type="STRING" jt="12" />
+			<column name="evar156" type="STRING" jt="12" />
+			<column name="evar157" type="STRING" jt="12" />
+			<column name="evar158" type="STRING" jt="12" />
+			<column name="evar159" type="STRING" jt="12" />
+			<column name="evar160" type="STRING" jt="12" />
+			<column name="evar161" type="STRING" jt="12" />
+			<column name="evar162" type="STRING" jt="12" />
+			<column name="evar163" type="STRING" jt="12" />
+			<column name="evar164" type="STRING" jt="12" />
+			<column name="evar165" type="STRING" jt="12" />
+			<column name="evar166" type="STRING" jt="12" />
+			<column name="evar167" type="STRING" jt="12" />
+			<column name="evar168" type="STRING" jt="12" />
+			<column name="evar169" type="STRING" jt="12" />
+			<column name="evar170" type="STRING" jt="12" />
+			<column name="evar171" type="STRING" jt="12" />
+			<column name="evar172" type="STRING" jt="12" />
+			<column name="evar173" type="STRING" jt="12" />
+			<column name="evar174" type="STRING" jt="12" />
+			<column name="evar175" type="STRING" jt="12" />
+			<column name="evar176" type="STRING" jt="12" />
+			<column name="evar177" type="STRING" jt="12" />
+			<column name="evar178" type="STRING" jt="12" />
+			<column name="evar179" type="STRING" jt="12" />
+			<column name="evar180" type="STRING" jt="12" />
+			<column name="evar181" type="STRING" jt="12" />
+			<column name="evar182" type="STRING" jt="12" />
+			<column name="evar183" type="STRING" jt="12" />
+			<column name="evar184" type="STRING" jt="12" />
+			<column name="evar185" type="STRING" jt="12" />
+			<column name="evar186" type="STRING" jt="12" />
+			<column name="evar187" type="STRING" jt="12" />
+			<column name="evar188" type="STRING" jt="12" />
+			<column name="evar189" type="STRING" jt="12" />
+			<column name="evar190" type="STRING" jt="12" />
+			<column name="evar191" type="STRING" jt="12" />
+			<column name="evar192" type="STRING" jt="12" />
+			<column name="evar193" type="STRING" jt="12" />
+			<column name="evar194" type="STRING" jt="12" />
+			<column name="evar195" type="STRING" jt="12" />
+			<column name="evar196" type="STRING" jt="12" />
+			<column name="evar197" type="STRING" jt="12" />
+			<column name="evar198" type="STRING" jt="12" />
+			<column name="evar199" type="STRING" jt="12" />
+			<column name="evar200" type="STRING" jt="12" />
+			<column name="evar201" type="STRING" jt="12" />
+			<column name="evar202" type="STRING" jt="12" />
+			<column name="evar203" type="STRING" jt="12" />
+			<column name="evar204" type="STRING" jt="12" />
+			<column name="evar205" type="STRING" jt="12" />
+			<column name="evar206" type="STRING" jt="12" />
+			<column name="evar207" type="STRING" jt="12" />
+			<column name="evar208" type="STRING" jt="12" />
+			<column name="evar209" type="STRING" jt="12" />
+			<column name="evar210" type="STRING" jt="12" />
+			<column name="evar211" type="STRING" jt="12" />
+			<column name="evar212" type="STRING" jt="12" />
+			<column name="evar213" type="STRING" jt="12" />
+			<column name="evar214" type="STRING" jt="12" />
+			<column name="evar215" type="STRING" jt="12" />
+			<column name="evar216" type="STRING" jt="12" />
+			<column name="evar217" type="STRING" jt="12" />
+			<column name="evar218" type="STRING" jt="12" />
+			<column name="evar219" type="STRING" jt="12" />
+			<column name="evar220" type="STRING" jt="12" />
+			<column name="evar221" type="STRING" jt="12" />
+			<column name="evar222" type="STRING" jt="12" />
+			<column name="evar223" type="STRING" jt="12" />
+			<column name="evar224" type="STRING" jt="12" />
+			<column name="evar225" type="STRING" jt="12" />
+			<column name="evar226" type="STRING" jt="12" />
+			<column name="evar227" type="STRING" jt="12" />
+			<column name="evar228" type="STRING" jt="12" />
+			<column name="evar229" type="STRING" jt="12" />
+			<column name="evar230" type="STRING" jt="12" />
+			<column name="evar231" type="STRING" jt="12" />
+			<column name="evar232" type="STRING" jt="12" />
+			<column name="evar233" type="STRING" jt="12" />
+			<column name="evar234" type="STRING" jt="12" />
+			<column name="evar235" type="STRING" jt="12" />
+			<column name="evar236" type="STRING" jt="12" />
+			<column name="evar237" type="STRING" jt="12" />
+			<column name="evar238" type="STRING" jt="12" />
+			<column name="evar239" type="STRING" jt="12" />
+			<column name="evar240" type="STRING" jt="12" />
+			<column name="evar241" type="STRING" jt="12" />
+			<column name="evar242" type="STRING" jt="12" />
+			<column name="evar243" type="STRING" jt="12" />
+			<column name="evar244" type="STRING" jt="12" />
+			<column name="evar245" type="STRING" jt="12" />
+			<column name="evar246" type="STRING" jt="12" />
+			<column name="evar247" type="STRING" jt="12" />
+			<column name="evar248" type="STRING" jt="12" />
+			<column name="evar249" type="STRING" jt="12" />
+			<column name="evar250" type="STRING" jt="12" />
+			<column name="event_list" type="STRING" jt="12" />
+			<column name="exclude_hit" type="STRING" jt="12" />
+			<column name="first_hit_page_url" type="STRING" jt="12" />
+			<column name="first_hit_pagename" type="STRING" jt="12" />
+			<column name="first_hit_ref_domain" type="STRING" jt="12" />
+			<column name="first_hit_ref_type" type="STRING" jt="12" />
+			<column name="first_hit_referrer" type="STRING" jt="12" />
+			<column name="first_hit_time_gmt" type="STRING" jt="12" />
+			<column name="geo_city" type="STRING" jt="12" />
+			<column name="geo_country" type="STRING" jt="12" />
+			<column name="geo_dma" type="STRING" jt="12" />
+			<column name="geo_region" type="STRING" jt="12" />
+			<column name="geo_zip" type="STRING" jt="12" />
+			<column name="hier1" type="STRING" jt="12" />
+			<column name="hier2" type="STRING" jt="12" />
+			<column name="hier3" type="STRING" jt="12" />
+			<column name="hier4" type="STRING" jt="12" />
+			<column name="hier5" type="STRING" jt="12" />
+			<column name="hit_source" type="STRING" jt="12" />
+			<column name="hit_time_gmt" type="STRING" jt="12" />
+			<column name="hitid_high" type="STRING" jt="12" />
+			<column name="hitid_low" type="STRING" jt="12" />
+			<column name="homepage" type="STRING" jt="12" />
+			<column name="hourly_visitor" type="STRING" jt="12" />
+			<column name="ip" type="STRING" jt="12" />
+			<column name="ip2" type="STRING" jt="12" />
+			<column name="j_jscript" type="STRING" jt="12" />
+			<column name="java_enabled" type="STRING" jt="12" />
+			<column name="javascript" type="STRING" jt="12" />
+			<column name="language" type="STRING" jt="12" />
+			<column name="last_hit_time_gmt" type="STRING" jt="12" />
+			<column name="last_purchase_num" type="STRING" jt="12" />
+			<column name="last_purchase_time_gmt" type="STRING" jt="12" />
+			<column name="latlon1" type="STRING" jt="12" />
+			<column name="latlon23" type="STRING" jt="12" />
+			<column name="latlon45" type="STRING" jt="12" />
+			<column name="mc_audiences" type="STRING" jt="12" />
+			<column name="mcvisid" type="STRING" jt="12" />
+			<column name="mobile_id" type="STRING" jt="12" />
+			<column name="mobileacquisitionclicks" type="STRING" jt="12" />
+			<column name="mobileaction" type="STRING" jt="12" />
+			<column name="mobileactioninapptime" type="STRING" jt="12" />
+			<column name="mobileactiontotaltime" type="STRING" jt="12" />
+			<column name="mobileappid" type="STRING" jt="12" />
+			<column name="mobileappperformanceaffectedusers" type="STRING" jt="12" />
+			<column name="mobileappperformanceappid" type="MAP" jt="4999544" >
+				<column name="app-perf-app-name" type="STRING" jt="12" />
+				<column name="app-perf-platform" type="STRING" jt="12" />
+			</column>
+			<column name="mobileappperformancecrashes" type="STRING" jt="12" />
+			<column name="mobileappperformancecrashid" type="MAP" jt="4999544" >
+				<column name="app-perf-crash-name" type="STRING" jt="12" />
+			</column>
+			<column name="mobileappperformanceloads" type="STRING" jt="12" />
+			<column name="mobileappstoreavgrating" type="STRING" jt="12" />
+			<column name="mobileappstoredownloads" type="STRING" jt="12" />
+			<column name="mobileappstoreinapprevenue" type="STRING" jt="12" />
+			<column name="mobileappstoreinapproyalties" type="STRING" jt="12" />
+			<column name="mobileappstoreobjectid" type="MAP" jt="4999544" >
+				<column name="app-store-user" type="STRING" jt="12" />
+				<column name="application-name" type="STRING" jt="12" />
+				<column name="application-version" type="STRING" jt="12" />
+				<column name="appstore-name" type="STRING" jt="12" />
+				<column name="category-name" type="STRING" jt="12" />
+				<column name="country-name" type="STRING" jt="12" />
+				<column name="device-manufacturer" type="STRING" jt="12" />
+				<column name="device-name" type="STRING" jt="12" />
+				<column name="in-app-name" type="STRING" jt="12" />
+				<column name="platform-name-version" type="STRING" jt="12" />
+				<column name="rank-category-type" type="STRING" jt="12" />
+				<column name="region-name" type="STRING" jt="12" />
+				<column name="review-comment" type="STRING" jt="12" />
+				<column name="review-title" type="STRING" jt="12" />
+			</column>
+			<column name="mobileappstoreoneoffrevenue" type="STRING" jt="12" />
+			<column name="mobileappstoreoneoffroyalties" type="STRING" jt="12" />
+			<column name="mobileappstorepurchases" type="STRING" jt="12" />
+			<column name="mobileappstorerank" type="STRING" jt="12" />
+			<column name="mobileappstorerankdivisor" type="STRING" jt="12" />
+			<column name="mobileappstorerating" type="STRING" jt="12" />
+			<column name="mobileappstoreratingdivisor" type="STRING" jt="12" />
+			<column name="mobileavgprevsessionlength" type="STRING" jt="12" />
+			<column name="mobilebeaconmajor" type="STRING" jt="12" />
+			<column name="mobilebeaconminor" type="STRING" jt="12" />
+			<column name="mobilebeaconproximity" type="STRING" jt="12" />
+			<column name="mobilebeaconuuid" type="STRING" jt="12" />
+			<column name="mobilecampaigncontent" type="STRING" jt="12" />
+			<column name="mobilecampaignmedium" type="STRING" jt="12" />
+			<column name="mobilecampaignname" type="STRING" jt="12" />
+			<column name="mobilecampaignsource" type="STRING" jt="12" />
+			<column name="mobilecampaignterm" type="STRING" jt="12" />
+			<column name="mobilecrashes" type="STRING" jt="12" />
+			<column name="mobilecrashrate" type="STRING" jt="12" />
+			<column name="mobiledailyengagedusers" type="STRING" jt="12" />
+			<column name="mobiledayofweek" type="STRING" jt="12" />
+			<column name="mobiledayssincefirstuse" type="STRING" jt="12" />
+			<column name="mobiledayssincelastupgrade" type="STRING" jt="12" />
+			<column name="mobiledayssincelastuse" type="STRING" jt="12" />
+			<column name="mobiledeeplinkid" type="MAP" jt="4999544" >
+				<column name="name" type="STRING" jt="12" />
+			</column>
+			<column name="mobiledevice" type="STRING" jt="12" />
+			<column name="mobilehourofday" type="STRING" jt="12" />
+			<column name="mobileinstalldate" type="STRING" jt="12" />
+			<column name="mobileinstalls" type="STRING" jt="12" />
+			<column name="mobilelaunches" type="STRING" jt="12" />
+			<column name="mobilelaunchessincelastupgrade" type="STRING" jt="12" />
+			<column name="mobilelaunchnumber" type="STRING" jt="12" />
+			<column name="mobileltv" type="STRING" jt="12" />
+			<column name="mobileltvtotal" type="STRING" jt="12" />
+			<column name="mobilemessagebuttonname" type="STRING" jt="12" />
+			<column name="mobilemessageclicks" type="STRING" jt="12" />
+			<column name="mobilemessageid" type="MAP" jt="4999544" >
+				<column name="dest" type="STRING" jt="12" />
+				<column name="name" type="STRING" jt="12" />
+				<column name="type" type="STRING" jt="12" />
+			</column>
+			<column name="mobilemessageimpressions" type="STRING" jt="12" />
+			<column name="mobilemessageonline" type="STRING" jt="12" />
+			<column name="mobilemessagepushoptin" type="STRING" jt="12" />
+			<column name="mobilemessagepushpayloadid" type="MAP" jt="4999544" >
+				<column name="name" type="STRING" jt="12" />
+			</column>
+			<column name="mobilemessageviews" type="STRING" jt="12" />
+			<column name="mobilemonthlyengagedusers" type="STRING" jt="12" />
+			<column name="mobileosenvironment" type="STRING" jt="12" />
+			<column name="mobileosversion" type="STRING" jt="12" />
+			<column name="mobileplaceaccuracy" type="STRING" jt="12" />
+			<column name="mobileplacecategory" type="STRING" jt="12" />
+			<column name="mobileplacedwelltime" type="STRING" jt="12" />
+			<column name="mobileplaceentry" type="STRING" jt="12" />
+			<column name="mobileplaceexit" type="STRING" jt="12" />
+			<column name="mobileplaceid" type="STRING" jt="12" />
+			<column name="mobileprevsessionlength" type="STRING" jt="12" />
+			<column name="mobilepushoptin" type="STRING" jt="12" />
+			<column name="mobilepushpayloadid" type="STRING" jt="12" />
+			<column name="mobilerelaunchcampaigncontent" type="STRING" jt="12" />
+			<column name="mobilerelaunchcampaignmedium" type="STRING" jt="12" />
+			<column name="mobilerelaunchcampaignsource" type="STRING" jt="12" />
+			<column name="mobilerelaunchcampaignterm" type="STRING" jt="12" />
+			<column name="mobilerelaunchcampaigntrackingcode" type="MAP" jt="4999544" >
+				<column name="name" type="STRING" jt="12" />
+			</column>
+			<column name="mobileresolution" type="STRING" jt="12" />
+			<column name="mobileupgrades" type="STRING" jt="12" />
+			<column name="monthly_visitor" type="STRING" jt="12" />
+			<column name="mvvar1" type="STRING" jt="12" />
+			<column name="mvvar2" type="STRING" jt="12" />
+			<column name="mvvar3" type="STRING" jt="12" />
+			<column name="namespace" type="STRING" jt="12" />
+			<column name="new_visit" type="STRING" jt="12" />
+			<column name="os" type="STRING" jt="12" />
+			<column name="p_plugins" type="STRING" jt="12" />
+			<column name="page_event" type="STRING" jt="12" />
+			<column name="page_event_var1" type="STRING" jt="12" />
+			<column name="page_event_var2" type="STRING" jt="12" />
+			<column name="page_event_var3" type="STRING" jt="12" />
+			<column name="page_type" type="STRING" jt="12" />
+			<column name="page_url" type="STRING" jt="12" />
+			<column name="pagename" type="STRING" jt="12" />
+			<column name="paid_search" type="STRING" jt="12" />
+			<column name="partner_plugins" type="STRING" jt="12" />
+			<column name="persistent_cookie" type="STRING" jt="12" />
+			<column name="plugins" type="STRING" jt="12" />
+			<column name="pointofinterest" type="STRING" jt="12" />
+			<column name="pointofinterestdistance" type="STRING" jt="12" />
+			<column name="post_adclassificationcreative" type="STRING" jt="12" />
+			<column name="post_adload" type="STRING" jt="12" />
+			<column name="post_browser_height" type="STRING" jt="12" />
+			<column name="post_browser_width" type="STRING" jt="12" />
+			<column name="post_campaign" type="STRING" jt="12" />
+			<column name="post_channel" type="STRING" jt="12" />
+			<column name="post_clickmaplink" type="STRING" jt="12" />
+			<column name="post_clickmaplinkbyregion" type="STRING" jt="12" />
+			<column name="post_clickmappage" type="STRING" jt="12" />
+			<column name="post_clickmapregion" type="STRING" jt="12" />
+			<column name="post_cookies" type="STRING" jt="12" />
+			<column name="post_currency" type="STRING" jt="12" />
+			<column name="post_cust_hit_time_gmt" type="STRING" jt="12" />
+			<column name="post_cust_visid" type="STRING" jt="12" />
+			<column name="post_ef_id" type="STRING" jt="12" />
+			<column name="post_evar1" type="STRING" jt="12" />
+			<column name="post_evar2" type="STRING" jt="12" />
+			<column name="post_evar3" type="STRING" jt="12" />
+			<column name="post_evar4" type="STRING" jt="12" />
+			<column name="post_evar5" type="STRING" jt="12" />
+			<column name="post_evar6" type="STRING" jt="12" />
+			<column name="post_evar7" type="STRING" jt="12" />
+			<column name="post_evar8" type="STRING" jt="12" />
+			<column name="post_evar9" type="STRING" jt="12" />
+			<column name="post_evar10" type="STRING" jt="12" />
+			<column name="post_evar11" type="STRING" jt="12" />
+			<column name="post_evar12" type="STRING" jt="12" />
+			<column name="post_evar13" type="STRING" jt="12" />
+			<column name="post_evar14" type="STRING" jt="12" />
+			<column name="post_evar15" type="STRING" jt="12" />
+			<column name="post_evar16" type="STRING" jt="12" />
+			<column name="post_evar17" type="STRING" jt="12" />
+			<column name="post_evar18" type="STRING" jt="12" />
+			<column name="post_evar19" type="STRING" jt="12" />
+			<column name="post_evar20" type="STRING" jt="12" />
+			<column name="post_evar21" type="STRING" jt="12" />
+			<column name="post_evar22" type="STRING" jt="12" />
+			<column name="post_evar23" type="STRING" jt="12" />
+			<column name="post_evar24" type="STRING" jt="12" />
+			<column name="post_evar25" type="STRING" jt="12" />
+			<column name="post_evar26" type="STRING" jt="12" />
+			<column name="post_evar27" type="STRING" jt="12" />
+			<column name="post_evar28" type="STRING" jt="12" />
+			<column name="post_evar29" type="STRING" jt="12" />
+			<column name="post_evar30" type="STRING" jt="12" />
+			<column name="post_evar31" type="STRING" jt="12" />
+			<column name="post_evar32" type="STRING" jt="12" />
+			<column name="post_evar33" type="STRING" jt="12" />
+			<column name="post_evar34" type="STRING" jt="12" />
+			<column name="post_evar35" type="STRING" jt="12" />
+			<column name="post_evar36" type="STRING" jt="12" />
+			<column name="post_evar37" type="STRING" jt="12" />
+			<column name="post_evar38" type="STRING" jt="12" />
+			<column name="post_evar39" type="STRING" jt="12" />
+			<column name="post_evar40" type="STRING" jt="12" />
+			<column name="post_evar41" type="STRING" jt="12" />
+			<column name="post_evar42" type="STRING" jt="12" />
+			<column name="post_evar43" type="STRING" jt="12" />
+			<column name="post_evar44" type="STRING" jt="12" />
+			<column name="post_evar45" type="STRING" jt="12" />
+			<column name="post_evar46" type="STRING" jt="12" />
+			<column name="post_evar47" type="STRING" jt="12" />
+			<column name="post_evar48" type="STRING" jt="12" />
+			<column name="post_evar49" type="STRING" jt="12" />
+			<column name="post_evar50" type="STRING" jt="12" />
+			<column name="post_evar51" type="STRING" jt="12" />
+			<column name="post_evar52" type="STRING" jt="12" />
+			<column name="post_evar53" type="STRING" jt="12" />
+			<column name="post_evar54" type="STRING" jt="12" />
+			<column name="post_evar55" type="STRING" jt="12" />
+			<column name="post_evar56" type="STRING" jt="12" />
+			<column name="post_evar57" type="STRING" jt="12" />
+			<column name="post_evar58" type="STRING" jt="12" />
+			<column name="post_evar59" type="STRING" jt="12" />
+			<column name="post_evar60" type="STRING" jt="12" />
+			<column name="post_evar61" type="STRING" jt="12" />
+			<column name="post_evar62" type="STRING" jt="12" />
+			<column name="post_evar63" type="STRING" jt="12" />
+			<column name="post_evar64" type="STRING" jt="12" />
+			<column name="post_evar65" type="STRING" jt="12" />
+			<column name="post_evar66" type="STRING" jt="12" />
+			<column name="post_evar67" type="STRING" jt="12" />
+			<column name="post_evar68" type="STRING" jt="12" />
+			<column name="post_evar69" type="STRING" jt="12" />
+			<column name="post_evar70" type="STRING" jt="12" />
+			<column name="post_evar71" type="STRING" jt="12" />
+			<column name="post_evar72" type="STRING" jt="12" />
+			<column name="post_evar73" type="STRING" jt="12" />
+			<column name="post_evar74" type="STRING" jt="12" />
+			<column name="post_evar75" type="STRING" jt="12" />
+			<column name="post_evar76" type="STRING" jt="12" />
+			<column name="post_evar77" type="STRING" jt="12" />
+			<column name="post_evar78" type="STRING" jt="12" />
+			<column name="post_evar79" type="STRING" jt="12" />
+			<column name="post_evar80" type="STRING" jt="12" />
+			<column name="post_evar81" type="STRING" jt="12" />
+			<column name="post_evar82" type="STRING" jt="12" />
+			<column name="post_evar83" type="STRING" jt="12" />
+			<column name="post_evar84" type="STRING" jt="12" />
+			<column name="post_evar85" type="STRING" jt="12" />
+			<column name="post_evar86" type="STRING" jt="12" />
+			<column name="post_evar87" type="STRING" jt="12" />
+			<column name="post_evar88" type="STRING" jt="12" />
+			<column name="post_evar89" type="STRING" jt="12" />
+			<column name="post_evar90" type="STRING" jt="12" />
+			<column name="post_evar91" type="STRING" jt="12" />
+			<column name="post_evar92" type="STRING" jt="12" />
+			<column name="post_evar93" type="STRING" jt="12" />
+			<column name="post_evar94" type="STRING" jt="12" />
+			<column name="post_evar95" type="STRING" jt="12" />
+			<column name="post_evar96" type="STRING" jt="12" />
+			<column name="post_evar97" type="STRING" jt="12" />
+			<column name="post_evar98" type="STRING" jt="12" />
+			<column name="post_evar99" type="STRING" jt="12" />
+			<column name="post_evar100" type="STRING" jt="12" />
+			<column name="post_evar101" type="STRING" jt="12" />
+			<column name="post_evar102" type="STRING" jt="12" />
+			<column name="post_evar103" type="STRING" jt="12" />
+			<column name="post_evar104" type="STRING" jt="12" />
+			<column name="post_evar105" type="STRING" jt="12" />
+			<column name="post_evar106" type="STRING" jt="12" />
+			<column name="post_evar107" type="STRING" jt="12" />
+			<column name="post_evar108" type="STRING" jt="12" />
+			<column name="post_evar109" type="STRING" jt="12" />
+			<column name="post_evar110" type="STRING" jt="12" />
+			<column name="post_evar111" type="STRING" jt="12" />
+			<column name="post_evar112" type="STRING" jt="12" />
+			<column name="post_evar113" type="STRING" jt="12" />
+			<column name="post_evar114" type="STRING" jt="12" />
+			<column name="post_evar115" type="STRING" jt="12" />
+			<column name="post_evar116" type="STRING" jt="12" />
+			<column name="post_evar117" type="STRING" jt="12" />
+			<column name="post_evar118" type="STRING" jt="12" />
+			<column name="post_evar119" type="STRING" jt="12" />
+			<column name="post_evar120" type="STRING" jt="12" />
+			<column name="post_evar121" type="STRING" jt="12" />
+			<column name="post_evar122" type="STRING" jt="12" />
+			<column name="post_evar123" type="STRING" jt="12" />
+			<column name="post_evar124" type="STRING" jt="12" />
+			<column name="post_evar125" type="STRING" jt="12" />
+			<column name="post_evar126" type="STRING" jt="12" />
+			<column name="post_evar127" type="STRING" jt="12" />
+			<column name="post_evar128" type="STRING" jt="12" />
+			<column name="post_evar129" type="STRING" jt="12" />
+			<column name="post_evar130" type="STRING" jt="12" />
+			<column name="post_evar131" type="STRING" jt="12" />
+			<column name="post_evar132" type="STRING" jt="12" />
+			<column name="post_evar133" type="STRING" jt="12" />
+			<column name="post_evar134" type="STRING" jt="12" />
+			<column name="post_evar135" type="STRING" jt="12" />
+			<column name="post_evar136" type="STRING" jt="12" />
+			<column name="post_evar137" type="STRING" jt="12" />
+			<column name="post_evar138" type="STRING" jt="12" />
+			<column name="post_evar139" type="STRING" jt="12" />
+			<column name="post_evar140" type="STRING" jt="12" />
+			<column name="post_evar141" type="STRING" jt="12" />
+			<column name="post_evar142" type="STRING" jt="12" />
+			<column name="post_evar143" type="STRING" jt="12" />
+			<column name="post_evar144" type="STRING" jt="12" />
+			<column name="post_evar145" type="STRING" jt="12" />
+			<column name="post_evar146" type="STRING" jt="12" />
+			<column name="post_evar147" type="STRING" jt="12" />
+			<column name="post_evar148" type="STRING" jt="12" />
+			<column name="post_evar149" type="STRING" jt="12" />
+			<column name="post_evar150" type="STRING" jt="12" />
+			<column name="post_evar151" type="STRING" jt="12" />
+			<column name="post_evar152" type="STRING" jt="12" />
+			<column name="post_evar153" type="STRING" jt="12" />
+			<column name="post_evar154" type="STRING" jt="12" />
+			<column name="post_evar155" type="STRING" jt="12" />
+			<column name="post_evar156" type="STRING" jt="12" />
+			<column name="post_evar157" type="STRING" jt="12" />
+			<column name="post_evar158" type="STRING" jt="12" />
+			<column name="post_evar159" type="STRING" jt="12" />
+			<column name="post_evar160" type="STRING" jt="12" />
+			<column name="post_evar161" type="STRING" jt="12" />
+			<column name="post_evar162" type="STRING" jt="12" />
+			<column name="post_evar163" type="STRING" jt="12" />
+			<column name="post_evar164" type="STRING" jt="12" />
+			<column name="post_evar165" type="STRING" jt="12" />
+			<column name="post_evar166" type="STRING" jt="12" />
+			<column name="post_evar167" type="STRING" jt="12" />
+			<column name="post_evar168" type="STRING" jt="12" />
+			<column name="post_evar169" type="STRING" jt="12" />
+			<column name="post_evar170" type="STRING" jt="12" />
+			<column name="post_evar171" type="STRING" jt="12" />
+			<column name="post_evar172" type="STRING" jt="12" />
+			<column name="post_evar173" type="STRING" jt="12" />
+			<column name="post_evar174" type="STRING" jt="12" />
+			<column name="post_evar175" type="STRING" jt="12" />
+			<column name="post_evar176" type="STRING" jt="12" />
+			<column name="post_evar177" type="STRING" jt="12" />
+			<column name="post_evar178" type="STRING" jt="12" />
+			<column name="post_evar179" type="STRING" jt="12" />
+			<column name="post_evar180" type="STRING" jt="12" />
+			<column name="post_evar181" type="STRING" jt="12" />
+			<column name="post_evar182" type="STRING" jt="12" />
+			<column name="post_evar183" type="STRING" jt="12" />
+			<column name="post_evar184" type="STRING" jt="12" />
+			<column name="post_evar185" type="STRING" jt="12" />
+			<column name="post_evar186" type="STRING" jt="12" />
+			<column name="post_evar187" type="STRING" jt="12" />
+			<column name="post_evar188" type="STRING" jt="12" />
+			<column name="post_evar189" type="STRING" jt="12" />
+			<column name="post_evar190" type="STRING" jt="12" />
+			<column name="post_evar191" type="STRING" jt="12" />
+			<column name="post_evar192" type="STRING" jt="12" />
+			<column name="post_evar193" type="STRING" jt="12" />
+			<column name="post_evar194" type="STRING" jt="12" />
+			<column name="post_evar195" type="STRING" jt="12" />
+			<column name="post_evar196" type="STRING" jt="12" />
+			<column name="post_evar197" type="STRING" jt="12" />
+			<column name="post_evar198" type="STRING" jt="12" />
+			<column name="post_evar199" type="STRING" jt="12" />
+			<column name="post_evar200" type="STRING" jt="12" />
+			<column name="post_evar201" type="STRING" jt="12" />
+			<column name="post_evar202" type="STRING" jt="12" />
+			<column name="post_evar203" type="STRING" jt="12" />
+			<column name="post_evar204" type="STRING" jt="12" />
+			<column name="post_evar205" type="STRING" jt="12" />
+			<column name="post_evar206" type="STRING" jt="12" />
+			<column name="post_evar207" type="STRING" jt="12" />
+			<column name="post_evar208" type="STRING" jt="12" />
+			<column name="post_evar209" type="STRING" jt="12" />
+			<column name="post_evar210" type="STRING" jt="12" />
+			<column name="post_evar211" type="STRING" jt="12" />
+			<column name="post_evar212" type="STRING" jt="12" />
+			<column name="post_evar213" type="STRING" jt="12" />
+			<column name="post_evar214" type="STRING" jt="12" />
+			<column name="post_evar215" type="STRING" jt="12" />
+			<column name="post_evar216" type="STRING" jt="12" />
+			<column name="post_evar217" type="STRING" jt="12" />
+			<column name="post_evar218" type="STRING" jt="12" />
+			<column name="post_evar219" type="STRING" jt="12" />
+			<column name="post_evar220" type="STRING" jt="12" />
+			<column name="post_evar221" type="STRING" jt="12" />
+			<column name="post_evar222" type="STRING" jt="12" />
+			<column name="post_evar223" type="STRING" jt="12" />
+			<column name="post_evar224" type="STRING" jt="12" />
+			<column name="post_evar225" type="STRING" jt="12" />
+			<column name="post_evar226" type="STRING" jt="12" />
+			<column name="post_evar227" type="STRING" jt="12" />
+			<column name="post_evar228" type="STRING" jt="12" />
+			<column name="post_evar229" type="STRING" jt="12" />
+			<column name="post_evar230" type="STRING" jt="12" />
+			<column name="post_evar231" type="STRING" jt="12" />
+			<column name="post_evar232" type="STRING" jt="12" />
+			<column name="post_evar233" type="STRING" jt="12" />
+			<column name="post_evar234" type="STRING" jt="12" />
+			<column name="post_evar235" type="STRING" jt="12" />
+			<column name="post_evar236" type="STRING" jt="12" />
+			<column name="post_evar237" type="STRING" jt="12" />
+			<column name="post_evar238" type="STRING" jt="12" />
+			<column name="post_evar239" type="STRING" jt="12" />
+			<column name="post_evar240" type="STRING" jt="12" />
+			<column name="post_evar241" type="STRING" jt="12" />
+			<column name="post_evar242" type="STRING" jt="12" />
+			<column name="post_evar243" type="STRING" jt="12" />
+			<column name="post_evar244" type="STRING" jt="12" />
+			<column name="post_evar245" type="STRING" jt="12" />
+			<column name="post_evar246" type="STRING" jt="12" />
+			<column name="post_evar247" type="STRING" jt="12" />
+			<column name="post_evar248" type="STRING" jt="12" />
+			<column name="post_evar249" type="STRING" jt="12" />
+			<column name="post_evar250" type="STRING" jt="12" />
+			<column name="post_event_list" type="STRING" jt="12" />
+			<column name="post_hier1" type="STRING" jt="12" />
+			<column name="post_hier2" type="STRING" jt="12" />
+			<column name="post_hier3" type="STRING" jt="12" />
+			<column name="post_hier4" type="STRING" jt="12" />
+			<column name="post_hier5" type="STRING" jt="12" />
+			<column name="post_java_enabled" type="STRING" jt="12" />
+			<column name="post_keywords" type="STRING" jt="12" />
+			<column name="post_mc_audiences" type="STRING" jt="12" />
+			<column name="post_mobileaction" type="STRING" jt="12" />
+			<column name="post_mobileappid" type="STRING" jt="12" />
+			<column name="post_mobilecampaigncontent" type="STRING" jt="12" />
+			<column name="post_mobilecampaignmedium" type="STRING" jt="12" />
+			<column name="post_mobilecampaignname" type="STRING" jt="12" />
+			<column name="post_mobilecampaignsource" type="STRING" jt="12" />
+			<column name="post_mobilecampaignterm" type="STRING" jt="12" />
+			<column name="post_mobiledayofweek" type="STRING" jt="12" />
+			<column name="post_mobiledayssincefirstuse" type="STRING" jt="12" />
+			<column name="post_mobiledayssincelastuse" type="STRING" jt="12" />
+			<column name="post_mobiledevice" type="STRING" jt="12" />
+			<column name="post_mobilehourofday" type="STRING" jt="12" />
+			<column name="post_mobileinstalldate" type="STRING" jt="12" />
+			<column name="post_mobilelaunchnumber" type="STRING" jt="12" />
+			<column name="post_mobileltv" type="STRING" jt="12" />
+			<column name="post_mobilemessagebuttonname" type="STRING" jt="12" />
+			<column name="post_mobilemessageclicks" type="STRING" jt="12" />
+			<column name="post_mobilemessageid" type="MAP" jt="4999544" >
+				<column name="dest" type="STRING" jt="12" />
+				<column name="name" type="STRING" jt="12" />
+				<column name="type" type="STRING" jt="12" />
+			</column>
+			<column name="post_mobilemessageimpressions" type="STRING" jt="12" />
+			<column name="post_mobilemessageonline" type="STRING" jt="12" />
+			<column name="post_mobilemessagepushoptin" type="STRING" jt="12" />
+			<column name="post_mobilemessagepushpayloadid" type="MAP" jt="4999544" >
+				<column name="name" type="STRING" jt="12" />
+			</column>
+			<column name="post_mobilemessageviews" type="STRING" jt="12" />
+			<column name="post_mobileosversion" type="STRING" jt="12" />
+			<column name="post_mobilepushoptin" type="STRING" jt="12" />
+			<column name="post_mobilepushpayloadid" type="STRING" jt="12" />
+			<column name="post_mobileresolution" type="STRING" jt="12" />
+			<column name="post_mvvar1" type="STRING" jt="12" />
+			<column name="post_mvvar2" type="STRING" jt="12" />
+			<column name="post_mvvar3" type="STRING" jt="12" />
+			<column name="post_page_event" type="STRING" jt="12" />
+			<column name="post_page_event_var1" type="STRING" jt="12" />
+			<column name="post_page_event_var2" type="STRING" jt="12" />
+			<column name="post_page_event_var3" type="STRING" jt="12" />
+			<column name="post_page_type" type="STRING" jt="12" />
+			<column name="post_page_url" type="STRING" jt="12" />
+			<column name="post_pagename" type="STRING" jt="12" />
+			<column name="post_pagename_no_url" type="STRING" jt="12" />
+			<column name="post_partner_plugins" type="STRING" jt="12" />
+			<column name="post_persistent_cookie" type="STRING" jt="12" />
+			<column name="post_pointofinterest" type="STRING" jt="12" />
+			<column name="post_pointofinterestdistance" type="STRING" jt="12" />
+			<column name="post_product_list" type="STRING" jt="12" />
+			<column name="post_prop1" type="STRING" jt="12" />
+			<column name="post_prop2" type="STRING" jt="12" />
+			<column name="post_prop3" type="STRING" jt="12" />
+			<column name="post_prop4" type="STRING" jt="12" />
+			<column name="post_prop5" type="STRING" jt="12" />
+			<column name="post_prop6" type="STRING" jt="12" />
+			<column name="post_prop7" type="STRING" jt="12" />
+			<column name="post_prop8" type="STRING" jt="12" />
+			<column name="post_prop9" type="STRING" jt="12" />
+			<column name="post_prop10" type="STRING" jt="12" />
+			<column name="post_prop11" type="STRING" jt="12" />
+			<column name="post_prop12" type="STRING" jt="12" />
+			<column name="post_prop13" type="STRING" jt="12" />
+			<column name="post_prop14" type="STRING" jt="12" />
+			<column name="post_prop15" type="STRING" jt="12" />
+			<column name="post_prop16" type="STRING" jt="12" />
+			<column name="post_prop17" type="STRING" jt="12" />
+			<column name="post_prop18" type="STRING" jt="12" />
+			<column name="post_prop19" type="STRING" jt="12" />
+			<column name="post_prop20" type="STRING" jt="12" />
+			<column name="post_prop21" type="STRING" jt="12" />
+			<column name="post_prop22" type="STRING" jt="12" />
+			<column name="post_prop23" type="STRING" jt="12" />
+			<column name="post_prop24" type="STRING" jt="12" />
+			<column name="post_prop25" type="STRING" jt="12" />
+			<column name="post_prop26" type="STRING" jt="12" />
+			<column name="post_prop27" type="STRING" jt="12" />
+			<column name="post_prop28" type="STRING" jt="12" />
+			<column name="post_prop29" type="STRING" jt="12" />
+			<column name="post_prop30" type="STRING" jt="12" />
+			<column name="post_prop31" type="STRING" jt="12" />
+			<column name="post_prop32" type="STRING" jt="12" />
+			<column name="post_prop33" type="STRING" jt="12" />
+			<column name="post_prop34" type="STRING" jt="12" />
+			<column name="post_prop35" type="STRING" jt="12" />
+			<column name="post_prop36" type="STRING" jt="12" />
+			<column name="post_prop37" type="STRING" jt="12" />
+			<column name="post_prop38" type="STRING" jt="12" />
+			<column name="post_prop39" type="STRING" jt="12" />
+			<column name="post_prop40" type="STRING" jt="12" />
+			<column name="post_prop41" type="STRING" jt="12" />
+			<column name="post_prop42" type="STRING" jt="12" />
+			<column name="post_prop43" type="STRING" jt="12" />
+			<column name="post_prop44" type="STRING" jt="12" />
+			<column name="post_prop45" type="STRING" jt="12" />
+			<column name="post_prop46" type="STRING" jt="12" />
+			<column name="post_prop47" type="STRING" jt="12" />
+			<column name="post_prop48" type="STRING" jt="12" />
+			<column name="post_prop49" type="STRING" jt="12" />
+			<column name="post_prop50" type="STRING" jt="12" />
+			<column name="post_prop51" type="STRING" jt="12" />
+			<column name="post_prop52" type="STRING" jt="12" />
+			<column name="post_prop53" type="STRING" jt="12" />
+			<column name="post_prop54" type="STRING" jt="12" />
+			<column name="post_prop55" type="STRING" jt="12" />
+			<column name="post_prop56" type="STRING" jt="12" />
+			<column name="post_prop57" type="STRING" jt="12" />
+			<column name="post_prop58" type="STRING" jt="12" />
+			<column name="post_prop59" type="STRING" jt="12" />
+			<column name="post_prop60" type="STRING" jt="12" />
+			<column name="post_prop61" type="STRING" jt="12" />
+			<column name="post_prop62" type="STRING" jt="12" />
+			<column name="post_prop63" type="STRING" jt="12" />
+			<column name="post_prop64" type="STRING" jt="12" />
+			<column name="post_prop65" type="STRING" jt="12" />
+			<column name="post_prop66" type="STRING" jt="12" />
+			<column name="post_prop67" type="STRING" jt="12" />
+			<column name="post_prop68" type="STRING" jt="12" />
+			<column name="post_prop69" type="STRING" jt="12" />
+			<column name="post_prop70" type="STRING" jt="12" />
+			<column name="post_prop71" type="STRING" jt="12" />
+			<column name="post_prop72" type="STRING" jt="12" />
+			<column name="post_prop73" type="STRING" jt="12" />
+			<column name="post_prop74" type="STRING" jt="12" />
+			<column name="post_prop75" type="STRING" jt="12" />
+			<column name="post_purchaseid" type="STRING" jt="12" />
+			<column name="post_referrer" type="STRING" jt="12" />
+			<column name="post_s_kwcid" type="STRING" jt="12" />
+			<column name="post_search_engine" type="STRING" jt="12" />
+			<column name="post_socialaccountandappids" type="STRING" jt="12" />
+			<column name="post_socialassettrackingcode" type="STRING" jt="12" />
+			<column name="post_socialauthor" type="STRING" jt="12" />
+			<column name="post_socialaveragesentiment" type="STRING" jt="12" />
+			<column name="post_socialaveragesentiment_deprecated" type="STRING" jt="12" />
+			<column name="post_socialcontentprovider" type="STRING" jt="12" />
+			<column name="post_socialfbstories" type="STRING" jt="12" />
+			<column name="post_socialfbstorytellers" type="STRING" jt="12" />
+			<column name="post_socialinteractioncount" type="STRING" jt="12" />
+			<column name="post_socialinteractiontype" type="STRING" jt="12" />
+			<column name="post_sociallanguage" type="STRING" jt="12" />
+			<column name="post_sociallatlong" type="STRING" jt="12" />
+			<column name="post_sociallikeadds" type="STRING" jt="12" />
+			<column name="post_sociallink" type="STRING" jt="12" />
+			<column name="post_sociallink_deprecated" type="STRING" jt="12" />
+			<column name="post_socialmentions" type="STRING" jt="12" />
+			<column name="post_socialowneddefinitioninsighttype" type="STRING" jt="12" />
+			<column name="post_socialowneddefinitioninsightvalue" type="STRING" jt="12" />
+			<column name="post_socialowneddefinitionmetric" type="STRING" jt="12" />
+			<column name="post_socialowneddefinitionpropertyvspost" type="STRING" jt="12" />
+			<column name="post_socialownedpostids" type="STRING" jt="12" />
+			<column name="post_socialownedpropertyid" type="STRING" jt="12" />
+			<column name="post_socialownedpropertyname" type="STRING" jt="12" />
+			<column name="post_socialownedpropertypropertyvsapp" type="STRING" jt="12" />
+			<column name="post_socialpageviews" type="STRING" jt="12" />
+			<column name="post_socialpostviews" type="STRING" jt="12" />
+			<column name="post_socialproperty" type="STRING" jt="12" />
+			<column name="post_socialproperty_deprecated" type="STRING" jt="12" />
+			<column name="post_socialpubcomments" type="STRING" jt="12" />
+			<column name="post_socialpubposts" type="STRING" jt="12" />
+			<column name="post_socialpubrecommends" type="STRING" jt="12" />
+			<column name="post_socialpubsubscribers" type="STRING" jt="12" />
+			<column name="post_socialterm" type="STRING" jt="12" />
+			<column name="post_socialtermslist" type="STRING" jt="12" />
+			<column name="post_socialtermslist_deprecated" type="STRING" jt="12" />
+			<column name="post_socialtotalsentiment" type="STRING" jt="12" />
+			<column name="post_state" type="STRING" jt="12" />
+			<column name="post_survey" type="STRING" jt="12" />
+			<column name="post_t_time_info" type="STRING" jt="12" />
+			<column name="post_tnt" type="STRING" jt="12" />
+			<column name="post_tnt_action" type="STRING" jt="12" />
+			<column name="post_transactionid" type="STRING" jt="12" />
+			<column name="post_video" type="STRING" jt="12" />
+			<column name="post_videoad" type="STRING" jt="12" />
+			<column name="post_videoadinpod" type="STRING" jt="12" />
+			<column name="post_videoadlength" type="STRING" jt="12" />
+			<column name="post_videoadname" type="STRING" jt="12" />
+			<column name="post_videoadplayername" type="STRING" jt="12" />
+			<column name="post_videoadpod" type="STRING" jt="12" />
+			<column name="post_videoadvertiser" type="STRING" jt="12" />
+			<column name="post_videoauthorized" type="STRING" jt="12" />
+			<column name="post_videocampaign" type="STRING" jt="12" />
+			<column name="post_videochannel" type="STRING" jt="12" />
+			<column name="post_videochapter" type="STRING" jt="12" />
+			<column name="post_videocontenttype" type="STRING" jt="12" />
+			<column name="post_videodaypart" type="STRING" jt="12" />
+			<column name="post_videoepisode" type="STRING" jt="12" />
+			<column name="post_videofeedtype" type="STRING" jt="12" />
+			<column name="post_videogenre" type="STRING" jt="12" />
+			<column name="post_videolength" type="STRING" jt="12" />
+			<column name="post_videomvpd" type="STRING" jt="12" />
+			<column name="post_videoname" type="STRING" jt="12" />
+			<column name="post_videonetwork" type="STRING" jt="12" />
+			<column name="post_videopath" type="STRING" jt="12" />
+			<column name="post_videoplayername" type="STRING" jt="12" />
+			<column name="post_videoqoebitrateaverageevar" type="STRING" jt="12" />
+			<column name="post_videoqoebitratechangecountevar" type="STRING" jt="12" />
+			<column name="post_videoqoebuffercountevar" type="STRING" jt="12" />
+			<column name="post_videoqoebuffertimeevar" type="STRING" jt="12" />
+			<column name="post_videoqoedroppedframecountevar" type="STRING" jt="12" />
+			<column name="post_videoqoeerrorcountevar" type="STRING" jt="12" />
+			<column name="post_videoqoetimetostartevar" type="STRING" jt="12" />
+			<column name="post_videoseason" type="STRING" jt="12" />
+			<column name="post_videosegment" type="STRING" jt="12" />
+			<column name="post_videoshow" type="STRING" jt="12" />
+			<column name="post_videoshowtype" type="STRING" jt="12" />
+			<column name="post_visid_high" type="STRING" jt="12" />
+			<column name="post_visid_low" type="STRING" jt="12" />
+			<column name="post_visid_type" type="STRING" jt="12" />
+			<column name="post_zip" type="STRING" jt="12" />
+			<column name="prev_page" type="STRING" jt="12" />
+			<column name="product_list" type="STRING" jt="12" />
+			<column name="product_merchandising" type="STRING" jt="12" />
+			<column name="prop1" type="STRING" jt="12" />
+			<column name="prop2" type="STRING" jt="12" />
+			<column name="prop3" type="STRING" jt="12" />
+			<column name="prop4" type="STRING" jt="12" />
+			<column name="prop5" type="STRING" jt="12" />
+			<column name="prop6" type="STRING" jt="12" />
+			<column name="prop7" type="STRING" jt="12" />
+			<column name="prop8" type="STRING" jt="12" />
+			<column name="prop9" type="STRING" jt="12" />
+			<column name="prop10" type="STRING" jt="12" />
+			<column name="prop11" type="STRING" jt="12" />
+			<column name="prop12" type="STRING" jt="12" />
+			<column name="prop13" type="STRING" jt="12" />
+			<column name="prop14" type="STRING" jt="12" />
+			<column name="prop15" type="STRING" jt="12" />
+			<column name="prop16" type="STRING" jt="12" />
+			<column name="prop17" type="STRING" jt="12" />
+			<column name="prop18" type="STRING" jt="12" />
+			<column name="prop19" type="STRING" jt="12" />
+			<column name="prop20" type="STRING" jt="12" />
+			<column name="prop21" type="STRING" jt="12" />
+			<column name="prop22" type="STRING" jt="12" />
+			<column name="prop23" type="STRING" jt="12" />
+			<column name="prop24" type="STRING" jt="12" />
+			<column name="prop25" type="STRING" jt="12" />
+			<column name="prop26" type="STRING" jt="12" />
+			<column name="prop27" type="STRING" jt="12" />
+			<column name="prop28" type="STRING" jt="12" />
+			<column name="prop29" type="STRING" jt="12" />
+			<column name="prop30" type="STRING" jt="12" />
+			<column name="prop31" type="STRING" jt="12" />
+			<column name="prop32" type="STRING" jt="12" />
+			<column name="prop33" type="STRING" jt="12" />
+			<column name="prop34" type="STRING" jt="12" />
+			<column name="prop35" type="STRING" jt="12" />
+			<column name="prop36" type="STRING" jt="12" />
+			<column name="prop37" type="STRING" jt="12" />
+			<column name="prop38" type="STRING" jt="12" />
+			<column name="prop39" type="STRING" jt="12" />
+			<column name="prop40" type="STRING" jt="12" />
+			<column name="prop41" type="STRING" jt="12" />
+			<column name="prop42" type="STRING" jt="12" />
+			<column name="prop43" type="STRING" jt="12" />
+			<column name="prop44" type="STRING" jt="12" />
+			<column name="prop45" type="STRING" jt="12" />
+			<column name="prop46" type="STRING" jt="12" />
+			<column name="prop47" type="STRING" jt="12" />
+			<column name="prop48" type="STRING" jt="12" />
+			<column name="prop49" type="STRING" jt="12" />
+			<column name="prop50" type="STRING" jt="12" />
+			<column name="prop51" type="STRING" jt="12" />
+			<column name="prop52" type="STRING" jt="12" />
+			<column name="prop53" type="STRING" jt="12" />
+			<column name="prop54" type="STRING" jt="12" />
+			<column name="prop55" type="STRING" jt="12" />
+			<column name="prop56" type="STRING" jt="12" />
+			<column name="prop57" type="STRING" jt="12" />
+			<column name="prop58" type="STRING" jt="12" />
+			<column name="prop59" type="STRING" jt="12" />
+			<column name="prop60" type="STRING" jt="12" />
+			<column name="prop61" type="STRING" jt="12" />
+			<column name="prop62" type="STRING" jt="12" />
+			<column name="prop63" type="STRING" jt="12" />
+			<column name="prop64" type="STRING" jt="12" />
+			<column name="prop65" type="STRING" jt="12" />
+			<column name="prop66" type="STRING" jt="12" />
+			<column name="prop67" type="STRING" jt="12" />
+			<column name="prop68" type="STRING" jt="12" />
+			<column name="prop69" type="STRING" jt="12" />
+			<column name="prop70" type="STRING" jt="12" />
+			<column name="prop71" type="STRING" jt="12" />
+			<column name="prop72" type="STRING" jt="12" />
+			<column name="prop73" type="STRING" jt="12" />
+			<column name="prop74" type="STRING" jt="12" />
+			<column name="prop75" type="STRING" jt="12" />
+			<column name="purchaseid" type="STRING" jt="12" />
+			<column name="quarterly_visitor" type="STRING" jt="12" />
+			<column name="ref_domain" type="STRING" jt="12" />
+			<column name="ref_type" type="STRING" jt="12" />
+			<column name="referrer" type="STRING" jt="12" />
+			<column name="resolution" type="STRING" jt="12" />
+			<column name="s_kwcid" type="STRING" jt="12" />
+			<column name="s_resolution" type="STRING" jt="12" />
+			<column name="sampled_hit" type="STRING" jt="12" />
+			<column name="search_engine" type="STRING" jt="12" />
+			<column name="search_page_num" type="STRING" jt="12" />
+			<column name="secondary_hit" type="STRING" jt="12" />
+			<column name="service" type="STRING" jt="12" />
+			<column name="socialaccountandappids" type="STRING" jt="12" />
+			<column name="socialassettrackingcode" type="STRING" jt="12" />
+			<column name="socialauthor" type="STRING" jt="12" />
+			<column name="socialaveragesentiment" type="STRING" jt="12" />
+			<column name="socialaveragesentiment_deprecated" type="STRING" jt="12" />
+			<column name="socialcontentprovider" type="STRING" jt="12" />
+			<column name="socialfbstories" type="STRING" jt="12" />
+			<column name="socialfbstorytellers" type="STRING" jt="12" />
+			<column name="socialinteractioncount" type="STRING" jt="12" />
+			<column name="socialinteractiontype" type="STRING" jt="12" />
+			<column name="sociallanguage" type="STRING" jt="12" />
+			<column name="sociallatlong" type="STRING" jt="12" />
+			<column name="sociallikeadds" type="STRING" jt="12" />
+			<column name="sociallink" type="STRING" jt="12" />
+			<column name="sociallink_deprecated" type="STRING" jt="12" />
+			<column name="socialmentions" type="STRING" jt="12" />
+			<column name="socialowneddefinitioninsighttype" type="STRING" jt="12" />
+			<column name="socialowneddefinitioninsightvalue" type="STRING" jt="12" />
+			<column name="socialowneddefinitionmetric" type="STRING" jt="12" />
+			<column name="socialowneddefinitionpropertyvspost" type="STRING" jt="12" />
+			<column name="socialownedpostids" type="STRING" jt="12" />
+			<column name="socialownedpropertyid" type="STRING" jt="12" />
+			<column name="socialownedpropertyname" type="STRING" jt="12" />
+			<column name="socialownedpropertypropertyvsapp" type="STRING" jt="12" />
+			<column name="socialpageviews" type="STRING" jt="12" />
+			<column name="socialpostviews" type="STRING" jt="12" />
+			<column name="socialproperty" type="STRING" jt="12" />
+			<column name="socialproperty_deprecated" type="STRING" jt="12" />
+			<column name="socialpubcomments" type="STRING" jt="12" />
+			<column name="socialpubposts" type="STRING" jt="12" />
+			<column name="socialpubrecommends" type="STRING" jt="12" />
+			<column name="socialpubsubscribers" type="STRING" jt="12" />
+			<column name="socialterm" type="STRING" jt="12" />
+			<column name="socialtermslist" type="STRING" jt="12" />
+			<column name="socialtermslist_deprecated" type="STRING" jt="12" />
+			<column name="socialtotalsentiment" type="STRING" jt="12" />
+			<column name="sourceid" type="STRING" jt="12" />
+			<column name="state" type="STRING" jt="12" />
+			<column name="stats_server" type="STRING" jt="12" />
+			<column name="t_time_info" type="STRING" jt="12" />
+			<column name="tnt" type="STRING" jt="12" />
+			<column name="tnt_action" type="STRING" jt="12" />
+			<column name="tnt_post_vista" type="STRING" jt="12" />
+			<column name="transactionid" type="STRING" jt="12" />
+			<column name="truncated_hit" type="STRING" jt="12" />
+			<column name="ua_color" type="STRING" jt="12" />
+			<column name="ua_os" type="STRING" jt="12" />
+			<column name="ua_pixels" type="STRING" jt="12" />
+			<column name="user_hash" type="STRING" jt="12" />
+			<column name="user_server" type="STRING" jt="12" />
+			<column name="userid" type="STRING" jt="12" />
+			<column name="username" type="STRING" jt="12" />
+			<column name="va_closer_detail" type="STRING" jt="12" />
+			<column name="va_closer_id" type="STRING" jt="12" />
+			<column name="va_finder_detail" type="STRING" jt="12" />
+			<column name="va_finder_id" type="STRING" jt="12" />
+			<column name="va_instance_event" type="STRING" jt="12" />
+			<column name="va_new_engagement" type="STRING" jt="12" />
+			<column name="video" type="STRING" jt="12" />
+			<column name="videoad" type="STRING" jt="12" />
+			<column name="videoadinpod" type="STRING" jt="12" />
+			<column name="videoadlength" type="STRING" jt="12" />
+			<column name="videoadname" type="STRING" jt="12" />
+			<column name="videoadplayername" type="STRING" jt="12" />
+			<column name="videoadpod" type="STRING" jt="12" />
+			<column name="videoadvertiser" type="STRING" jt="12" />
+			<column name="videoaudioalbum" type="STRING" jt="12" />
+			<column name="videoaudioartist" type="STRING" jt="12" />
+			<column name="videoaudioauthor" type="STRING" jt="12" />
+			<column name="videoaudiolabel" type="STRING" jt="12" />
+			<column name="videoaudiopublisher" type="STRING" jt="12" />
+			<column name="videoaudiostation" type="STRING" jt="12" />
+			<column name="videoauthorized" type="STRING" jt="12" />
+			<column name="videoaverageminuteaudience" type="STRING" jt="12" />
+			<column name="videocampaign" type="STRING" jt="12" />
+			<column name="videochannel" type="STRING" jt="12" />
+			<column name="videochapter" type="STRING" jt="12" />
+			<column name="videochaptercomplete" type="STRING" jt="12" />
+			<column name="videochapterstart" type="STRING" jt="12" />
+			<column name="videochaptertime" type="STRING" jt="12" />
+			<column name="videocontenttype" type="STRING" jt="12" />
+			<column name="videodaypart" type="STRING" jt="12" />
+			<column name="videoepisode" type="STRING" jt="12" />
+			<column name="videofeedtype" type="STRING" jt="12" />
+			<column name="videogenre" type="STRING" jt="12" />
+			<column name="videolength" type="STRING" jt="12" />
+			<column name="videomvpd" type="STRING" jt="12" />
+			<column name="videoname" type="STRING" jt="12" />
+			<column name="videonetwork" type="STRING" jt="12" />
+			<column name="videopath" type="STRING" jt="12" />
+			<column name="videopause" type="STRING" jt="12" />
+			<column name="videopausecount" type="STRING" jt="12" />
+			<column name="videopausetime" type="STRING" jt="12" />
+			<column name="videoplay" type="STRING" jt="12" />
+			<column name="videoplayername" type="STRING" jt="12" />
+			<column name="videoprogress10" type="STRING" jt="12" />
+			<column name="videoprogress25" type="STRING" jt="12" />
+			<column name="videoprogress50" type="STRING" jt="12" />
+			<column name="videoprogress75" type="STRING" jt="12" />
+			<column name="videoprogress96" type="STRING" jt="12" />
+			<column name="videoqoebitrateaverage" type="STRING" jt="12" />
+			<column name="videoqoebitrateaverageevar" type="STRING" jt="12" />
+			<column name="videoqoebitratechange" type="STRING" jt="12" />
+			<column name="videoqoebitratechangecountevar" type="STRING" jt="12" />
+			<column name="videoqoebuffer" type="STRING" jt="12" />
+			<column name="videoqoebuffercountevar" type="STRING" jt="12" />
+			<column name="videoqoebuffertimeevar" type="STRING" jt="12" />
+			<column name="videoqoedropbeforestart" type="STRING" jt="12" />
+			<column name="videoqoedroppedframecountevar" type="STRING" jt="12" />
+			<column name="videoqoedroppedframes" type="STRING" jt="12" />
+			<column name="videoqoeerror" type="STRING" jt="12" />
+			<column name="videoqoeerrorcountevar" type="STRING" jt="12" />
+			<column name="videoqoeextneralerrors" type="STRING" jt="12" />
+			<column name="videoqoeplayersdkerrors" type="STRING" jt="12" />
+			<column name="videoqoetimetostartevar" type="STRING" jt="12" />
+			<column name="videoresume" type="STRING" jt="12" />
+			<column name="videoseason" type="STRING" jt="12" />
+			<column name="videosegment" type="STRING" jt="12" />
+			<column name="videoshow" type="STRING" jt="12" />
+			<column name="videoshowtype" type="STRING" jt="12" />
+			<column name="videostreamtype" type="STRING" jt="12" />
+			<column name="videototaltime" type="STRING" jt="12" />
+			<column name="videouniquetimeplayed" type="STRING" jt="12" />
+			<column name="visid_high" type="STRING" jt="12" />
+			<column name="visid_low" type="STRING" jt="12" />
+			<column name="visid_new" type="STRING" jt="12" />
+			<column name="visid_timestamp" type="STRING" jt="12" />
+			<column name="visid_type" type="STRING" jt="12" />
+			<column name="visit_keywords" type="STRING" jt="12" />
+			<column name="visit_num" type="STRING" jt="12" />
+			<column name="visit_page_num" type="STRING" jt="12" />
+			<column name="visit_ref_domain" type="STRING" jt="12" />
+			<column name="visit_ref_type" type="STRING" jt="12" />
+			<column name="visit_referrer" type="STRING" jt="12" />
+			<column name="visit_search_engine" type="STRING" jt="12" />
+			<column name="visit_start_page_url" type="STRING" jt="12" />
+			<column name="visit_start_pagename" type="STRING" jt="12" />
+			<column name="visit_start_time_gmt" type="STRING" jt="12" />
+			<column name="weekly_visitor" type="STRING" jt="12" />
+			<column name="yearly_visitor" type="STRING" jt="12" />
+			<column name="zip" type="STRING" jt="12" />
+			<column name="date" type="DATE" jt="91" />
+			<column name="framework_update_ts" type="TIMESTAMP" jt="93" />
+			<column name="framework_source" type="STRING" jt="12" />
+			<index name="partition" unique="PARTITION" >
+				<column name="date" />
+			</index>
+			<options><![CDATA[USING delta
+LOCATION 'dbfs:/mnt/hma_delta_spark_warehouse_prod/hma_adobe_analytics.data_feed'
+TBLPROPERTIES (
+  'delta.minReaderVersion' = '1',
+  'delta.minWriterVersion' = '2',
+  'upgraded_to' = 'ius_unity_prod.hma_adobe_analytics.data_feed')]]></options>
+		</table>
+	</schema>
+	<layout name="Main Layout" id="Layout-5bf" show_relation="columns" >
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" color="BED3F4" x="352" y="240" >
+			<column name="accept_language" />
+			<column name="adclassificationcreative" />
+			<column name="adload" />
+			<column name="aemassetid" />
+			<column name="aemassetsource" />
+			<column name="aemclickedassetid" />
+			<column name="browser" />
+			<column name="browser_height" />
+			<column name="browser_width" />
+			<column name="c_color" />
+			<column name="campaign" />
+		</entity>
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformanceappid" color="BED3F4" x="624" y="240" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformancecrashid" color="BED3F4" x="624" y="560" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappstoreobjectid" color="BED3F4" x="352" y="560" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobiledeeplinkid" color="BED3F4" x="128" y="560" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessageid" color="BED3F4" x="128" y="368" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessagepushpayloadid" color="BED3F4" x="48" y="80" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilerelaunchcampaigntrackingcode" color="BED3F4" x="352" y="80" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessageid" color="C7F4BE" x="960" y="80" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessagepushpayloadid" color="C7F4BE" x="1216" y="80" />
+		<callout x="352" y="96" pointer="Round" >
+			<comment><![CDATA[This is a layout. A table may show in multiple layouts.
+Create further layouts by clicking the '+' tab. 
+Double-click any table header to edit.
+The layouts and the schema structure will be saved to the design model file.]]></comment>
+		</callout>
+		<group name="post_mobilemessageid" color="EEF7EC" >
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessageid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessagepushpayloadid" />
+		</group>
+		<group name="data_feed" color="ECF0F7" >
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformanceappid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformancecrashid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappstoreobjectid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobiledeeplinkid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessageid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessagepushpayloadid" />
+			<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilerelaunchcampaigntrackingcode" />
+		</group>
+	</layout>
+	<layout name="~Layout with Sample Tools" id="Layout-ca5" show_column_type="y" show_relation="columns" >
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" color="BED3F4" x="352" y="240" >
+			<column name="accept_language" />
+			<column name="adclassificationcreative" />
+			<column name="adload" />
+			<column name="aemassetid" />
+			<column name="aemassetsource" />
+			<column name="aemclickedassetid" />
+			<column name="browser" />
+			<column name="browser_height" />
+			<column name="browser_width" />
+			<column name="c_color" />
+			<column name="campaign" />
+		</entity>
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformanceappid" color="BED3F4" x="656" y="240" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappperformancecrashid" color="BED3F4" x="656" y="560" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobileappstoreobjectid" color="BED3F4" x="336" y="560" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobiledeeplinkid" color="BED3F4" x="128" y="400" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessageid" color="BED3F4" x="128" y="48" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilemessagepushpayloadid" color="BED3F4" x="48" y="240" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="mobilerelaunchcampaigntrackingcode" color="BED3F4" x="352" y="80" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessageid" color="C7F4BE" x="992" y="48" />
+		<entity schema="hive_metastore.hma_adobe_analytics" name="data_feed" column="post_mobilemessagepushpayloadid" color="C7F4BE" x="1248" y="48" />
+		<script name="SQL Editor" id="Editor-187" language="SQL" >
+			<string><![CDATA[SELECT
+	accept_language, adclassificationcreative, adload, aemassetid, aemassetsource, aemclickedassetid, browser, browser_height, 
+	browser_width, c_color, campaign, carrier, channel, click_action, click_action_type, click_context, click_context_type, click_sourceid, 
+	click_tag, clickmaplink, clickmaplinkbyregion, clickmappage, clickmapregion, code_ver, color, connection_type, cookies, country, 
+	ct_connect_type, curr_factor, curr_rate, currency, cust_hit_time_gmt, cust_visid, daily_visitor, date_time, domain, duplicate_events, 
+	duplicate_purchase, duplicated_from, ef_id, evar1, evar2, evar3, evar4, evar5, evar6, evar7, evar8, evar9, evar10, evar11, 
+	evar12, evar13, evar14, evar15, evar16, evar17, evar18, evar19, evar20, evar21, evar22, evar23, evar24, evar25, evar26, evar27, 
+	evar28, evar29, evar30, evar31, evar32, evar33, evar34, evar35, evar36, evar37, evar38, evar39, evar40, evar41, evar42, evar43, 
+	evar44, evar45, evar46, evar47, evar48, evar49, evar50, evar51, evar52, evar53, evar54, evar55, evar56, evar57, evar58, evar59, 
+	evar60, evar61, evar62, evar63, evar64, evar65, evar66, evar67, evar68, evar69, evar70, evar71, evar72, evar73, evar74, evar75, 
+	evar76, evar77, evar78, evar79, evar80, evar81, evar82, evar83, evar84, evar85, evar86, evar87, evar88, evar89, evar90, evar91, 
+	evar92, evar93, evar94, evar95, evar96, evar97, evar98, evar99, evar100, evar101, evar102, evar103, evar104, evar105, evar106, 
+	evar107, evar108, evar109, evar110, evar111, evar112, evar113, evar114, evar115, evar116, evar117, evar118, evar119, evar120, 
+	evar121, evar122, evar123, evar124, evar125, evar126, evar127, evar128, evar129, evar130, evar131, evar132, evar133, evar134, 
+	evar135, evar136, evar137, evar138, evar139, evar140, evar141, evar142, evar143, evar144, evar145, evar146, evar147, evar148, 
+	evar149, evar150, evar151, evar152, evar153, evar154, evar155, evar156, evar157, evar158, evar159, evar160, evar161, evar162, 
+	evar163, evar164, evar165, evar166, evar167, evar168, evar169, evar170, evar171, evar172, evar173, evar174, evar175, evar176, 
+	evar177, evar178, evar179, evar180, evar181, evar182, evar183, evar184, evar185, evar186, evar187, evar188, evar189, evar190, 
+	evar191, evar192, evar193, evar194, evar195, evar196, evar197, evar198, evar199, evar200, evar201, evar202, evar203, evar204, 
+	evar205, evar206, evar207, evar208, evar209, evar210, evar211, evar212, evar213, evar214, evar215, evar216, evar217, evar218, 
+	evar219, evar220, evar221, evar222, evar223, evar224, evar225, evar226, evar227, evar228, evar229, evar230, evar231, evar232, 
+	evar233, evar234, evar235, evar236, evar237, evar238, evar239, evar240, evar241, evar242, evar243, evar244, evar245, evar246, 
+	evar247, evar248, evar249, evar250, event_list, exclude_hit, first_hit_page_url, first_hit_pagename, first_hit_ref_domain, 
+	first_hit_ref_type, first_hit_referrer, first_hit_time_gmt, geo_city, geo_country, geo_dma, geo_region, geo_zip, hier1, hier2, 
+	hier3, hier4, hier5, hit_source, hit_time_gmt, hitid_high, hitid_low, homepage, hourly_visitor, ip, ip2, j_jscript, java_enabled, 
+	javascript, language, last_hit_time_gmt, last_purchase_num, last_purchase_time_gmt, latlon1, latlon23, latlon45, mc_audiences, 
+	mcvisid, mobile_id, mobileacquisitionclicks, mobileaction, mobileactioninapptime, mobileactiontotaltime, mobileappid, mobileappperformanceaffectedusers, 
+	mobileappperformanceappid, mobileappperformancecrashes, mobileappperformancecrashid, mobileappperformanceloads, mobileappstoreavgrating, 
+	mobileappstoredownloads, mobileappstoreinapprevenue, mobileappstoreinapproyalties, mobileappstoreobjectid, mobileappstoreoneoffrevenue, 
+	mobileappstoreoneoffroyalties, mobileappstorepurchases, mobileappstorerank, mobileappstorerankdivisor, mobileappstorerating, 
+	mobileappstoreratingdivisor, mobileavgprevsessionlength, mobilebeaconmajor, mobilebeaconminor, mobilebeaconproximity, mobilebeaconuuid, 
+	mobilecampaigncontent, mobilecampaignmedium, mobilecampaignname, mobilecampaignsource, mobilecampaignterm, mobilecrashes, 
+	mobilecrashrate, mobiledailyengagedusers, mobiledayofweek, mobiledayssincefirstuse, mobiledayssincelastupgrade, mobiledayssincelastuse, 
+	mobiledeeplinkid, mobiledevice, mobilehourofday, mobileinstalldate, mobileinstalls, mobilelaunches, mobilelaunchessincelastupgrade, 
+	mobilelaunchnumber, mobileltv, mobileltvtotal, mobilemessagebuttonname, mobilemessageclicks, mobilemessageid, mobilemessageimpressions, 
+	mobilemessageonline, mobilemessagepushoptin, mobilemessagepushpayloadid, mobilemessageviews, mobilemonthlyengagedusers, mobileosenvironment, 
+	mobileosversion, mobileplaceaccuracy, mobileplacecategory, mobileplacedwelltime, mobileplaceentry, mobileplaceexit, mobileplaceid, 
+	mobileprevsessionlength, mobilepushoptin, mobilepushpayloadid, mobilerelaunchcampaigncontent, mobilerelaunchcampaignmedium, 
+	mobilerelaunchcampaignsource, mobilerelaunchcampaignterm, mobilerelaunchcampaigntrackingcode, mobileresolution, mobileupgrades, 
+	monthly_visitor, mvvar1, mvvar2, mvvar3, namespace, new_visit, os, p_plugins, page_event, page_event_var1, page_event_var2, 
+	page_event_var3, page_type, page_url, pagename, paid_search, partner_plugins, persistent_cookie, plugins, pointofinterest, 
+	pointofinterestdistance, post_adclassificationcreative, post_adload, post_browser_height, post_browser_width, post_campaign, 
+	post_channel, post_clickmaplink, post_clickmaplinkbyregion, post_clickmappage, post_clickmapregion, post_cookies, post_currency, 
+	post_cust_hit_time_gmt, post_cust_visid, post_ef_id, post_evar1, post_evar2, post_evar3, post_evar4, post_evar5, post_evar6, 
+	post_evar7, post_evar8, post_evar9, post_evar10, post_evar11, post_evar12, post_evar13, post_evar14, post_evar15, post_evar16, 
+	post_evar17, post_evar18, post_evar19, post_evar20, post_evar21, post_evar22, post_evar23, post_evar24, post_evar25, post_evar26, 
+	post_evar27, post_evar28, post_evar29, post_evar30, post_evar31, post_evar32, post_evar33, post_evar34, post_evar35, post_evar36, 
+	post_evar37, post_evar38, post_evar39, post_evar40, post_evar41, post_evar42, post_evar43, post_evar44, post_evar45, post_evar46, 
+	post_evar47, post_evar48, post_evar49, post_evar50, post_evar51, post_evar52, post_evar53, post_evar54, post_evar55, post_evar56, 
+	post_evar57, post_evar58, post_evar59, post_evar60, post_evar61, post_evar62, post_evar63, post_evar64, post_evar65, post_evar66, 
+	post_evar67, post_evar68, post_evar69, post_evar70, post_evar71, post_evar72, post_evar73, post_evar74, post_evar75, post_evar76, 
+	post_evar77, post_evar78, post_evar79, post_evar80, post_evar81, post_evar82, post_evar83, post_evar84, post_evar85, post_evar86, 
+	post_evar87, post_evar88, post_evar89, post_evar90, post_evar91, post_evar92, post_evar93, post_evar94, post_evar95, post_evar96, 
+	post_evar97, post_evar98, post_evar99, post_evar100, post_evar101, post_evar102, post_evar103, post_evar104, post_evar105, 
+	post_evar106, post_evar107, post_evar108, post_evar109, post_evar110, post_evar111, post_evar112, post_evar113, post_evar114, 
+	post_evar115, post_evar116, post_evar117, post_evar118, post_evar119, post_evar120, post_evar121, post_evar122, post_evar123, 
+	post_evar124, post_evar125, post_evar126, post_evar127, post_evar128, post_evar129, post_evar130, post_evar131, post_evar132, 
+	post_evar133, post_evar134, post_evar135, post_evar136, post_evar137, post_evar138, post_evar139, post_evar140, post_evar141, 
+	post_evar142, post_evar143, post_evar144, post_evar145, post_evar146, post_evar147, post_evar148, post_evar149, post_evar150, 
+	post_evar151, post_evar152, post_evar153, post_evar154, post_evar155, post_evar156, post_evar157, post_evar158, post_evar159, 
+	post_evar160, post_evar161, post_evar162, post_evar163, post_evar164, post_evar165, post_evar166, post_evar167, post_evar168, 
+	post_evar169, post_evar170, post_evar171, post_evar172, post_evar173, post_evar174, post_evar175, post_evar176, post_evar177, 
+	post_evar178, post_evar179, post_evar180, post_evar181, post_evar182, post_evar183, post_evar184, post_evar185, post_evar186, 
+	post_evar187, post_evar188, post_evar189, post_evar190, post_evar191, post_evar192, post_evar193, post_evar194, post_evar195, 
+	post_evar196, post_evar197, post_evar198, post_evar199, post_evar200, post_evar201, post_evar202, post_evar203, post_evar204, 
+	post_evar205, post_evar206, post_evar207, post_evar208, post_evar209, post_evar210, post_evar211, post_evar212, post_evar213, 
+	post_evar214, post_evar215, post_evar216, post_evar217, post_evar218, post_evar219, post_evar220, post_evar221, post_evar222, 
+	post_evar223, post_evar224, post_evar225, post_evar226, post_evar227, post_evar228, post_evar229, post_evar230, post_evar231, 
+	post_evar232, post_evar233, post_evar234, post_evar235, post_evar236, post_evar237, post_evar238, post_evar239, post_evar240, 
+	post_evar241, post_evar242, post_evar243, post_evar244, post_evar245, post_evar246, post_evar247, post_evar248, post_evar249, 
+	post_evar250, post_event_list, post_hier1, post_hier2, post_hier3, post_hier4, post_hier5, post_java_enabled, post_keywords, 
+	post_mc_audiences, post_mobileaction, post_mobileappid, post_mobilecampaigncontent, post_mobilecampaignmedium, post_mobilecampaignname, 
+	post_mobilecampaignsource, post_mobilecampaignterm, post_mobiledayofweek, post_mobiledayssincefirstuse, post_mobiledayssincelastuse, 
+	post_mobiledevice, post_mobilehourofday, post_mobileinstalldate, post_mobilelaunchnumber, post_mobileltv, post_mobilemessagebuttonname, 
+	post_mobilemessageclicks, post_mobilemessageid, post_mobilemessageimpressions, post_mobilemessageonline, post_mobilemessagepushoptin, 
+	post_mobilemessagepushpayloadid, post_mobilemessageviews, post_mobileosversion, post_mobilepushoptin, post_mobilepushpayloadid, 
+	post_mobileresolution, post_mvvar1, post_mvvar2, post_mvvar3, post_page_event, post_page_event_var1, post_page_event_var2, 
+	post_page_event_var3, post_page_type, post_page_url, post_pagename, post_pagename_no_url, post_partner_plugins, post_persistent_cookie, 
+	post_pointofinterest, post_pointofinterestdistance, post_product_list, post_prop1, post_prop2, post_prop3, post_prop4, post_prop5, 
+	post_prop6, post_prop7, post_prop8, post_prop9, post_prop10, post_prop11, post_prop12, post_prop13, post_prop14, post_prop15, 
+	post_prop16, post_prop17, post_prop18, post_prop19, post_prop20, post_prop21, post_prop22, post_prop23, post_prop24, post_prop25, 
+	post_prop26, post_prop27, post_prop28, post_prop29, post_prop30, post_prop31, post_prop32, post_prop33, post_prop34, post_prop35, 
+	post_prop36, post_prop37, post_prop38, post_prop39, post_prop40, post_prop41, post_prop42, post_prop43, post_prop44, post_prop45, 
+	post_prop46, post_prop47, post_prop48, post_prop49, post_prop50, post_prop51, post_prop52, post_prop53, post_prop54, post_prop55, 
+	post_prop56, post_prop57, post_prop58, post_prop59, post_prop60, post_prop61, post_prop62, post_prop63, post_prop64, post_prop65, 
+	post_prop66, post_prop67, post_prop68, post_prop69, post_prop70, post_prop71, post_prop72, post_prop73, post_prop74, post_prop75, 
+	post_purchaseid, post_referrer, post_s_kwcid, post_search_engine, post_socialaccountandappids, post_socialassettrackingcode, 
+	post_socialauthor, post_socialaveragesentiment, post_socialaveragesentiment_deprecated, post_socialcontentprovider, post_socialfbstories, 
+	post_socialfbstorytellers, post_socialinteractioncount, post_socialinteractiontype, post_sociallanguage, post_sociallatlong, 
+	post_sociallikeadds, post_sociallink, post_sociallink_deprecated, post_socialmentions, post_socialowneddefinitioninsighttype, 
+	post_socialowneddefinitioninsightvalue, post_socialowneddefinitionmetric, post_socialowneddefinitionpropertyvspost, post_socialownedpostids, 
+	post_socialownedpropertyid, post_socialownedpropertyname, post_socialownedpropertypropertyvsapp, post_socialpageviews, post_socialpostviews, 
+	post_socialproperty, post_socialproperty_deprecated, post_socialpubcomments, post_socialpubposts, post_socialpubrecommends, 
+	post_socialpubsubscribers, post_socialterm, post_socialtermslist, post_socialtermslist_deprecated, post_socialtotalsentiment, 
+	post_state, post_survey, post_t_time_info, post_tnt, post_tnt_action, post_transactionid, post_video, post_videoad, post_videoadinpod, 
+	post_videoadlength, post_videoadname, post_videoadplayername, post_videoadpod, post_videoadvertiser, post_videoauthorized, 
+	post_videocampaign, post_videochannel, post_videochapter, post_videocontenttype, post_videodaypart, post_videoepisode, post_videofeedtype, 
+	post_videogenre, post_videolength, post_videomvpd, post_videoname, post_videonetwork, post_videopath, post_videoplayername, 
+	post_videoqoebitrateaverageevar, post_videoqoebitratechangecountevar, post_videoqoebuffercountevar, post_videoqoebuffertimeevar, 
+	post_videoqoedroppedframecountevar, post_videoqoeerrorcountevar, post_videoqoetimetostartevar, post_videoseason, post_videosegment, 
+	post_videoshow, post_videoshowtype, post_visid_high, post_visid_low, post_visid_type, post_zip, prev_page, product_list, 
+	product_merchandising, prop1, prop2, prop3, prop4, prop5, prop6, prop7, prop8, prop9, prop10, prop11, prop12, prop13, prop14, 
+	prop15, prop16, prop17, prop18, prop19, prop20, prop21, prop22, prop23, prop24, prop25, prop26, prop27, prop28, prop29, prop30, 
+	prop31, prop32, prop33, prop34, prop35, prop36, prop37, prop38, prop39, prop40, prop41, prop42, prop43, prop44, prop45, prop46, 
+	prop47, prop48, prop49, prop50, prop51, prop52, prop53, prop54, prop55, prop56, prop57, prop58, prop59, prop60, prop61, prop62, 
+	prop63, prop64, prop65, prop66, prop67, prop68, prop69, prop70, prop71, prop72, prop73, prop74, prop75, purchaseid, quarterly_visitor, 
+	ref_domain, ref_type, referrer, resolution, s_kwcid, s_resolution, sampled_hit, search_engine, search_page_num, secondary_hit, 
+	service, socialaccountandappids, socialassettrackingcode, socialauthor, socialaveragesentiment, socialaveragesentiment_deprecated, 
+	socialcontentprovider, socialfbstories, socialfbstorytellers, socialinteractioncount, socialinteractiontype, sociallanguage, 
+	sociallatlong, sociallikeadds, sociallink, sociallink_deprecated, socialmentions, socialowneddefinitioninsighttype, socialowneddefinitioninsightvalue, 
+	socialowneddefinitionmetric, socialowneddefinitionpropertyvspost, socialownedpostids, socialownedpropertyid, socialownedpropertyname, 
+	socialownedpropertypropertyvsapp, socialpageviews, socialpostviews, socialproperty, socialproperty_deprecated, socialpubcomments, 
+	socialpubposts, socialpubrecommends, socialpubsubscribers, socialterm, socialtermslist, socialtermslist_deprecated, socialtotalsentiment, 
+	sourceid, state, stats_server, t_time_info, tnt, tnt_action, tnt_post_vista, transactionid, truncated_hit, ua_color, ua_os, 
+	ua_pixels, user_hash, user_server, userid, username, va_closer_detail, va_closer_id, va_finder_detail, va_finder_id, va_instance_event, 
+	va_new_engagement, video, videoad, videoadinpod, videoadlength, videoadname, videoadplayername, videoadpod, videoadvertiser, 
+	videoaudioalbum, videoaudioartist, videoaudioauthor, videoaudiolabel, videoaudiopublisher, videoaudiostation, videoauthorized, 
+	videoaverageminuteaudience, videocampaign, videochannel, videochapter, videochaptercomplete, videochapterstart, videochaptertime, 
+	videocontenttype, videodaypart, videoepisode, videofeedtype, videogenre, videolength, videomvpd, videoname, videonetwork, 
+	videopath, videopause, videopausecount, videopausetime, videoplay, videoplayername, videoprogress10, videoprogress25, videoprogress50, 
+	videoprogress75, videoprogress96, videoqoebitrateaverage, videoqoebitrateaverageevar, videoqoebitratechange, videoqoebitratechangecountevar, 
+	videoqoebuffer, videoqoebuffercountevar, videoqoebuffertimeevar, videoqoedropbeforestart, videoqoedroppedframecountevar, 
+	videoqoedroppedframes, videoqoeerror, videoqoeerrorcountevar, videoqoeextneralerrors, videoqoeplayersdkerrors, videoqoetimetostartevar, 
+	videoresume, videoseason, videosegment, videoshow, videoshowtype, videostreamtype, videototaltime, videouniquetimeplayed, 
+	visid_high, visid_low, visid_new, visid_timestamp, visid_type, visit_keywords, visit_num, visit_page_num, visit_ref_domain, 
+	visit_ref_type, visit_referrer, visit_search_engine, visit_start_page_url, visit_start_pagename, visit_start_time_gmt, weekly_visitor, 
+	yearly_visitor, zip, date, framework_update_ts, framework_source
+FROM
+	hive_metastore.hma_adobe_analytics.data_feed d;]]></string>
+		</script>
+		<browser id="Browse-221c" name="Relational Data Editor" confirm_updates="y" >
+			<browse_table schema="hive_metastore.hma_adobe_analytics" entity="data_feed" x="20" y="20" width="270" height="-60" />
+		</browser>
+		<query id="Query-241d" name="Query Builder" >
+			<query_table schema="hive_metastore.hma_adobe_analytics" name="data_feed" alias="df" x="48" y="48" >
+				<column name="accept_language" />
+				<column name="adclassificationcreative" />
+				<column name="adload" />
+				<column name="aemassetid" />
+				<column name="aemassetsource" />
+				<column name="aemclickedassetid" />
+				<column name="browser" />
+				<column name="browser_height" />
+				<column name="browser_width" />
+				<column name="c_color" />
+				<column name="campaign" />
+				<column name="carrier" />
+				<column name="channel" />
+				<column name="click_action" />
+				<column name="click_action_type" />
+				<column name="click_context" />
+				<column name="click_context_type" />
+				<column name="click_sourceid" />
+				<column name="click_tag" />
+				<column name="clickmaplink" />
+				<column name="clickmaplinkbyregion" />
+				<column name="clickmappage" />
+				<column name="clickmapregion" />
+				<column name="code_ver" />
+				<column name="color" />
+				<column name="connection_type" />
+				<column name="cookies" />
+				<column name="country" />
+				<column name="ct_connect_type" />
+				<column name="curr_factor" />
+				<column name="curr_rate" />
+				<column name="currency" />
+				<column name="cust_hit_time_gmt" />
+				<column name="cust_visid" />
+				<column name="daily_visitor" />
+				<column name="date_time" />
+				<column name="domain" />
+				<column name="duplicate_events" />
+				<column name="duplicate_purchase" />
+				<column name="duplicated_from" />
+				<column name="ef_id" />
+				<column name="evar1" />
+				<column name="evar2" />
+				<column name="evar3" />
+				<column name="evar4" />
+				<column name="evar5" />
+				<column name="evar6" />
+				<column name="evar7" />
+				<column name="evar8" />
+				<column name="evar9" />
+				<column name="evar10" />
+				<column name="evar11" />
+				<column name="evar12" />
+				<column name="evar13" />
+				<column name="evar14" />
+				<column name="evar15" />
+				<column name="evar16" />
+				<column name="evar17" />
+				<column name="evar18" />
+				<column name="evar19" />
+				<column name="evar20" />
+				<column name="evar21" />
+				<column name="evar22" />
+				<column name="evar23" />
+				<column name="evar24" />
+				<column name="evar25" />
+				<column name="evar26" />
+				<column name="evar27" />
+				<column name="evar28" />
+				<column name="evar29" />
+				<column name="evar30" />
+				<column name="evar31" />
+				<column name="evar32" />
+				<column name="evar33" />
+				<column name="evar34" />
+				<column name="evar35" />
+				<column name="evar36" />
+				<column name="evar37" />
+				<column name="evar38" />
+				<column name="evar39" />
+				<column name="evar40" />
+				<column name="evar41" />
+				<column name="evar42" />
+				<column name="evar43" />
+				<column name="evar44" />
+				<column name="evar45" />
+				<column name="evar46" />
+				<column name="evar47" />
+				<column name="evar48" />
+				<column name="evar49" />
+				<column name="evar50" />
+				<column name="evar51" />
+				<column name="evar52" />
+				<column name="evar53" />
+				<column name="evar54" />
+				<column name="evar55" />
+				<column name="evar56" />
+				<column name="evar57" />
+				<column name="evar58" />
+				<column name="evar59" />
+				<column name="evar60" />
+				<column name="evar61" />
+				<column name="evar62" />
+				<column name="evar63" />
+				<column name="evar64" />
+				<column name="evar65" />
+				<column name="evar66" />
+				<column name="evar67" />
+				<column name="evar68" />
+				<column name="evar69" />
+				<column name="evar70" />
+				<column name="evar71" />
+				<column name="evar72" />
+				<column name="evar73" />
+				<column name="evar74" />
+				<column name="evar75" />
+				<column name="evar76" />
+				<column name="evar77" />
+				<column name="evar78" />
+				<column name="evar79" />
+				<column name="evar80" />
+				<column name="evar81" />
+				<column name="evar82" />
+				<column name="evar83" />
+				<column name="evar84" />
+				<column name="evar85" />
+				<column name="evar86" />
+				<column name="evar87" />
+				<column name="evar88" />
+				<column name="evar89" />
+				<column name="evar90" />
+				<column name="evar91" />
+				<column name="evar92" />
+				<column name="evar93" />
+				<column name="evar94" />
+				<column name="evar95" />
+				<column name="evar96" />
+				<column name="evar97" />
+				<column name="evar98" />
+				<column name="evar99" />
+				<column name="evar100" />
+				<column name="evar101" />
+				<column name="evar102" />
+				<column name="evar103" />
+				<column name="evar104" />
+				<column name="evar105" />
+				<column name="evar106" />
+				<column name="evar107" />
+				<column name="evar108" />
+				<column name="evar109" />
+				<column name="evar110" />
+				<column name="evar111" />
+				<column name="evar112" />
+				<column name="evar113" />
+				<column name="evar114" />
+				<column name="evar115" />
+				<column name="evar116" />
+				<column name="evar117" />
+				<column name="evar118" />
+				<column name="evar119" />
+				<column name="evar120" />
+				<column name="evar121" />
+				<column name="evar122" />
+				<column name="evar123" />
+				<column name="evar124" />
+				<column name="evar125" />
+				<column name="evar126" />
+				<column name="evar127" />
+				<column name="evar128" />
+				<column name="evar129" />
+				<column name="evar130" />
+				<column name="evar131" />
+				<column name="evar132" />
+				<column name="evar133" />
+				<column name="evar134" />
+				<column name="evar135" />
+				<column name="evar136" />
+				<column name="evar137" />
+				<column name="evar138" />
+				<column name="evar139" />
+				<column name="evar140" />
+				<column name="evar141" />
+				<column name="evar142" />
+				<column name="evar143" />
+				<column name="evar144" />
+				<column name="evar145" />
+				<column name="evar146" />
+				<column name="evar147" />
+				<column name="evar148" />
+				<column name="evar149" />
+				<column name="evar150" />
+				<column name="evar151" />
+				<column name="evar152" />
+				<column name="evar153" />
+				<column name="evar154" />
+				<column name="evar155" />
+				<column name="evar156" />
+				<column name="evar157" />
+				<column name="evar158" />
+				<column name="evar159" />
+				<column name="evar160" />
+				<column name="evar161" />
+				<column name="evar162" />
+				<column name="evar163" />
+				<column name="evar164" />
+				<column name="evar165" />
+				<column name="evar166" />
+				<column name="evar167" />
+				<column name="evar168" />
+				<column name="evar169" />
+				<column name="evar170" />
+				<column name="evar171" />
+				<column name="evar172" />
+				<column name="evar173" />
+				<column name="evar174" />
+				<column name="evar175" />
+				<column name="evar176" />
+				<column name="evar177" />
+				<column name="evar178" />
+				<column name="evar179" />
+				<column name="evar180" />
+				<column name="evar181" />
+				<column name="evar182" />
+				<column name="evar183" />
+				<column name="evar184" />
+				<column name="evar185" />
+				<column name="evar186" />
+				<column name="evar187" />
+				<column name="evar188" />
+				<column name="evar189" />
+				<column name="evar190" />
+				<column name="evar191" />
+				<column name="evar192" />
+				<column name="evar193" />
+				<column name="evar194" />
+				<column name="evar195" />
+				<column name="evar196" />
+				<column name="evar197" />
+				<column name="evar198" />
+				<column name="evar199" />
+				<column name="evar200" />
+				<column name="evar201" />
+				<column name="evar202" />
+				<column name="evar203" />
+				<column name="evar204" />
+				<column name="evar205" />
+				<column name="evar206" />
+				<column name="evar207" />
+				<column name="evar208" />
+				<column name="evar209" />
+				<column name="evar210" />
+				<column name="evar211" />
+				<column name="evar212" />
+				<column name="evar213" />
+				<column name="evar214" />
+				<column name="evar215" />
+				<column name="evar216" />
+				<column name="evar217" />
+				<column name="evar218" />
+				<column name="evar219" />
+				<column name="evar220" />
+				<column name="evar221" />
+				<column name="evar222" />
+				<column name="evar223" />
+				<column name="evar224" />
+				<column name="evar225" />
+				<column name="evar226" />
+				<column name="evar227" />
+				<column name="evar228" />
+				<column name="evar229" />
+				<column name="evar230" />
+				<column name="evar231" />
+				<column name="evar232" />
+				<column name="evar233" />
+				<column name="evar234" />
+				<column name="evar235" />
+				<column name="evar236" />
+				<column name="evar237" />
+				<column name="evar238" />
+				<column name="evar239" />
+				<column name="evar240" />
+				<column name="evar241" />
+				<column name="evar242" />
+				<column name="evar243" />
+				<column name="evar244" />
+				<column name="evar245" />
+				<column name="evar246" />
+				<column name="evar247" />
+				<column name="evar248" />
+				<column name="evar249" />
+				<column name="evar250" />
+				<column name="event_list" />
+				<column name="exclude_hit" />
+				<column name="first_hit_page_url" />
+				<column name="first_hit_pagename" />
+				<column name="first_hit_ref_domain" />
+				<column name="first_hit_ref_type" />
+				<column name="first_hit_referrer" />
+				<column name="first_hit_time_gmt" />
+				<column name="geo_city" />
+				<column name="geo_country" />
+				<column name="geo_dma" />
+				<column name="geo_region" />
+				<column name="geo_zip" />
+				<column name="hier1" />
+				<column name="hier2" />
+				<column name="hier3" />
+				<column name="hier4" />
+				<column name="hier5" />
+				<column name="hit_source" />
+				<column name="hit_time_gmt" />
+				<column name="hitid_high" />
+				<column name="hitid_low" />
+				<column name="homepage" />
+				<column name="hourly_visitor" />
+				<column name="ip" />
+				<column name="ip2" />
+				<column name="j_jscript" />
+				<column name="java_enabled" />
+				<column name="javascript" />
+				<column name="language" />
+				<column name="last_hit_time_gmt" />
+				<column name="last_purchase_num" />
+				<column name="last_purchase_time_gmt" />
+				<column name="latlon1" />
+				<column name="latlon23" />
+				<column name="latlon45" />
+				<column name="mc_audiences" />
+				<column name="mcvisid" />
+				<column name="mobile_id" />
+				<column name="mobileacquisitionclicks" />
+				<column name="mobileaction" />
+				<column name="mobileactioninapptime" />
+				<column name="mobileactiontotaltime" />
+				<column name="mobileappid" />
+				<column name="mobileappperformanceaffectedusers" />
+				<column name="mobileappperformanceappid" />
+				<column name="mobileappperformancecrashes" />
+				<column name="mobileappperformancecrashid" />
+				<column name="mobileappperformanceloads" />
+				<column name="mobileappstoreavgrating" />
+				<column name="mobileappstoredownloads" />
+				<column name="mobileappstoreinapprevenue" />
+				<column name="mobileappstoreinapproyalties" />
+				<column name="mobileappstoreobjectid" />
+				<column name="mobileappstoreoneoffrevenue" />
+				<column name="mobileappstoreoneoffroyalties" />
+				<column name="mobileappstorepurchases" />
+				<column name="mobileappstorerank" />
+				<column name="mobileappstorerankdivisor" />
+				<column name="mobileappstorerating" />
+				<column name="mobileappstoreratingdivisor" />
+				<column name="mobileavgprevsessionlength" />
+				<column name="mobilebeaconmajor" />
+				<column name="mobilebeaconminor" />
+				<column name="mobilebeaconproximity" />
+				<column name="mobilebeaconuuid" />
+				<column name="mobilecampaigncontent" />
+				<column name="mobilecampaignmedium" />
+				<column name="mobilecampaignname" />
+				<column name="mobilecampaignsource" />
+				<column name="mobilecampaignterm" />
+				<column name="mobilecrashes" />
+				<column name="mobilecrashrate" />
+				<column name="mobiledailyengagedusers" />
+				<column name="mobiledayofweek" />
+				<column name="mobiledayssincefirstuse" />
+				<column name="mobiledayssincelastupgrade" />
+				<column name="mobiledayssincelastuse" />
+				<column name="mobiledeeplinkid" />
+				<column name="mobiledevice" />
+				<column name="mobilehourofday" />
+				<column name="mobileinstalldate" />
+				<column name="mobileinstalls" />
+				<column name="mobilelaunches" />
+				<column name="mobilelaunchessincelastupgrade" />
+				<column name="mobilelaunchnumber" />
+				<column name="mobileltv" />
+				<column name="mobileltvtotal" />
+				<column name="mobilemessagebuttonname" />
+				<column name="mobilemessageclicks" />
+				<column name="mobilemessageid" />
+				<column name="mobilemessageimpressions" />
+				<column name="mobilemessageonline" />
+				<column name="mobilemessagepushoptin" />
+				<column name="mobilemessagepushpayloadid" />
+				<column name="mobilemessageviews" />
+				<column name="mobilemonthlyengagedusers" />
+				<column name="mobileosenvironment" />
+				<column name="mobileosversion" />
+				<column name="mobileplaceaccuracy" />
+				<column name="mobileplacecategory" />
+				<column name="mobileplacedwelltime" />
+				<column name="mobileplaceentry" />
+				<column name="mobileplaceexit" />
+				<column name="mobileplaceid" />
+				<column name="mobileprevsessionlength" />
+				<column name="mobilepushoptin" />
+				<column name="mobilepushpayloadid" />
+				<column name="mobilerelaunchcampaigncontent" />
+				<column name="mobilerelaunchcampaignmedium" />
+				<column name="mobilerelaunchcampaignsource" />
+				<column name="mobilerelaunchcampaignterm" />
+				<column name="mobilerelaunchcampaigntrackingcode" />
+				<column name="mobileresolution" />
+				<column name="mobileupgrades" />
+				<column name="monthly_visitor" />
+				<column name="mvvar1" />
+				<column name="mvvar2" />
+				<column name="mvvar3" />
+				<column name="namespace" />
+				<column name="new_visit" />
+				<column name="os" />
+				<column name="p_plugins" />
+				<column name="page_event" />
+				<column name="page_event_var1" />
+				<column name="page_event_var2" />
+				<column name="page_event_var3" />
+				<column name="page_type" />
+				<column name="page_url" />
+				<column name="pagename" />
+				<column name="paid_search" />
+				<column name="partner_plugins" />
+				<column name="persistent_cookie" />
+				<column name="plugins" />
+				<column name="pointofinterest" />
+				<column name="pointofinterestdistance" />
+				<column name="post_adclassificationcreative" />
+				<column name="post_adload" />
+				<column name="post_browser_height" />
+				<column name="post_browser_width" />
+				<column name="post_campaign" />
+				<column name="post_channel" />
+				<column name="post_clickmaplink" />
+				<column name="post_clickmaplinkbyregion" />
+				<column name="post_clickmappage" />
+				<column name="post_clickmapregion" />
+				<column name="post_cookies" />
+				<column name="post_currency" />
+				<column name="post_cust_hit_time_gmt" />
+				<column name="post_cust_visid" />
+				<column name="post_ef_id" />
+				<column name="post_evar1" />
+				<column name="post_evar2" />
+				<column name="post_evar3" />
+				<column name="post_evar4" />
+				<column name="post_evar5" />
+				<column name="post_evar6" />
+				<column name="post_evar7" />
+				<column name="post_evar8" />
+				<column name="post_evar9" />
+				<column name="post_evar10" />
+				<column name="post_evar11" />
+				<column name="post_evar12" />
+				<column name="post_evar13" />
+				<column name="post_evar14" />
+				<column name="post_evar15" />
+				<column name="post_evar16" />
+				<column name="post_evar17" />
+				<column name="post_evar18" />
+				<column name="post_evar19" />
+				<column name="post_evar20" />
+				<column name="post_evar21" />
+				<column name="post_evar22" />
+				<column name="post_evar23" />
+				<column name="post_evar24" />
+				<column name="post_evar25" />
+				<column name="post_evar26" />
+				<column name="post_evar27" />
+				<column name="post_evar28" />
+				<column name="post_evar29" />
+				<column name="post_evar30" />
+				<column name="post_evar31" />
+				<column name="post_evar32" />
+				<column name="post_evar33" />
+				<column name="post_evar34" />
+				<column name="post_evar35" />
+				<column name="post_evar36" />
+				<column name="post_evar37" />
+				<column name="post_evar38" />
+				<column name="post_evar39" />
+				<column name="post_evar40" />
+				<column name="post_evar41" />
+				<column name="post_evar42" />
+				<column name="post_evar43" />
+				<column name="post_evar44" />
+				<column name="post_evar45" />
+				<column name="post_evar46" />
+				<column name="post_evar47" />
+				<column name="post_evar48" />
+				<column name="post_evar49" />
+				<column name="post_evar50" />
+				<column name="post_evar51" />
+				<column name="post_evar52" />
+				<column name="post_evar53" />
+				<column name="post_evar54" />
+				<column name="post_evar55" />
+				<column name="post_evar56" />
+				<column name="post_evar57" />
+				<column name="post_evar58" />
+				<column name="post_evar59" />
+				<column name="post_evar60" />
+				<column name="post_evar61" />
+				<column name="post_evar62" />
+				<column name="post_evar63" />
+				<column name="post_evar64" />
+				<column name="post_evar65" />
+				<column name="post_evar66" />
+				<column name="post_evar67" />
+				<column name="post_evar68" />
+				<column name="post_evar69" />
+				<column name="post_evar70" />
+				<column name="post_evar71" />
+				<column name="post_evar72" />
+				<column name="post_evar73" />
+				<column name="post_evar74" />
+				<column name="post_evar75" />
+				<column name="post_evar76" />
+				<column name="post_evar77" />
+				<column name="post_evar78" />
+				<column name="post_evar79" />
+				<column name="post_evar80" />
+				<column name="post_evar81" />
+				<column name="post_evar82" />
+				<column name="post_evar83" />
+				<column name="post_evar84" />
+				<column name="post_evar85" />
+				<column name="post_evar86" />
+				<column name="post_evar87" />
+				<column name="post_evar88" />
+				<column name="post_evar89" />
+				<column name="post_evar90" />
+				<column name="post_evar91" />
+				<column name="post_evar92" />
+				<column name="post_evar93" />
+				<column name="post_evar94" />
+				<column name="post_evar95" />
+				<column name="post_evar96" />
+				<column name="post_evar97" />
+				<column name="post_evar98" />
+				<column name="post_evar99" />
+				<column name="post_evar100" />
+				<column name="post_evar101" />
+				<column name="post_evar102" />
+				<column name="post_evar103" />
+				<column name="post_evar104" />
+				<column name="post_evar105" />
+				<column name="post_evar106" />
+				<column name="post_evar107" />
+				<column name="post_evar108" />
+				<column name="post_evar109" />
+				<column name="post_evar110" />
+				<column name="post_evar111" />
+				<column name="post_evar112" />
+				<column name="post_evar113" />
+				<column name="post_evar114" />
+				<column name="post_evar115" />
+				<column name="post_evar116" />
+				<column name="post_evar117" />
+				<column name="post_evar118" />
+				<column name="post_evar119" />
+				<column name="post_evar120" />
+				<column name="post_evar121" />
+				<column name="post_evar122" />
+				<column name="post_evar123" />
+				<column name="post_evar124" />
+				<column name="post_evar125" />
+				<column name="post_evar126" />
+				<column name="post_evar127" />
+				<column name="post_evar128" />
+				<column name="post_evar129" />
+				<column name="post_evar130" />
+				<column name="post_evar131" />
+				<column name="post_evar132" />
+				<column name="post_evar133" />
+				<column name="post_evar134" />
+				<column name="post_evar135" />
+				<column name="post_evar136" />
+				<column name="post_evar137" />
+				<column name="post_evar138" />
+				<column name="post_evar139" />
+				<column name="post_evar140" />
+				<column name="post_evar141" />
+				<column name="post_evar142" />
+				<column name="post_evar143" />
+				<column name="post_evar144" />
+				<column name="post_evar145" />
+				<column name="post_evar146" />
+				<column name="post_evar147" />
+				<column name="post_evar148" />
+				<column name="post_evar149" />
+				<column name="post_evar150" />
+				<column name="post_evar151" />
+				<column name="post_evar152" />
+				<column name="post_evar153" />
+				<column name="post_evar154" />
+				<column name="post_evar155" />
+				<column name="post_evar156" />
+				<column name="post_evar157" />
+				<column name="post_evar158" />
+				<column name="post_evar159" />
+				<column name="post_evar160" />
+				<column name="post_evar161" />
+				<column name="post_evar162" />
+				<column name="post_evar163" />
+				<column name="post_evar164" />
+				<column name="post_evar165" />
+				<column name="post_evar166" />
+				<column name="post_evar167" />
+				<column name="post_evar168" />
+				<column name="post_evar169" />
+				<column name="post_evar170" />
+				<column name="post_evar171" />
+				<column name="post_evar172" />
+				<column name="post_evar173" />
+				<column name="post_evar174" />
+				<column name="post_evar175" />
+				<column name="post_evar176" />
+				<column name="post_evar177" />
+				<column name="post_evar178" />
+				<column name="post_evar179" />
+				<column name="post_evar180" />
+				<column name="post_evar181" />
+				<column name="post_evar182" />
+				<column name="post_evar183" />
+				<column name="post_evar184" />
+				<column name="post_evar185" />
+				<column name="post_evar186" />
+				<column name="post_evar187" />
+				<column name="post_evar188" />
+				<column name="post_evar189" />
+				<column name="post_evar190" />
+				<column name="post_evar191" />
+				<column name="post_evar192" />
+				<column name="post_evar193" />
+				<column name="post_evar194" />
+				<column name="post_evar195" />
+				<column name="post_evar196" />
+				<column name="post_evar197" />
+				<column name="post_evar198" />
+				<column name="post_evar199" />
+				<column name="post_evar200" />
+				<column name="post_evar201" />
+				<column name="post_evar202" />
+				<column name="post_evar203" />
+				<column name="post_evar204" />
+				<column name="post_evar205" />
+				<column name="post_evar206" />
+				<column name="post_evar207" />
+				<column name="post_evar208" />
+				<column name="post_evar209" />
+				<column name="post_evar210" />
+				<column name="post_evar211" />
+				<column name="post_evar212" />
+				<column name="post_evar213" />
+				<column name="post_evar214" />
+				<column name="post_evar215" />
+				<column name="post_evar216" />
+				<column name="post_evar217" />
+				<column name="post_evar218" />
+				<column name="post_evar219" />
+				<column name="post_evar220" />
+				<column name="post_evar221" />
+				<column name="post_evar222" />
+				<column name="post_evar223" />
+				<column name="post_evar224" />
+				<column name="post_evar225" />
+				<column name="post_evar226" />
+				<column name="post_evar227" />
+				<column name="post_evar228" />
+				<column name="post_evar229" />
+				<column name="post_evar230" />
+				<column name="post_evar231" />
+				<column name="post_evar232" />
+				<column name="post_evar233" />
+				<column name="post_evar234" />
+				<column name="post_evar235" />
+				<column name="post_evar236" />
+				<column name="post_evar237" />
+				<column name="post_evar238" />
+				<column name="post_evar239" />
+				<column name="post_evar240" />
+				<column name="post_evar241" />
+				<column name="post_evar242" />
+				<column name="post_evar243" />
+				<column name="post_evar244" />
+				<column name="post_evar245" />
+				<column name="post_evar246" />
+				<column name="post_evar247" />
+				<column name="post_evar248" />
+				<column name="post_evar249" />
+				<column name="post_evar250" />
+				<column name="post_event_list" />
+				<column name="post_hier1" />
+				<column name="post_hier2" />
+				<column name="post_hier3" />
+				<column name="post_hier4" />
+				<column name="post_hier5" />
+				<column name="post_java_enabled" />
+				<column name="post_keywords" />
+				<column name="post_mc_audiences" />
+				<column name="post_mobileaction" />
+				<column name="post_mobileappid" />
+				<column name="post_mobilecampaigncontent" />
+				<column name="post_mobilecampaignmedium" />
+				<column name="post_mobilecampaignname" />
+				<column name="post_mobilecampaignsource" />
+				<column name="post_mobilecampaignterm" />
+				<column name="post_mobiledayofweek" />
+				<column name="post_mobiledayssincefirstuse" />
+				<column name="post_mobiledayssincelastuse" />
+				<column name="post_mobiledevice" />
+				<column name="post_mobilehourofday" />
+				<column name="post_mobileinstalldate" />
+				<column name="post_mobilelaunchnumber" />
+				<column name="post_mobileltv" />
+				<column name="post_mobilemessagebuttonname" />
+				<column name="post_mobilemessageclicks" />
+				<column name="post_mobilemessageid" />
+				<column name="post_mobilemessageimpressions" />
+				<column name="post_mobilemessageonline" />
+				<column name="post_mobilemessagepushoptin" />
+				<column name="post_mobilemessagepushpayloadid" />
+				<column name="post_mobilemessageviews" />
+				<column name="post_mobileosversion" />
+				<column name="post_mobilepushoptin" />
+				<column name="post_mobilepushpayloadid" />
+				<column name="post_mobileresolution" />
+				<column name="post_mvvar1" />
+				<column name="post_mvvar2" />
+				<column name="post_mvvar3" />
+				<column name="post_page_event" />
+				<column name="post_page_event_var1" />
+				<column name="post_page_event_var2" />
+				<column name="post_page_event_var3" />
+				<column name="post_page_type" />
+				<column name="post_page_url" />
+				<column name="post_pagename" />
+				<column name="post_pagename_no_url" />
+				<column name="post_partner_plugins" />
+				<column name="post_persistent_cookie" />
+				<column name="post_pointofinterest" />
+				<column name="post_pointofinterestdistance" />
+				<column name="post_product_list" />
+				<column name="post_prop1" />
+				<column name="post_prop2" />
+				<column name="post_prop3" />
+				<column name="post_prop4" />
+				<column name="post_prop5" />
+				<column name="post_prop6" />
+				<column name="post_prop7" />
+				<column name="post_prop8" />
+				<column name="post_prop9" />
+				<column name="post_prop10" />
+				<column name="post_prop11" />
+				<column name="post_prop12" />
+				<column name="post_prop13" />
+				<column name="post_prop14" />
+				<column name="post_prop15" />
+				<column name="post_prop16" />
+				<column name="post_prop17" />
+				<column name="post_prop18" />
+				<column name="post_prop19" />
+				<column name="post_prop20" />
+				<column name="post_prop21" />
+				<column name="post_prop22" />
+				<column name="post_prop23" />
+				<column name="post_prop24" />
+				<column name="post_prop25" />
+				<column name="post_prop26" />
+				<column name="post_prop27" />
+				<column name="post_prop28" />
+				<column name="post_prop29" />
+				<column name="post_prop30" />
+				<column name="post_prop31" />
+				<column name="post_prop32" />
+				<column name="post_prop33" />
+				<column name="post_prop34" />
+				<column name="post_prop35" />
+				<column name="post_prop36" />
+				<column name="post_prop37" />
+				<column name="post_prop38" />
+				<column name="post_prop39" />
+				<column name="post_prop40" />
+				<column name="post_prop41" />
+				<column name="post_prop42" />
+				<column name="post_prop43" />
+				<column name="post_prop44" />
+				<column name="post_prop45" />
+				<column name="post_prop46" />
+				<column name="post_prop47" />
+				<column name="post_prop48" />
+				<column name="post_prop49" />
+				<column name="post_prop50" />
+				<column name="post_prop51" />
+				<column name="post_prop52" />
+				<column name="post_prop53" />
+				<column name="post_prop54" />
+				<column name="post_prop55" />
+				<column name="post_prop56" />
+				<column name="post_prop57" />
+				<column name="post_prop58" />
+				<column name="post_prop59" />
+				<column name="post_prop60" />
+				<column name="post_prop61" />
+				<column name="post_prop62" />
+				<column name="post_prop63" />
+				<column name="post_prop64" />
+				<column name="post_prop65" />
+				<column name="post_prop66" />
+				<column name="post_prop67" />
+				<column name="post_prop68" />
+				<column name="post_prop69" />
+				<column name="post_prop70" />
+				<column name="post_prop71" />
+				<column name="post_prop72" />
+				<column name="post_prop73" />
+				<column name="post_prop74" />
+				<column name="post_prop75" />
+				<column name="post_purchaseid" />
+				<column name="post_referrer" />
+				<column name="post_s_kwcid" />
+				<column name="post_search_engine" />
+				<column name="post_socialaccountandappids" />
+				<column name="post_socialassettrackingcode" />
+				<column name="post_socialauthor" />
+				<column name="post_socialaveragesentiment" />
+				<column name="post_socialaveragesentiment_deprecated" />
+				<column name="post_socialcontentprovider" />
+				<column name="post_socialfbstories" />
+				<column name="post_socialfbstorytellers" />
+				<column name="post_socialinteractioncount" />
+				<column name="post_socialinteractiontype" />
+				<column name="post_sociallanguage" />
+				<column name="post_sociallatlong" />
+				<column name="post_sociallikeadds" />
+				<column name="post_sociallink" />
+				<column name="post_sociallink_deprecated" />
+				<column name="post_socialmentions" />
+				<column name="post_socialowneddefinitioninsighttype" />
+				<column name="post_socialowneddefinitioninsightvalue" />
+				<column name="post_socialowneddefinitionmetric" />
+				<column name="post_socialowneddefinitionpropertyvspost" />
+				<column name="post_socialownedpostids" />
+				<column name="post_socialownedpropertyid" />
+				<column name="post_socialownedpropertyname" />
+				<column name="post_socialownedpropertypropertyvsapp" />
+				<column name="post_socialpageviews" />
+				<column name="post_socialpostviews" />
+				<column name="post_socialproperty" />
+				<column name="post_socialproperty_deprecated" />
+				<column name="post_socialpubcomments" />
+				<column name="post_socialpubposts" />
+				<column name="post_socialpubrecommends" />
+				<column name="post_socialpubsubscribers" />
+				<column name="post_socialterm" />
+				<column name="post_socialtermslist" />
+				<column name="post_socialtermslist_deprecated" />
+				<column name="post_socialtotalsentiment" />
+				<column name="post_state" />
+				<column name="post_survey" />
+				<column name="post_t_time_info" />
+				<column name="post_tnt" />
+				<column name="post_tnt_action" />
+				<column name="post_transactionid" />
+				<column name="post_video" />
+				<column name="post_videoad" />
+				<column name="post_videoadinpod" />
+				<column name="post_videoadlength" />
+				<column name="post_videoadname" />
+				<column name="post_videoadplayername" />
+				<column name="post_videoadpod" />
+				<column name="post_videoadvertiser" />
+				<column name="post_videoauthorized" />
+				<column name="post_videocampaign" />
+				<column name="post_videochannel" />
+				<column name="post_videochapter" />
+				<column name="post_videocontenttype" />
+				<column name="post_videodaypart" />
+				<column name="post_videoepisode" />
+				<column name="post_videofeedtype" />
+				<column name="post_videogenre" />
+				<column name="post_videolength" />
+				<column name="post_videomvpd" />
+				<column name="post_videoname" />
+				<column name="post_videonetwork" />
+				<column name="post_videopath" />
+				<column name="post_videoplayername" />
+				<column name="post_videoqoebitrateaverageevar" />
+				<column name="post_videoqoebitratechangecountevar" />
+				<column name="post_videoqoebuffercountevar" />
+				<column name="post_videoqoebuffertimeevar" />
+				<column name="post_videoqoedroppedframecountevar" />
+				<column name="post_videoqoeerrorcountevar" />
+				<column name="post_videoqoetimetostartevar" />
+				<column name="post_videoseason" />
+				<column name="post_videosegment" />
+				<column name="post_videoshow" />
+				<column name="post_videoshowtype" />
+				<column name="post_visid_high" />
+				<column name="post_visid_low" />
+				<column name="post_visid_type" />
+				<column name="post_zip" />
+				<column name="prev_page" />
+				<column name="product_list" />
+				<column name="product_merchandising" />
+				<column name="prop1" />
+				<column name="prop2" />
+				<column name="prop3" />
+				<column name="prop4" />
+				<column name="prop5" />
+				<column name="prop6" />
+				<column name="prop7" />
+				<column name="prop8" />
+				<column name="prop9" />
+				<column name="prop10" />
+				<column name="prop11" />
+				<column name="prop12" />
+				<column name="prop13" />
+				<column name="prop14" />
+				<column name="prop15" />
+				<column name="prop16" />
+				<column name="prop17" />
+				<column name="prop18" />
+				<column name="prop19" />
+				<column name="prop20" />
+				<column name="prop21" />
+				<column name="prop22" />
+				<column name="prop23" />
+				<column name="prop24" />
+				<column name="prop25" />
+				<column name="prop26" />
+				<column name="prop27" />
+				<column name="prop28" />
+				<column name="prop29" />
+				<column name="prop30" />
+				<column name="prop31" />
+				<column name="prop32" />
+				<column name="prop33" />
+				<column name="prop34" />
+				<column name="prop35" />
+				<column name="prop36" />
+				<column name="prop37" />
+				<column name="prop38" />
+				<column name="prop39" />
+				<column name="prop40" />
+				<column name="prop41" />
+				<column name="prop42" />
+				<column name="prop43" />
+				<column name="prop44" />
+				<column name="prop45" />
+				<column name="prop46" />
+				<column name="prop47" />
+				<column name="prop48" />
+				<column name="prop49" />
+				<column name="prop50" />
+				<column name="prop51" />
+				<column name="prop52" />
+				<column name="prop53" />
+				<column name="prop54" />
+				<column name="prop55" />
+				<column name="prop56" />
+				<column name="prop57" />
+				<column name="prop58" />
+				<column name="prop59" />
+				<column name="prop60" />
+				<column name="prop61" />
+				<column name="prop62" />
+				<column name="prop63" />
+				<column name="prop64" />
+				<column name="prop65" />
+				<column name="prop66" />
+				<column name="prop67" />
+				<column name="prop68" />
+				<column name="prop69" />
+				<column name="prop70" />
+				<column name="prop71" />
+				<column name="prop72" />
+				<column name="prop73" />
+				<column name="prop74" />
+				<column name="prop75" />
+				<column name="purchaseid" />
+				<column name="quarterly_visitor" />
+				<column name="ref_domain" />
+				<column name="ref_type" />
+				<column name="referrer" />
+				<column name="resolution" />
+				<column name="s_kwcid" />
+				<column name="s_resolution" />
+				<column name="sampled_hit" />
+				<column name="search_engine" />
+				<column name="search_page_num" />
+				<column name="secondary_hit" />
+				<column name="service" />
+				<column name="socialaccountandappids" />
+				<column name="socialassettrackingcode" />
+				<column name="socialauthor" />
+				<column name="socialaveragesentiment" />
+				<column name="socialaveragesentiment_deprecated" />
+				<column name="socialcontentprovider" />
+				<column name="socialfbstories" />
+				<column name="socialfbstorytellers" />
+				<column name="socialinteractioncount" />
+				<column name="socialinteractiontype" />
+				<column name="sociallanguage" />
+				<column name="sociallatlong" />
+				<column name="sociallikeadds" />
+				<column name="sociallink" />
+				<column name="sociallink_deprecated" />
+				<column name="socialmentions" />
+				<column name="socialowneddefinitioninsighttype" />
+				<column name="socialowneddefinitioninsightvalue" />
+				<column name="socialowneddefinitionmetric" />
+				<column name="socialowneddefinitionpropertyvspost" />
+				<column name="socialownedpostids" />
+				<column name="socialownedpropertyid" />
+				<column name="socialownedpropertyname" />
+				<column name="socialownedpropertypropertyvsapp" />
+				<column name="socialpageviews" />
+				<column name="socialpostviews" />
+				<column name="socialproperty" />
+				<column name="socialproperty_deprecated" />
+				<column name="socialpubcomments" />
+				<column name="socialpubposts" />
+				<column name="socialpubrecommends" />
+				<column name="socialpubsubscribers" />
+				<column name="socialterm" />
+				<column name="socialtermslist" />
+				<column name="socialtermslist_deprecated" />
+				<column name="socialtotalsentiment" />
+				<column name="sourceid" />
+				<column name="state" />
+				<column name="stats_server" />
+				<column name="t_time_info" />
+				<column name="tnt" />
+				<column name="tnt_action" />
+				<column name="tnt_post_vista" />
+				<column name="transactionid" />
+				<column name="truncated_hit" />
+				<column name="ua_color" />
+				<column name="ua_os" />
+				<column name="ua_pixels" />
+				<column name="user_hash" />
+				<column name="user_server" />
+				<column name="userid" />
+				<column name="username" />
+				<column name="va_closer_detail" />
+				<column name="va_closer_id" />
+				<column name="va_finder_detail" />
+				<column name="va_finder_id" />
+				<column name="va_instance_event" />
+				<column name="va_new_engagement" />
+				<column name="video" />
+				<column name="videoad" />
+				<column name="videoadinpod" />
+				<column name="videoadlength" />
+				<column name="videoadname" />
+				<column name="videoadplayername" />
+				<column name="videoadpod" />
+				<column name="videoadvertiser" />
+				<column name="videoaudioalbum" />
+				<column name="videoaudioartist" />
+				<column name="videoaudioauthor" />
+				<column name="videoaudiolabel" />
+				<column name="videoaudiopublisher" />
+				<column name="videoaudiostation" />
+				<column name="videoauthorized" />
+				<column name="videoaverageminuteaudience" />
+				<column name="videocampaign" />
+				<column name="videochannel" />
+				<column name="videochapter" />
+				<column name="videochaptercomplete" />
+				<column name="videochapterstart" />
+				<column name="videochaptertime" />
+				<column name="videocontenttype" />
+				<column name="videodaypart" />
+				<column name="videoepisode" />
+				<column name="videofeedtype" />
+				<column name="videogenre" />
+				<column name="videolength" />
+				<column name="videomvpd" />
+				<column name="videoname" />
+				<column name="videonetwork" />
+				<column name="videopath" />
+				<column name="videopause" />
+				<column name="videopausecount" />
+				<column name="videopausetime" />
+				<column name="videoplay" />
+				<column name="videoplayername" />
+				<column name="videoprogress10" />
+				<column name="videoprogress25" />
+				<column name="videoprogress50" />
+				<column name="videoprogress75" />
+				<column name="videoprogress96" />
+				<column name="videoqoebitrateaverage" />
+				<column name="videoqoebitrateaverageevar" />
+				<column name="videoqoebitratechange" />
+				<column name="videoqoebitratechangecountevar" />
+				<column name="videoqoebuffer" />
+				<column name="videoqoebuffercountevar" />
+				<column name="videoqoebuffertimeevar" />
+				<column name="videoqoedropbeforestart" />
+				<column name="videoqoedroppedframecountevar" />
+				<column name="videoqoedroppedframes" />
+				<column name="videoqoeerror" />
+				<column name="videoqoeerrorcountevar" />
+				<column name="videoqoeextneralerrors" />
+				<column name="videoqoeplayersdkerrors" />
+				<column name="videoqoetimetostartevar" />
+				<column name="videoresume" />
+				<column name="videoseason" />
+				<column name="videosegment" />
+				<column name="videoshow" />
+				<column name="videoshowtype" />
+				<column name="videostreamtype" />
+				<column name="videototaltime" />
+				<column name="videouniquetimeplayed" />
+				<column name="visid_high" />
+				<column name="visid_low" />
+				<column name="visid_new" />
+				<column name="visid_timestamp" />
+				<column name="visid_type" />
+				<column name="visit_keywords" />
+				<column name="visit_num" />
+				<column name="visit_page_num" />
+				<column name="visit_ref_domain" />
+				<column name="visit_ref_type" />
+				<column name="visit_referrer" />
+				<column name="visit_search_engine" />
+				<column name="visit_start_page_url" />
+				<column name="visit_start_pagename" />
+				<column name="visit_start_time_gmt" />
+				<column name="weekly_visitor" />
+				<column name="yearly_visitor" />
+				<column name="zip" />
+				<column name="date" />
+				<column name="framework_update_ts" />
+				<column name="framework_source" />
+			</query_table>
+		</query>
+	</layout>
+</project>
